@@ -1,0 +1,89 @@
+.section__crew
+    padding gap 0
+.crew__list
+    display flex
+    justify-content flex-start
+    flex-wrap wrap
+    margin-top 30px
+    +adapt(998px)
+        justify-content center
+.crew__item
+    flex-basis: calc(100% / 4);
+    margin-top 60px
+    position relative
+    height 270px
+    +adapt(1264px)
+        flex-basis: calc(100%/ 3);
+    +adapt(998px)
+        flex-basis: calc(100% / 2);
+    +adapt(680px)
+        flex-basis: calc(100% / 1);
+
+.wrapper__transform
+    display flex
+    justify-content center
+    flex-direction column
+    align-items center 
+    height 100%
+    &:after
+        content ''
+        width 270px
+        height 220px
+        // width 110%
+        // height 90%
+        position absolute
+        top 50%
+        left 50%
+        transform translate(-50%, -50%)
+        border 1px solid yellow
+        z-index -1
+    @media (min-width: 680px)
+        &:hover
+            .wrap__crew--img
+                transform perspective(600px) rotateY(-180deg)
+            .crew__descr 
+                transform perspective(600px) rotateY(0deg)
+    
+.animateItem
+    .wrap__crew--img
+            transform perspective(600px) rotateY(-180deg)
+    .crew__descr 
+        transform perspective(600px) rotateY(0deg)
+.wrap__crew--img
+    width 240px
+    height 240px
+    position absolute
+    cursor pointer
+    backface-visibility hidden 
+    transform perspective(600px) rotateY(0deg)
+    tran(transform, .4s)
+   
+    
+.crew__img
+    display block
+    min-width 100%
+    height 100%
+.crew__descr
+    width 240px
+    height 240px
+    overflow hidden
+    cursor pointer
+    position: absolute
+    backface-visibility hidden 
+    background-color color_def
+    transform perspective(600px) rotateY(180deg)
+    tran(transform, .4s)
+    
+.wrap__descr
+    width 100%
+    height 100%
+    display flex
+    flex-direction column
+    justify-content center
+    align-items center
+.crew__name
+    font('robotoCondensedBold', 22px, blue)
+    text-transform uppercase
+.crew__position
+    font('robotoCondensedRegular', 16px, yellow)
+    text-transform uppercase

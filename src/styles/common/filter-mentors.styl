@@ -1,0 +1,80 @@
+.mentors__filter
+    display flex
+    margin-top 50px
+    +adapt(850px)
+        display block
+.box__btn
+    position relative
+    top 50%
+    width 104px
+    height 46px
+    margin -20px auto 0 auto
+    border-radius 100px
+    +adapt(1920px)
+        width 95px
+        height 40px
+    +adapt(850px)
+        margin 15px 0 0 0
+.knobs, .layer
+    position: absolute
+    top 0
+    right 0
+    bottom 0
+    left 0
+.layer
+    border-radius: 100px;
+.chk
+    position: relative
+    width 100%
+    height 100%
+    padding 0
+    margin 0
+    opacity 0
+    cursor pointer
+    z-index 3
+.knobs
+    z-index: 2
+    &:before
+        content ''
+        position absolute
+        top 8px
+        left 9px
+        width 28px
+        height 28px
+        background-image url(../images/knob-no.png)
+        background-repeat no-repeat
+        transition 0.3s cubic-bezier(0.18, 0.89, 0.35, 1.15) all
+.layer
+    background-image url(../images/layer.png)
+    background-size cover
+    background-repeat no-repeat
+    width 100%
+    transition 0.3s ease all
+    z-index 1
+.box__btn .chk.checked + .knobs:before
+    content ''
+    left 67px
+    background-image url(../images/knob-yes.png)
+    background-repeat no-repeat
+.box__btn .knobs, .box__btn .knobs:before, .box__btn .layer
+    transition 0.3s ease all
+.mentors__filter-activities1
+    margin-right 230px
+    margin-left 120px
+    +adapt(850px)
+        margin-right 0
+        margin-left 0
+.text
+    position absolute
+    top 50%
+    z-index 2
+    transform: translate(120px, -50%)
+    width auto
+    font('robotoCondensedRegular', 24px, #8FA4B9)
+    text-transform uppercase
+    tran(color, .3s)
+    white-space nowrap
+    +adapt(1920px)
+        font-size: 18px
+.box__btn .chk.checked ~ .text
+    color #3A3C4D

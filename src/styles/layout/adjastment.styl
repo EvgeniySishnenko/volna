@@ -1,0 +1,52 @@
+.wrapper 
+    width 100%
+    min-height 600px
+    height 100%
+    position relative
+
+.maincontent 
+    // height 100%
+    position relative
+
+.section 
+    width 100%
+    height auto
+    position relative
+.container 
+    margin 0 auto
+    max-width: 1920px
+    padding-left gap
+    padding-right gap
+    +adapt(1400px)
+        max-width: 1400px
+        width 100%
+    +adapt(1200px)
+        max-width: 1200px
+        width 100%
+
+    +adapt(992px)
+        max-width: 992px
+        width 100%
+    +adapt(768px)
+        max-width: 768px
+        width 100% 
+    +adapt(480px)
+        max-width: 480px
+        width 100% 
+        padding-left gap_mob
+        padding-right gap_mob
+    +adapt(320px)
+        min-width 320px
+.box-shadow
+    -webkit-box-shadow: inset 2px 13px 23px -12px rgba(245,245,245,1);
+    -moz-box-shadow: inset 2px 13px 23px -12px rgba(245,245,245,1);
+    box-shadow: inset 2px 13px 23px -12px rgba(245,245,245,1);
+.massage__error
+    font('Rb', 20px, red)
+    text-align center
+    opacity 0
+    width 0
+    tran()
+    position relative
+    overflow hidden
+    height 0

@@ -1,0 +1,124 @@
+.container__about
+    display flex
+    +adapt(1440px)
+        display flex
+        flex-direction column
+.about
+    width calc(100% - 560px)  
+    padding gap 0
+    +adapt(1440px)
+        order 2
+        width 100%  
+        margin-top 30px
+.main
+    padding-right gap_mob
+    +adapt(992px)
+        padding-right 0
+.h2__title
+    font('robotoCondensedRegular', 32px, yellow)
+    text-transform uppercase
+    +adapt(1920px)
+        font-size 22px
+
+.h2__title-first
+    font('robotoCondensedBold', 60px , blue)
+    line-height 1
+    text-transform none
+    +adapt(1920px)
+       font-size 40px
+    +adapt(1200px)
+       font-size 35px
+    +adapt(768px)
+        font-size 30px
+    +adapt(768px)
+        font-size 28px
+.wrap__block__title
+    width 100%
+    display flex
+    margin-top 50px
+    margin-bottom 50px
+    +adapt(1024px)
+        flex-direction column
+        align-items center
+    +adapt(992px)
+        margin-top 30px
+    +adapt(768px)
+        margin-top 30px
+.flex-item
+    width 70%
+    +adapt(1024px)
+        order 2
+        width 100%
+        margin-top 40px
+    +adapt(992px)
+        margin-top 30px
+.wrap__icon 
+    width 30%
+    display flex
+    justify-content center
+    align-items center
+    +adapt(1024px)
+        order 1
+       
+.about-box-svg
+    width 68px
+    height 75px
+    position relative
+    +adapt(768px)
+        width 40px
+        height 45px
+.h3__title 
+    font('robotoCondensedBold', 35px , blue)
+    text-transform uppercase
+    // padding-top 50px
+    span    
+        text-transform none
+        color red
+    +adapt(1920px)
+        font-size 28px
+    +adapt(1200px)
+        font-size 22px
+    +adapt(768px)
+        font-size 20px
+       
+
+.about__content
+    font('robotoSlabLight', 24px , black)
+    margin-bottom 60px
+    position relative
+    overflow hidden
+    +adapt(1920px)
+        font-size 20px
+    +adapt(1200px)
+        font-size 18px
+    +adapt(992px)
+        font-size 16px
+    +adapt(768px)
+        margin-bottom 45px
+.partners-gallery__shrt-text
+    margin-top 70px
+    font('robotoCondensedRegular', 24px, blue)
+    +adapt(1024px)
+        font-size 18px
+.partners-gallery--list
+    margin-top 30px
+    display flex
+    justify-content center
+    flex-wrap wrap
+    border-bottom: 1px solid color_def
+    padding-bottom 50px
+    &:last-child
+        border-bottom none
+.partners-gallery--item
+    // border: 0px solid color_def
+    border: 1px solid color_def
+    width 300px
+    height 80px
+
+    display flex
+    justify-content center
+    align-items center
+.partners-gallery--img
+    display block
+    border: 1px solid color_def
+    min-width 100%

@@ -1,0 +1,338 @@
+.news
+    width 100%
+    padding 60px 0
+.news__list
+    display flex
+    flex-wrap wrap
+    justify-content space-between
+    width 100%
+    +adapt(768px)
+        justify-content center
+.news__item
+    display none
+    margin-bottom 80px 
+    
+    +adapt(1920px)
+        margin-bottom 50px
+    +adapt(768px)
+        border-bottom 1px solid #707070
+        padding-bottom gap
+        margin-bottom gap
+.item-width-1fr
+    width 30%
+    +adapt(1200px)
+        width 48%
+    +adapt(768px)
+        width 88%
+    +adapt(600px)
+        width 98%
+.item-width-2fr
+    width 65%
+    +adapt(1200px)
+        width 100%
+.item-width-3fr
+    width 100%
+.wrap__news-img
+    width 100%
+    display flex
+    justify-content center
+    align-items center
+    margin-bottom 15px
+    position relative
+.news-img
+    display block
+    max-width 100%
+    height auto
+.news-icon
+    position absolute
+    top gap_mob
+    left gap_mob
+    width 48px
+    height 48px
+    border-radius 50%
+    background-color rgba(blue, 0.7)
+    z-index 10
+    +adapt(768px)
+        left 42px
+    +adapt(700px)
+        left gap_mob
+.mews--svg
+    position absolute
+    top 50%
+    left 50%
+    transform translate(-50%, -50%)
+    width 18px
+    height 18px
+    fill #fff
+.news__division
+    font('robotoCondensedRegular', 18px, red)
+    text-transform uppercase
+    +adapt(1920px)
+        font-size 14px
+.news__title
+    font('robotoCondensedBold', 30px, blue)
+    margin-top 10px
+    text-transform uppercase
+    display block
+    tran(all, .4s)
+    +adapt(1920px)
+        font-size 20px
+    &:hover
+        color red
+.news__descr
+    font('robotoSlabLight', 24px, #000)
+    margin-top 10px
+    +adapt(1920px)
+        font-size 18px
+
+.news__special-project-wr
+    background-image url(../images/news-card/girl.png) 
+    background-repeat  no-repeat 
+    background-size cover
+    background-position 36% 0%
+    width 100%
+    height auto
+    +adapt(1550px)
+        background-position 50%
+.special-project
+    width 50%
+    padding: 80px 0 80px 60px
+    &__shrt-text
+        font('robotoSlabRegular', 25px, yellow)
+    &__title
+        font('robotoCondensedBold', 35px, #fff)
+        text-transform uppercase
+    &__descr
+        font('robotoSlabLight', 24px, #fff)
+        margin-top 10px
+    &__wr-img
+        width 360px
+        height 64px
+    &__img
+        display block
+        max-width 100%
+        height 100%
+    &__button
+        margin-top 40px
+        .news-card__button-link
+            border 1px solid yellow
+    +adapt(1440px)
+        &__shrt-text
+            font-size 20px
+        &__title
+            font-size 25px
+        &__descr
+            font-size 20px
+        padding: 60px 0 60px 40px
+    +adapt(992px)
+        width 60%
+    +adapt(768px)
+        width 70%
+        &__title
+            font-size 22px
+        &__descr
+            font-size 16px
+    +adapt(480px)
+        width 80%
+        &__wr-img
+            width 150px
+        &__img
+            height auto
+        padding: 40px 0 40px gap_mob
+.news-card__button-link
+    display flex
+    justify-content center
+    align-items center
+    background-color blue
+    font('Rr', 18px, #fff)
+    text-transform uppercase
+    width 280px
+    height 65px
+    position relative
+    overflow: hidden;
+    tran()
+    +adapt(1020px)
+        width 220px
+        height 50px
+        font-size: 14px
+    &:before
+        content: '';
+        display: block;
+        position: absolute;
+        background: rgba(255,255,255,0.2);
+        width: 60px;
+        height: 100%;
+        left: 0;
+        top: 0;
+        opacity: .5;
+        filter: blur(30px);
+        transform: translateX(-100px)  skewX(-15deg);
+    &:after
+        content: '';
+        display: block;
+        position: absolute;
+        background: rgba(255,255,255,0.2);
+        width: 30px;
+        height: 100%;
+        left: 30px;
+        top: 0;
+        opacity: 0;
+        filter: blur(5px);
+        transform: translateX(-100px) skewX(-15deg);
+    &:hover
+        background: darken(blue, 10%)
+        cursor: pointer;
+        &:before
+            transform: translateX(300px)  skewX(-15deg);  
+            opacity: 0.6;
+            transition: .7s;
+        
+        &:after
+            transform: translateX(300px) skewX(-15deg);  
+            opacity: 1;
+            transition: .7s;
+.news__media-today-wr
+    background-image url(../images/news-card/clouds.png) 
+    background-repeat  no-repeat 
+    background-size cover
+    background-position 36% 0%
+    width 100%
+    height auto
+    display flex
+    justify-content center
+    align-items center
+    padding 20px
+.media-today
+    display flex
+    width 100%
+    height 100%
+    background-color rgba(blue, 0.5)
+    border 1px solid red
+    &__left
+        width 50%
+        padding gap_mob
+    &__right
+        width 50%
+        display flex
+        flex-direction column
+        justify-content center
+        align-items center
+    &__shrt-text
+        font('robotoCondensedLight', 18px, yellow)
+    &__left-info
+        font('playfairDisplayBold', 60px, red)
+    &__title
+        font('robotoSlabRegular', 35px, #fff)
+        line-height 1
+    &__descr
+        font('robotoSlabLight', 18px, #fff)
+        margin-top 20px
+    &__right-info
+        font('robotoSlabRegular', 35px, yellow)
+        text-transform uppercase
+    &__botton
+        margin-top 60px
+       .news-card__button-link
+           border 1px solid red
+    +adapt(1100px)
+        display block
+        &__left
+            width 100%
+        &__right
+            width 100%
+            padding-bottom gap_mob
+        &__botton
+            margin-top gap_mob
+        &__left-info
+            text-align center
+            font-size 40px
+        &__right-info
+            font-size 25px
+        &__title
+            font-size 25px
+            margin-top gap_mob
+        &__descr
+            font-size 16px
+    +adapt(480px)
+        &__left-info
+            font-size 25px
+        &__title
+            font-size 22px
+        &__descr
+            font-size 14px
+.news__look-at-media-wr
+    background-image url(../images/news-card/girl2.png) 
+    background-repeat  no-repeat 
+    background-size cover
+    width 100%
+    height 100%
+    display flex
+    align-items flex-end
+    padding 20px
+    position relative
+    padding 0 0 50px 40px
+    .news-icon
+        left gap 
+    +adapt(1200px)
+        height 400px
+        align-items center
+        padding 0 0 0 gap 
+        .news-icon
+            left gap_mob
+    +adapt(768px)
+        background-position 50%
+    +adapt(600px)
+        padding 0 gap_mob
+    &:after
+        content: ''
+        position absolute
+        top 0
+        left 0
+        width 100%
+        height 100%
+        background-color rgba(blue, 0.4)
+        z-index 0  
+.look-at-media
+    width 530px
+    position relative
+    z-index: 10
+    &__shrt-text
+        font('robotoCondensedRegular', 18px, yellow)
+        text-transform uppercase
+        position relative
+        padding-left gap_mob
+        &:after
+            content ''
+            position absolute
+            top 50%
+            left 0
+            transform translateY(-50%)
+            width 5px
+            height 5px
+            background-color red
+            border-radius 50%       
+    &__title
+        font('robotoCondensedBold', 30px, #fff)
+        text-transform uppercase
+        white-space nowrap
+        margin-top 30px
+        display block
+    &__descr
+        font('robotoSlabLight', 24px, #fff)
+        margin-top 30px
+    +adapt(1440px)
+        width 440px
+        &__title
+            font-size 25px
+            margin-top 15px
+        &__descr
+            font-size 20px
+            margin-top 15px
+    +adapt(600px)
+        &__title
+            white-space normal
+            font-size 20px
+        &__descr
+            font-size 16px
+        &__descr
+            font-size 16px

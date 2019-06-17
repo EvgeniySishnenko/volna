@@ -1,0 +1,12 @@
+- 
+    var arrContMenu = [
+        ['Все', '#' ],
+        ['Как все устроено', '#' ],
+        ['Профессиональные лайфхаки', '#' ],
+        ['Шторм идей', 'news2.html' ],
+        ['Точка зрения', 'news.html' ]
+    ]
+
+each item in arrContMenu
+    li.content__menu--item
+        a(href=`${item[1]}`).content__menu--link=item[0]

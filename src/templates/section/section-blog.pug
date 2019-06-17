@@ -1,0 +1,39 @@
+.blog
+    .blog__header-wr
+        .block__title
+            h2.h2__title Мы на волне
+        .blog__header__search
+            ul.blog__header-list
+                li.blog__header-item-reset
+                    .btn-reset Сбросить
+                li.blog__header-item.blog__search-year
+                    .blog__header-item__shrt-txt Год
+                    svg.blog__header-item__svg
+                        use(xlink:href="assets/sprite/sprite.svg#down")
+                    ul.blog__header__sub-list
+                        include ../mixins/blog-search-year-mix.pug
+                li.blog__header-item.blog__search-month
+                    .blog__header-item__shrt-txt Месяц
+                    svg.blog__header-item__svg
+                        use(xlink:href="assets/sprite/sprite.svg#down")
+                    ul.blog__header__sub-list
+                        include ../mixins/blog-search-month-mix.pug
+    main.main.main__blog
+        include ../data/blog-arr.pug
+            for items in blogArr
+                .blog__content--list(class="month_all "+`${items.month}` class="year_all year_"+`${items.year}`)
+                    .blog__content-date=items.date
+                    .blog__content--item-wr
+                        each val in items.content              
+                            .blog__content--item
+                                .blog__content__wr-img
+                                    img(src=`${val[0]}`).blog__content__img
+                                .blog__content__wr-title
+                                    a(href=`${val[2]}`).blog__content__link !{val[1]}
+                                .blog__content__wr-text !{val[3]}
+        .massage__error По заданным параметрам ничего не найдено 
+       
+                   
+                        
+            
+            

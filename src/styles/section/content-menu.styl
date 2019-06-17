@@ -1,0 +1,99 @@
+.content__menu
+    padding 35px 0 5px
+    border-bottom 1px solid#ECEDF2
+.content__menu--list
+    display flex
+    justify-content space-between
+    align-items center
+    +adapt(992px)
+        justify-content center
+        flex-wrap wrap
+    +adapt(480px)
+        display block
+.content__menu--item
+    margin-top 5px
+    +adapt(992px)
+        margin-right 20px
+        &:last-child
+            margin-right 0
+    +adapt(480px)
+        margin-right 0
+        margin-top 10px
+        &:last-child
+            margin-bottom 10px
+.content__menu--link
+    font('robotoCondensedRegular', 24px, blue)
+    text-transform uppercase
+    position relative
+    +adapt(1920px)
+        font-size 20px
+    +adapt(1200px)
+        font-size 18px
+    &:after
+        content ''
+        display block
+        opacity 0
+        overflow hidden
+        width 0
+        height 2px
+        background-color #ffff
+        position absolute
+        bottom -7px
+        left 50%
+        transform translateX(-50%)
+        tran(width, .2s)
+        +adapt(992px)
+            bottom 0
+    &:before
+        content ''
+        display block
+        opacity 1
+        overflow hidden
+        width 0
+        height 2px
+        background-color #ffff
+        position absolute
+        bottom -7px
+        width 0
+        right 50%
+        transform translateX(-50%)
+        tran(width, .2s)
+        +adapt(992px)
+            bottom 0
+    &:hover
+        &:after
+            opacity 1
+            overflow visible
+            width 50%
+            background-color red
+            transform translateX(0)
+        &:before
+            opacity 1
+            overflow visible
+            width 50%
+            background-color red
+            transform translateX(0)
+.content__menu--link-active
+    &:after
+        opacity 1
+        overflow visible
+        width 50%
+        background-color red
+        transform translateX(0)
+    &:before
+        opacity 1
+        overflow visible
+        width 50%
+        background-color red
+        transform translateX(0)
+    &.font-coloring-home
+        color blue
+.container-home
+    &  .content__menu--link
+        color yellow
+
+.font-coloring
+    color yellow
+    tran(color, .2s)
+    &:hover
+      color blue

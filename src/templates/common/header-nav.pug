@@ -1,0 +1,24 @@
+.block__header-nav
+    ul.header__nav--list
+        include ../mixins/top-menu-mix.pug
+.block__social
+    .social-text
+        .shrt-text Мы в соцсетях:
+    ul.social--list
+        li.social--item
+            a.social--link
+                svg.social--svg
+                    use(xlink:href="assets/sprite/sprite.svg#vk")
+        li.social--item
+            a.social--link
+                svg.social--svg
+                    use(xlink:href="assets/sprite/sprite.svg#youtube")
+        li.social--item
+            a.social--link
+                svg.social--svg
+                    use(xlink:href="assets/sprite/sprite.svg#tlg")
+        li.social--item
+            a.social--link
+                svg.social--svg
+                    use(xlink:href="assets/sprite/sprite.svg#fb")
+    

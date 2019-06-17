@@ -1,0 +1,98 @@
+.share 
+    border-top 1px solid#ECEDF2
+    border-bottom 1px solid#ECEDF2
+    margin-top gap
+    height 260px
+    display flex
+    align-items center
+    +adapt(768px)
+        height auto
+        padding gap 0
+.share__list
+    width 100%
+    display flex
+    justify-content space-around
+    align-items center
+    +adapt(768px)
+        flex-direction: column
+.share__item-social
+    +adapt(768px)
+        width 100%
+        margin gap_mob 0
+.wrap__share
+    width 560px
+    height 140px
+    border 1px solid #E8E3DB
+    display flex
+    flex-direction column
+    justify-content center
+    align-items center
+    +adapt(992px)
+        width 300px
+    +adapt(768px)
+        width 98%
+.share__shrt-text
+    font('Rr', 18px, blue)
+.share__social
+    margin-top 10px
+.share__item-icon 
+    width 68px
+    height 75px
+    position relative
+    +adapt(768px)
+        width 40px
+        height 45px
+    +adapt(480px)
+        display none
+.share-img
+    display block
+    max-width: 100%
+    height auto
+.plus--svg1,
+.plus--svg2,
+.plus--svg3
+    width 25px
+    height 25px
+    position absolute
+    +adapt(768px)
+        width 15px
+        height 15px
+.plus--svg1
+    top 0
+    right 0
+    fill #0037AE
+.plus--svg2
+    bottom 0
+    right 10px
+    fill #000000
+    +adapt(768px)
+        right 7px
+.plus--svg3
+    top 10px
+    fill #F80A53
+    +adapt(768px)
+        top 7px
+.animate-block-plus
+    &:hover
+        .plus--svg1,
+        .plus--svg3
+            animation plus1 1.5s infinite ease-in-out
+        .plus--svg2
+            animation plus2 1.5s infinite ease-in-out
+ 
+@keyframes plus1 
+    0%
+        transform: rotate(90deg)
+    50%
+        transform: rotate(0deg)
+    100%
+        transform: rotate(90deg)
+@keyframes plus2 
+    0%
+        transform: rotate(-90deg)
+    50%
+        transform: rotate(0deg)
+    100%
+        transform: rotate(-90deg)
+
+

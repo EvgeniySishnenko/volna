@@ -1,0 +1,134 @@
+.popop__form-wr
+    position fixed
+    top -100%
+    left 50%
+    // top 40%
+    transform translateX(-50%)
+    width 500px
+    background-color white
+    z-index 30
+    padding gap
+    border-radius 5px
+    box-shadow: 1px -4px 16px -5px rgba(0,0,0,0.39);
+    tran(top, .5s);
+    overflow hidden
+    +adapt(768px)
+        width 65%
+        padding gap_mob
+    +adapt(580px)
+        width 85%
+    +adapt(480px)
+        padding gap_mob
+.popop__form
+    position relative
+    z-index 10
+.popop__form-wr--show
+    top 20%
+    tran(top, .5s)
+    overflow visible
+.popop__form__title
+    display flex
+    align-items center
+.wrap__news__title-img
+    min-width 40px 
+    height 30px  
+    +adapt(480px)
+        display none
+.popop__form-img
+    display block
+    max-width 100%
+    height 100%
+    
+.popop__form_title__shrt-text
+    font('robotoCondensedBold', 30px, red)
+    margin-left 15px
+    text-transform uppercase
+    white-space nowrap
+    +adapt(1920px)
+        font-size 27px
+    +adapt(1460px)
+        font-size 20px
+    +adapt(1200px)
+        font-size 16px
+        margin-left 5px
+    +adapt(480px)
+        margin-left 0
+.popop__form
+    margin-top 25px
+    width 100%
+    display flex
+.popop__form-input,
+.popop__form-submit
+    height 65px
+    border none 
+    width 40px
+    outline none 
+    &:focus
+       outline none  
+    +adapt(1460px)
+        height 45px
+.popop__form-input
+    width calc(100% - 65px)
+    border 1px solid yellow
+    border-bottom-left-radius 5px
+    border-top-left-radius 5px
+    padding-left 30px
+    background-color white
+    font('robotoCondensedRegular', 24px, #8FA4B9)
+    +adapt(1460px)
+        font-size: 16px
+    &::-webkit-input-placeholder 
+        font('robotoCondensedRegular', 24px, #8FA4B9)
+        +adapt(1460px)
+            font-size: 16px
+    ::-moz-placeholder  
+        font('robotoCondensedRegular', 24px, #8FA4B9)
+        +adapt(1460px)
+            font-size: 16px
+    :-moz-placeholder 
+        font('robotoCondensedRegular', 24px, #8FA4B9)
+        +adapt(1460px)
+            font-size: 16px
+    :-moz-placeholder 
+        font('robotoCondensedRegular', 24px, #8FA4B9) 
+        +adapt(1460px)
+            font-size: 16px
+    +adapt(1460px)
+        width calc(100% - 45px) 
+.popop__form-submit
+    width 65px
+    cursor pointer
+    font('robotoCondensedRegular', 24px, #fff)
+    text-transform uppercase
+    background-color blue 
+    tran(background)
+    +adapt(1460px)
+        height 45px
+        width 45px
+        font-size: 18px
+    &:hover
+        background-color lighten(blue, 5%)    
+.popop__form__text
+    margin-top 30px
+    font('robotoCondensedLight', 18px, black)
+    +adapt(1460px)
+        font-size: 16px
+    +adapt(768px)
+        font-size: 14px
+.popop__form--svg
+    position absolute
+    top -28px
+    right -26px
+    width 45px
+    height 45px
+    fill red
+    cursor pointer
+    transform: rotate(0deg);
+    tran()   
+    &:hover
+        transform: rotate(270deg);
+    +adapt(480px)
+        width 30px
+        height 30px
+        top -18px
+        right -16px

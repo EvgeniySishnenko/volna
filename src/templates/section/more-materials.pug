@@ -1,0 +1,20 @@
+.more-materials
+    .block__title
+        h2.h2__title Еще материалы 
+    include ../data/news-arr.pug
+    ul.news__list
+        for items, i in newsArr
+            if i < 3
+                if items.class == "item-width-1fr"
+                    li(class=`${items.class}`).more-materials__item
+                        if items.img == true
+                            a(href=`${items.link}`).wrap__news-img
+                                img(class="news-img" src=`${items.imgSrc}`)
+                                if items.icon == true
+                                    .news-icon
+                                        svg.mews--svg
+                                            use(xlink:href=`${items.iconSrc}`)
+                        .wrap__news__descr
+                            .news__division !{items.division}
+                            a(href=`${items.link}`).news__title !{items.title}
+                            .news__descr !{items.descr}

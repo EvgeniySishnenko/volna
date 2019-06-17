@@ -1,0 +1,29 @@
+extends ../template
+
+block variables
+    - var title = 'Волна. Главная страница'
+
+block content
+    include ../common/header.pug
+    section.section.box-shadow
+        .container.container-home
+            include ../section/content-menu.pug
+    section.section.section__news
+        .container
+            include ../section/section-news.pug
+    section.section
+        .container
+            include ../section/share.pug
+    footer.footer
+        .container
+            include ../common/footer.pug
+    .popup-menu
+        .popup-menu-left
+        .popup-menu-right
+        .wrap-menu-mobile
+            include ../common/header-nav.pug
+        .closed__menu-mobile
+            svg.closed--svg
+                use(xlink:href="assets/sprite/sprite.svg#closed")
+    include ../common/btn-up.pug
+    include ../common/form-popup.pug

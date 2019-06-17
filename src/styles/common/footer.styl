@@ -1,0 +1,191 @@
+.footer
+    padding gap 0
+.footer__logo
+    width 268px
+    height 65px  
+    +adapt(992px)
+        width 200px
+        height 40px 
+.footer__logo-img
+    display block
+    max-width 100%
+    height 100%
+.footer__options
+    display flex
+    justify-content space-between
+    margin-top 50px
+    +adapt(992px)
+        justify-content center
+        flex-direction: column
+    +adapt(992px)
+        margin-top 20px
+.footer__menu
+    width 74%
+    +adapt(1920px)
+        width 70%
+    +adapt(992px)
+        width 100%
+.footer__menu-list
+    display flex
+    +adapt(1920px)
+        justify-content space-between
+    +adapt(768px)
+        display block
+.footer__menu-item
+    margin-right 100px
+    margin-top 20px
+    +adapt(1920px)
+        margin-right 50px
+    &:last-child
+        margin-right 30px
+    +adapt(1460px)
+        margin-right 0
+        width 30%
+    +adapt(992px)
+        margin-top 10px
+    +adapt(768px)
+        width 100%
+.footer__menu-title
+    font('robotoCondensedRegular', 30px, yellow)
+    text-transform uppercase
+    +adapt(1920px)
+        font-size 25px
+    +adapt(1460px)
+        font-size 18px
+    +adapt(992px)
+        font-size 16px
+.footer__wrap-link
+    +adapt(768px)
+        display flex 
+        flex-wrap wrap   
+.footer__menu-link
+    font('robotoCondensedRegular', 18px, blue)
+    text-transform uppercase
+    tran(color)
+    display block
+    margin-top 20px
+    &:hover
+        color red
+    +adapt(1920px)
+        font-size 16px
+    +adapt(1460px)
+        text-transform none
+        font-size 16px
+    +adapt(992px)
+        margin-top 10px
+    +adapt(768px)
+        font-size 14px
+        margin-right 15px
+.block__form
+    width 26%
+    +adapt(1920px)
+        width 30%
+    +adapt(992px)
+        margin-top 20px
+        width 50%
+    +adapt(768px)
+        width 60%
+    +adapt(480px)
+        width 90%
+.form__title
+    display flex
+    align-items center
+.wrap__title-img
+    min-width 66px
+    height 56px 
+    +adapt(1460px)
+        min-width 50px
+        height 40px  
+    +adapt(1200px)
+        min-width 40px 
+        height 30px  
+.form__title-img
+    display block
+    max-width 100%
+    height 100%
+.form__title__shrt-text
+    font('robotoCondensedBold', 30px, red)
+    margin-left 15px
+    text-transform uppercase
+    white-space nowrap
+    +adapt(1920px)
+        font-size 27px
+    +adapt(1460px)
+        font-size 20px
+    +adapt(1200px)
+        font-size 16px
+        margin-left 5px
+.form
+    margin-top 25px
+    width 100%
+    display flex
+.label
+    display block
+    position relative
+    width calc(100% - 65px)
+    +adapt(1460px)
+        width calc(100% - 45px) 
+.form-input,
+.form-submit
+    height 65px
+    border none 
+    outline none 
+    &:focus
+       outline none  
+    +adapt(1460px)
+        height 45px
+.form-input
+    display block
+    width 100%
+    border 1px solid yellow
+    border-bottom-left-radius 5px
+    border-top-left-radius 5px
+    padding-left 30px
+    font('robotoCondensedRegular', 24px, #8FA4B9)
+    +adapt(1460px)
+        font-size: 16px
+    &::-webkit-input-placeholder 
+        font('robotoCondensedRegular', 24px, #8FA4B9)
+        +adapt(1460px)
+            font-size: 16px
+    ::-moz-placeholder  
+        font('robotoCondensedRegular', 24px, #8FA4B9)
+        +adapt(1460px)
+            font-size: 16px
+    :-moz-placeholder 
+        font('robotoCondensedRegular', 24px, #8FA4B9)
+        +adapt(1460px)
+            font-size: 16px
+    :-moz-placeholder 
+        font('robotoCondensedRegular', 24px, #8FA4B9) 
+        +adapt(1460px)
+            font-size: 16px
+      
+.form-submit
+    width 65px
+    cursor pointer
+    font('robotoCondensedRegular', 24px, #fff)
+    text-transform uppercase
+    background-color blue 
+    tran(background)
+    +adapt(1460px)
+        height 45px
+        width 45px
+        font-size: 18px
+    &:hover
+        background-color lighten(blue, 5%)    
+.form__text
+    margin-top 30px
+    font('robotoCondensedLight', 18px, black)
+    +adapt(1460px)
+        font-size: 16px
+    +adapt(768px)
+        font-size: 14px
+.footer__bottom
+    margin-top 50px
+    font('robotoCondensedLight', 24px, black)
+    +adapt(1460px)
+        font-size: 16px
+        margin-top 30px
+    +adapt(768px)
+        font-size: 14px

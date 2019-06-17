@@ -1,0 +1,220 @@
+.container__blog
+    display flex
+    +adapt(1440px)
+        display flex
+        flex-direction column
+.blog
+    width calc(100% - 560px)  
+    padding gap 0
+    +adapt(1440px)
+        order 2
+        width 100%  
+        margin-top 30px
+.blog__header-wr
+    display flex
+    justify-content space-between
+    +adapt(768px)
+        flex-direction column 
+        align-items center
+.blog__header__search
+    +adapt(768px)
+        margin-top gap
+.blog__header-list
+    display flex
+    +adapt(450px)
+        flex-direction column 
+        align-items center
+.blog__header-item
+    margin-right 20px 
+    display flex
+    justify-content space-around
+    align-items center
+    width 100px
+    height 40px
+    border 1px solid #D7DAE2
+    border-radius 3px
+    position relative
+    cursor pointer
+    tran(border)
+    +adapt(992px)
+        &:last-child
+            margin-right 0
+    +adapt(450px)
+        margin-top gap_mob
+        margin-right 0
+.blog__header-item-reset
+    margin-right 20px 
+    display flex
+    justify-content center
+    align-items center
+    width auto
+    height 40px
+    cursor pointer
+    +adapt(450px)
+        height auto
+.btn-reset
+    font('Rr', 16px, #4D4F5C)
+.blog__header-item__shrt-txt
+    font('Rr', 16px, #4D4F5C)
+
+.blog__header-item__svg
+    width 16px
+    height 9px
+    fill #A4AFB7
+    tran()
+.blog__header__sub-list
+    display none
+    position absolute
+    top 45px
+    left 0
+    width 100%
+    z-index 10
+.blog__header__sub-item
+    font('Rr', 16px, #4D4F5C)
+    width 100%
+    height 30px
+    display flex
+    align-items center
+    justify-content center
+    background-color white
+    opacity 0
+    box-shadow: -1px -1px 19px -6px rgba(0,0,0,0.75);
+    tran()
+    &:hover
+        background-color blue
+        color white
+.blog__sub-item--toggle
+    border 1px solid blue
+    .blog__header-item__svg
+        transform: rotate(540deg);
+    .blog__header__sub-list
+            display block 
+            perspective 1000px
+    .blog__header__sub-item 
+        opacity 0
+        transform-original top center
+        for num in (1..12)
+            &:nth-child({num})
+                animation menu (110ms * num) ease-in-out forwards
+@keyframes menu 
+    0%
+        opacity 0
+        transform rotateX(-90deg)
+    100%
+        opacity 1
+        transform rotateX(0deg)
+.main__blog
+    border-left 1px solid yellow
+    position relative
+    margin-top gap
+    padding-top 40px
+    +adapt(1440px)
+        padding-top gap   
+    +adapt(992px)
+        padding-top 10px
+    &:before
+        content ''
+        position absolute 
+        top 0
+        left -22px
+        width 45px
+        height 45px
+        border 3px solid red
+        border-radius 50%
+        background-color white
+        z-index 10 
+        +adapt(1920px) 
+            width 35px
+            height 35px
+            left -17px
+        +adapt(768px)
+            width 21px
+            height 21px
+            left -10px
+.blog__content--list
+    margin-top 50px
+.blog__content-date
+    display inline-block
+    border-bottom 1px solid yellow
+    padding-left 20px
+    padding-bottom 10px
+    font('robotoCondensedRegular', 35px, yellow)
+    position relative
+    &:after
+        content ''
+        position absolute 
+        bottom -9px
+        left -9px
+        width 19px
+        height 19px
+        border 2px solid yellow
+        border-radius 50%
+        background-color white
+        z-index 10 
+        +adapt(768px)
+            bottom -7px
+            left -7px
+            width 15px
+            height 15px
+    +adapt(1920px)
+        font-size 26px
+    +adapt(1200px)
+        font-size 22px
+.blog__content--item-wr
+    display flex
+    flex-wrap wrap
+    +adapt(768px)
+        flex-direction column
+        align-items center
+.blog__content--item
+    width calc(50% - 40px)
+    margin-left 20px
+    margin-top gap
+    +adapt(768px)
+        width 70%
+        margin-left 0
+    +adapt(480px)
+        width 90%
+.blog__content__wr-img
+    width 100%
+.blog__content__img
+    display block
+    max-width 100%
+    height auto
+.blog__content__link
+    font('robotoCondensedBold', 30px, blue)
+    text-transform uppercase
+    tran(color)
+    &:hover
+        color red
+    +adapt(1920px)
+        font-size 22px
+    +adapt(1200px)
+        font-size 18px
+    +adapt(992px)
+        font-size 16px
+    +adapt(480px)
+        font-size 14px
+.blog__content__wr-text
+    font('robotoSlabLight', 24px, #000)
+    +adapt(1920px)
+        font-size 18px
+    +adapt(992px)
+        font-size 16px
+    +adapt(480px)
+        font-size 14px
+.blog__content__wr-title
+    margin-top gap_mob
+.blog__content__wr-text
+    padding gap_mob 0    
+.main__blog-def
+    &:before
+        display none
+    .massage__error
+        width 100%
+        opacity 1
+        overflow visible
+        height auto
+
+
+    

@@ -1,0 +1,19 @@
+- 
+    var arrBlog = [
+        ['Все', 'month_all' ],
+        ['Январь', 'january' ],
+        ['Февраль', 'february' ],
+        ['Март', 'march' ],
+        ['Апрель', 'april' ],
+        ['Май', 'may' ],
+        ['Июнь', 'june' ],
+        ['Июль', 'july' ],
+        ['Август', 'august' ],
+        ['Сентябрь', 'september' ],
+        ['Октябрь', 'october' ],
+        ['Ноябрь', 'november' ],
+        ['Декабрь', 'december' ],
+    ]
+
+each item in arrBlog
+    li(attr=`${item[1]}`).sub-item-month.blog__header__sub-item=item[0]

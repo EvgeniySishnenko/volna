@@ -1,0 +1,26 @@
+extends ../template
+
+block variables
+    - var title = 'Что такое волна'
+
+block content
+    include ../common/header-def.pug
+    section.section.section__crew.box-shadow
+        .container
+            include ../section/section-mentors.pug
+    section.section
+        .container
+            include ../section/share.pug
+    footer.footer
+        .container
+            include ../common/footer.pug
+    .popup-menu
+        .popup-menu-left
+        .popup-menu-right
+        .wrap-menu-mobile
+            include ../common/header-nav.pug
+        .closed__menu-mobile
+            svg.closed--svg
+                use(xlink:href="assets/sprite/sprite.svg#closed")
+    include ../common/btn-up.pug
+    

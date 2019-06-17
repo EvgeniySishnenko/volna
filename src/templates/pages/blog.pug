@@ -1,0 +1,23 @@
+extends ../template
+
+block variables
+    - var title = 'Блог'
+
+block content
+    include ../common/header-def.pug
+    section.section.section__about.box-shadow
+        .container.container__blog
+            include ../section/section-blog.pug
+            include ../common/aside.pug
+    footer.footer
+        .container
+            include ../common/footer.pug
+    .popup-menu
+        .popup-menu-left
+        .popup-menu-right
+        .wrap-menu-mobile
+            include ../common/header-nav.pug
+        .closed__menu-mobile
+            svg.closed--svg
+                use(xlink:href="assets/sprite/sprite.svg#closed")
+    include ../common/btn-up.pug

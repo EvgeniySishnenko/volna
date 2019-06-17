@@ -1,0 +1,42 @@
+.popup-menu
+    z-index -10
+    overflow hidden
+    height 0
+.popup-menu-left,
+.popup-menu-right
+    position absolute
+    top 0
+    bottom 0
+    width 0
+    background-color rgba(blue, 0.9)
+    tran(width)
+.popup-menu-left
+    left 0
+.popup-menu-right
+    right  0
+.popup-menu--show
+    height 100%
+    +adapt(992px)
+        overflow visible
+        position fixed
+        top 0
+        bottom 0
+        left 0
+        right 0
+        z-index 50
+        .popup-menu-right,
+        .popup-menu-left
+            width 50%
+        .closed__menu-mobile
+            opacity 1
+.closed__menu-mobile
+    position absolute
+    top 15px
+    right 15px
+    cursor pointer
+    opacity 0
+    tran(opacity, 1s)
+.closed--svg
+    fill white
+    width 30px
+    height 30px

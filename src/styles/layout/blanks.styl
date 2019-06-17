@@ -1,0 +1,57 @@
+.flex-992
+    display flex
+    +adapt(992px)
+        display block
+.flex-768
+    display flex
+    +adapt(768px)
+        display block
+.between
+    justify-content space-between
+
+.aline-items-center
+    align-items center
+.mt-gap
+    margin-top gap
+.mt-70
+    margin-top 70px
+.mt-100
+    margin-top 100px
+.mt-gap_mob
+    +adapt(768px)
+        margin-top  gap_mob  
+.fix-widt70
+    width 70%
+    +adapt(768px)
+        width 100%
+.fix-widt50
+    width 50%
+    +adapt(768px)
+        width 100%
+.fix-widt49
+    width 49%
+    +adapt(768px)
+        width 100%
+.fix-widt30
+    width 30%
+    +adapt(768px)
+        width 100%
+
+.float-r
+    float right 
+    margin-left gap
+    +adapt(768px)
+        float none
+        margin-left 0
+.float-l
+    float left 
+    margin-right gap
+    +adapt(768px)
+        float none
+        margin-right 0
+.txt-center
+    text-align center
+.clearfix::after 
+  content ""
+  display table
+  clear both

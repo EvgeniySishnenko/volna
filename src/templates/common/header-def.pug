@@ -1,0 +1,22 @@
+header.header.header-def
+    .header-top
+        .container.container_header-top
+            .header__logo-adindex
+                a(href="https://adindex.ru/" target="_blank").header__logo__link
+                    svg.logo__link--svg
+                        use(xlink:href="assets/sprite/sprite.svg#logo")
+            .header__logo-volna
+                a(href="#" target="_blank").header__logo__link
+                    img.logo-img(src="assets/images/volna-logo.png")
+            .header__contacts
+                .shrt-text +7 (495) 737-08-45
+                .shrt-text volna@adindex.ru
+    .header__nav
+        .container
+            .wrap-menu
+                include header-nav.pug
+            .block__btn
+                .btn__menu
+                    .btn__menu__wrap--img
+                        img.btn__menu--img(src="assets/images/volna.png")
+                    .btn__menu--text Меню

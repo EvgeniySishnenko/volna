@@ -1,0 +1,373 @@
+.container__art
+    display flex
+    +adapt(1440px)
+        display flex
+        flex-direction column
+.art
+    // width 70% 
+    width calc(100% - 560px)  
+    padding gap gap 0 0
+    +adapt(1440px)
+        order 2
+        width 100%  
+        margin 30px gap_mob 0 0 
+    p, li, .art-item-text, .art__box
+        font('robotoSlabLight', 24px, #000)
+        position relative
+    .color-red 
+        font('robotoSlabBold', 24px, red)
+
+    +adapt(1920px)
+        p, .art-item-text,.color-red, li, .art__box
+            font-size 20px
+    +adapt(1200px)
+        p, .art-item-text, .color-red, li, .art__box
+            font-size 18px
+    +adapt(992px)
+        p, .art-item-text, .color-red, li, .art__box
+            font-size 16px
+.art__fix-width-wr
+    max-width 1150px
+    width auto
+.art-division
+    font('robotoCondensedRegular', 18px, red)
+    text-transform uppercase
+    +adapt(1200px)
+        font-size 16px
+.art__first-title-wr
+    margin-top 30px
+.first-title
+    font('robotoCondensedBold', 48px, blue)
+    line-height 1
+    width 100%
+    +adapt(1920px)
+        font-size 37px
+    +adapt(1200px)
+        font-size 32px
+    +adapt(768px)
+        font-size 25px
+.art__img-wr
+    width 100%
+.art-img--larg
+    display block
+    max-width 100%
+.art__img-wr-boder
+    border 1px solid yellow
+    width 100%
+.art__h2-title
+    font('robotoCondensedBold', 35px, blue)
+    text-transform uppercase
+    +adapt(1920px)
+        font-size 28px
+    +adapt(992px)
+        font-size 25px
+    +adapt(768px)
+        font-size 22px
+.art__box
+    position relative
+.art__box__bckg-img-wr
+    width 100%
+    position relative
+    &:before
+        position absolute
+        content ''
+        width 50px
+        height 20px
+        background url(../images/volna.png) no-repeat
+        top 10px
+        right -25px
+        z-index 10
+    +adapt(768px)
+        width 100%
+        text-align center
+        &:before
+            display none
+        
+.art__box-image
+    display inline-block
+    max-width 100%
+   
+.art__shrt-text
+    font('robotoCondensedBold', 30px, blue)
+    line-height 1.1
+    +adapt(1920px)
+        font-size 26px
+    +adapt(768px)
+        font-size 22px
+        line-height inherit
+        margin-top gap_mob
+        text-align center    
+.ml-def
+    margin-left 36%
+    +adapt(768px)
+        margin-left 0
+.art__h3-title
+    font('robotoCondensedBold', 30px, blue)
+    text-transform uppercase 
+    +adapt(1920px)
+        font-size 22px
+    +adapt(992px)
+        font-size 20px
+    +adapt(768px)
+        font-size 18px
+
+.block-pick
+    display flex
+    justify-content center
+    margin-top gap
+.block-pick--svg
+    width 23px
+    height 19px
+    fill red
+.block-pick-img
+    display block
+    margin-left 10px
+    margin-right 10px
+.first-letter
+    font('Rb', 121px, blue)
+    line-height 0.8
+    margin-right 10px
+    float left
+    +adapt(768px)
+        display none
+
+.incut-text
+    font('Rb', 30px, blue)
+    text-transform uppercase
+    +adapt(1920px)
+        font-size 22px
+    +adapt(1200px)
+        font-size 20px
+    +adapt(768px)
+        font-size 18px
+    +adapt(480px)
+        font-size 16px
+.incut-text-wr
+    margin gap 0
+    +adapt(768px)
+        margin gap_mob 0
+    .incut-text 
+        // font-size 24px
+        text-align center
+        // +adapt(1200px)
+        //     font-size 20px
+.block__incut
+    display flex
+    flex-direction column
+    justify-content center
+    align-items center
+    height 300px
+    position relative
+.incut-svg
+    position absolute
+    width 40px
+    height 45px
+    .plus--svg1,
+    .plus--svg2,
+    .plus--svg3
+        width 15px
+        height 15px
+    .plus--svg2
+        right 7px
+    .plus--svg3
+        top 7px
+.incut-svg-plus1
+    top 40px
+    left 0
+    +adapt(768px)
+        top 25px
+       
+.incut-svg-plus2
+    top 40px
+    right 0
+    +adapt(768px)
+        top 25px
+.incut-svg-plus3
+    bottom 40px
+    left 0
+    +adapt(768px)
+        bottom 25px
+       
+.incut-svg-plus4
+    bottom 40px
+    right 0
+    +adapt(768px)
+        bottom 25px
+
+.block__incut-text-wr
+    margin 45px 0
+    .incut-text 
+        text-align center
+    +adapt(480px)
+         margin 15px 0
+.incut-item
+    display flex
+    align-items flex-end
+    margin-top gap
+    +adapt(480px)
+        margin-top gap_mob
+.color__sm-num
+    font('playfairDisplayBold', 48px, yellow)
+    border-bottom 1px solid red
+    line-height 0.8
+    margin-right gap_mob
+    padding-bottom 7px
+    +adapt(1440px)
+        font-size 40px
+    +adapt(480px)
+        font-size 25px
+.incut-item__shrt-text
+    font('robotoCondensedRegular', 30px, blue)
+    line-height 0.8
+    padding-bottom 7px
+    +adapt(1440px)
+        font-size 24px
+    +adapt(480px)
+        font-size 18px
+.art__box-border
+    border 1px solid yellow
+    padding gap gap_mob 
+
+.art-item
+    padding 70px 0
+    border-top 1px solid yellow
+    .incut-text
+        tran()
+        &:hover
+            color yellow
+    +adapt(1200px)
+        padding gap 0
+.art-item-def
+    .incut-text
+        color red
+        &:hover
+            color blue
+.art-item-wr
+    margin-top gap_mob
+.art-item-text
+    margin gap_mob 0 0 0
+    +adapt(1200px)
+        margin gap_mob 0 0 0
+.art__fancybox__link
+    display block
+    width 100%
+    position relative
+    z-index 10
+
+.art__fancybox__link
+    position relative
+.wr__icon-play
+    position absolute
+    top 50%
+    left 50%
+    transform translate(-50%, -50%)
+    width 15%
+    height 13%
+    z-index 20
+.icon-play__img
+    display block
+    max-width 100%
+    height 100%
+.hover__num-animate
+    &:hover
+        & .num-animate1-1
+            animation num-animate-1 3s ease-in-out infinite
+            +adapt(768px)
+                animation none
+        & .num-animate1-2
+            animation num-animate-2 4s ease-in-out infinite
+            +adapt(768px)
+                animation none
+        & .img-animate
+            animation img-animate 4s ease-in-out infinite
+            +adapt(768px)
+                animation none
+@keyframes img-animate
+    0%
+        bottom 17px
+        left 17px
+    20%
+        bottom 20px
+        left 23px
+    40%
+        bottom 17px
+        left 17px
+    60%
+        bottom 20px
+        left 23px
+    80%
+        bottom 17px
+        right 17px
+    100%
+        bottom 17px
+        right 18px
+@keyframes num-animate-1 
+    0%
+        top -2px
+    20%
+        top 0px
+    40%
+        top -5px
+    60%
+        top 0px
+    80%
+        top -5px
+    100%
+        top -2px
+@keyframes num-animate-2
+    0%
+        top 2px
+    20%
+        top 0px
+    40%
+        top 5px
+    60%
+        top 0px
+    80%
+        top 5px
+    100%
+        top 2px
+.animate-wr-num
+    position relative
+    width 200px
+    display flex
+    +adapt(768px)
+        margin 0 auto
+        width 100px
+        height 100px
+.num-animate1-1,
+.num-animate1-2
+    font('Attentica4F', 287px, red)
+    position relative
+    line-height 0.7
+    tran(all, .8s)
+    +adapt(768px)
+        font-size 190px
+.num-animate1-1
+    top 0
+    left 0
+    +adapt(768px)
+        top -20px
+.num-animate1-2
+    top 0
+    right 0
+    +adapt(768px)
+        right 0
+        top -20px
+.img-animate
+    position absolute
+    bottom 20px
+    left 20px
+    +adapt(768px)
+        bottom 0px
+        left 10%   
+.decor-img-wr
+    display inline-block
+    width 10%
+    text-align center
+    img
+        display inline-block
+        max-width 100%
+    
+
+

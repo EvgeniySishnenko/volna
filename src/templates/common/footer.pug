@@ -1,0 +1,16 @@
+.footer__logo
+    img(src="assets/images/volna-logo.png").footer__logo-img
+.footer__options
+    .footer__menu
+        ul.footer__menu-list
+            include ../mixins/footer-menu-mix.pug
+    .block__form
+        .form__title
+            .wrap__title-img
+                img(src="assets/images/lips.png" class="form__title-img")
+            .form__title__shrt-text Получить лучшее на почту
+        form.form
+            input(type="email" placeholder="Ваш e-mail" class="form-input")
+            input(type="submit" value="ок" class="form-submit")
+        .form__text Нажимая на кнопку, вы даете согласие на обработку своих персональных данных
+.footer__bottom © 2017 Все права защищены

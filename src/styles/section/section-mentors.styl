@@ -1,0 +1,93 @@
+.mentors
+    margin-bottom 40px
+.mentors__list
+    display flex
+    justify-content flex-start
+    flex-wrap wrap
+    width 100%
+    +adapt(998px)
+        justify-content center
+.mentors__item
+    display none
+    flex-basis: calc(100% / 4);
+    margin-top 60px
+    position relative
+    +adapt(1380px)
+        flex-basis: calc(100%/ 3);
+    +adapt(998px)
+        flex-basis: calc(100% / 2);
+    +adapt(680px)
+        flex-basis: calc(100% / 1);       
+.wrap__mentors--img
+    position relative
+    display flex
+    justify-content center
+    height 270px
+    &:after
+        content ''
+        width 310px
+        height 220px
+        position absolute
+        top 50%
+        left 50%
+        transform translate(-50%, -50%)
+        border 1px solid yellow
+        z-index -1
+    +adapt(680px)
+        &:after
+           display none
+.mentors__img
+    tran(all, 0.4s)
+    display block
+    width 270px
+    &:hover
+        transform scale(1.1)
+.wrap__mentors__descr
+    display flex
+    align-items center
+    flex-direction column
+.mentors__activities
+    font('robotoCondensedRegular', 18px, yellow)
+    text-transform uppercase
+    margin-top 15px
+    +adapt(1920px)
+        font-size 16px
+.mentors__name
+    font('robotoCondensedBold', 24px, blue)
+    text-transform uppercase
+    margin-top 15px
+    +adapt(1920px)
+        font-size 20px
+        margin-top 7px
+.mentors__position 
+    font('robotoCondensedRegular', 24px, title_color)
+    margin-top 10px
+    text-align center
+    padding 0 10px
+    +adapt(1920px)
+        font-size 18px
+        margin-top 3px
+    +adapt(680px)
+        width 70%
+    +adapt(536px)
+        width 90%
+    +adapt(480px)
+        width 100%
+.btn__show-more
+    height 100px
+    width 100%
+    border 1px solid color_def
+    display flex
+    justify-content center
+    align-items center
+    font('robotoCondensedRegular', 24px, blue)
+    text-transform uppercase
+    box-shadow: 0px 1px 25px -13px rgba(0,0,0,0.75);
+    cursor pointer
+    tran(all, .4s)
+    &:hover
+        box-shadow: -200px -200px 14px -200px rgba(0,0,0,0.75);
+        border 1px solid yellow
+    +adapt(1440px)
+        font-size 20px
+        height 90px

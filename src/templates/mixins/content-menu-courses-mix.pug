@@ -1,0 +1,11 @@
+- 
+    var arrContMenu = [
+        ['Digital PR & SMM', 'https://volna-courses.adindex.ru/' ],
+        ['Бренд-маркетинг', 'https://volna.adindex.ru/courses/brand-marketing/index.phtml' ],
+        ['Практическое медиапланирование', 'https://volna.adindex.ru/courses/intensive-practical-media-planni/index.phtml' ],
+        ['Медиапланирование и маркетинговые исследования в digital', 'https://volna-courses.adindex.ru/promedia?utm_source=volna&utm_medium=banner&utm_campaign=newmedia' ],
+    ]
+    //- .font-coloring-courses цвет текста на разных страницах
+each item in arrContMenu
+    li.content__menu--item
+        a(href=`${item[1]}` target="_blank").font-coloring-courses.content__menu--link=item[0]

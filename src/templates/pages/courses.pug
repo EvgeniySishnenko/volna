@@ -1,0 +1,28 @@
+extends ../template
+
+block variables
+    - var title = 'Волна. Курсы и интенсивы'
+
+block content
+    include ../common/header-def.pug
+    section.section.box-shadow
+        .container
+            include ../section/content-courses-menu.pug
+    section.section.section__courses__card
+        .container
+            include ../section/courses-card.pug
+    section.section
+        .container
+            include ../section/share.pug
+    footer.footer
+        .container
+            include ../common/footer.pug
+    .popup-menu
+        .popup-menu-left
+        .popup-menu-right
+        .wrap-menu-mobile
+            include ../common/header-nav.pug
+        .closed__menu-mobile
+            svg.closed--svg
+                use(xlink:href="assets/sprite/sprite.svg#closed")
+    include ../common/btn-up.pug

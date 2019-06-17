@@ -1,0 +1,30 @@
+.contacts
+    .contacts-left
+        .wrap__left
+            .block__title
+                h2.h2__title Контакты
+            ul.contacts__list
+                li.contacts__item
+                    .wrap__contacts-icon
+                        svg.contacts--svg
+                            use(xlink:href="assets/sprite/sprite.svg#call")
+                    .contacts__address
+                        .address-key Телефон:
+                        .address-value +7 (495) 737-08-45
+                li.contacts__item
+                    .wrap__contacts-icon
+                        svg.contacts--svg
+                            use(xlink:href="assets/sprite/sprite.svg#email")
+                    .contacts__address
+                        .address-key E-mail:
+                        .address-value volna@adindex.ru
+                li.contacts__item
+                    .wrap__contacts-icon
+                        svg.contacts--svg
+                            use(xlink:href="assets/sprite/sprite.svg#placeholder")
+                    .contacts__address
+                        .address-key Офис:
+                        .address-value Москва, Образцова д.7, офис 301
+    .contacts-right
+        .wrap-map
+            #map

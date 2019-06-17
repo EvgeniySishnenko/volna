@@ -1,0 +1,18 @@
+include ../data/crew-arr.pug
+.crew
+    .block__title
+        h2.h2__title Команда «Волна»
+    .crew__list
+        for items in crewArr
+            .crew__item.animate(data-animate="animateItem")
+                .wrapper__transform
+                    .wrap__crew--img
+                        img(src=`${items[2]}`).crew__img
+                    .crew__descr
+                        .wrap__descr
+                            .crew__name=items[0]
+                            .crew__position=items[1]
+        
+        
+
+

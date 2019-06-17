@@ -1,0 +1,332 @@
+-
+    var mentorsArr = [
+        {
+            division : "Digital PR & SMM",
+            name : "Александр Еськов",
+            descr: "Senior Performance Manager АДВ Лаб",
+            src : "assets/images/mentors/men1.png",
+            classFilter : "digital"
+        },
+        {
+            division : "Digital PR & SMM",
+            name : "Александр Марфин",
+            descr: "Бренд-стратег. Независимый консультант.",
+            src : "assets/images/mentors/men2.png",
+            classFilter : "digital"
+        },
+        {
+            division : "Маркетинг",
+            name : "Александра Кулачикова",
+            descr: "Руководитель продвижения Яндекс.Метрика",
+            src : "assets/images/mentors/men3.png",
+            classFilter : "marketing"
+        },
+        {
+            division : "Digital PR & SMM",
+            name : "Анастасия Лобода",
+            descr: "Заместитель директора поцифровой стратегии ИД «Коммерсантъ»",
+            src : "assets/images/mentors/men4.png",
+            classFilter : "digital"
+        },
+        {
+            division : "Маркетинг",
+            name : "Андрей Иванов",
+            descr: "Менеджер рекламных кампаний programmatic-платформы Getintent",
+            src : "assets/images/mentors/men5.png",
+            classFilter : "marketing"
+        },
+        {
+            division : "Маркетинг",
+            name : "Анна Старостина",
+            descr: "Руководитель отдела маркетинга Uvenco Group (Russia/UK)",
+            src : "assets/images/mentors/men6.png",
+            classFilter : "marketing"
+        },
+        {
+            division : "Digital PR & SMM",
+            name : "Антон Шестаков",
+            descr: "PR-директор АДВ",
+            src : "assets/images/mentors/men7.png",
+            classFilter : "digital"
+        },
+        {
+            division : "Маркетинг",
+            name : "Арина Клементьева",
+            descr: "Директор по связям с общественностью Tenzor Consulting Group",
+            src : "assets/images/mentors/men8.png",
+            classFilter : "marketing"
+        },
+        {
+            division : "Digital PR & SMM",
+            name : "Артём Крашенинников",
+            descr: "Главный редактор \"Лентач\"",
+            src : "assets/images/mentors/men9.png",
+            classFilter : "digital"
+        },
+        {
+            division : "Digital PR & SMM",
+            name : "Артем Тарабрин",
+            descr: "Senior Targeted Advertising Manager iProspect Russia",
+            src : "assets/images/mentors/men10.png",
+            classFilter : "digital"
+        },
+        {
+            division : "Digital PR & SMM",
+            name : "Василий Богданов",
+            descr: "Соучредитель и креативный директор агентства Little BigAgency",
+            src : "assets/images/mentors/men11.png",
+            classFilter : "digital"
+        },
+        {
+            division : "Digital PR & SMM",
+            name : "Василий Черный",
+            descr: "Директор по маркетинговым коммуникациям в Brand Analytics",
+            src : "assets/images/mentors/men12.png",
+            classFilter : "digital"
+        },
+        {
+            division : "Маркетинг",
+            name : "Анна Гиско",
+            descr: "Head of Media Henkel Russia & CIS",
+            src : "assets/images/mentors/men13.png",
+            classFilter : "marketing"
+        },
+        {
+            division : "Маркетинг",
+            name : "Василий Ящук",
+            descr: "Основатель Players",
+            src : "assets/images/mentors/men14.png",
+            classFilter : "marketing"
+        },
+        {
+            division : "Маркетинг",
+            name : "Виктория Грин",
+            descr: "Key account manager LAVA MEDIA",
+            src : "assets/images/mentors/men15.png",
+            classFilter : "marketing"
+        },
+        {
+            division : "Маркетинг",
+            name : "Владимир Антошин",
+            descr: "Коммерческий директор iVengo Mobile",
+            src : "assets/images/mentors/men16.png",
+            classFilter : "marketing"
+        },
+        {
+            division : "Маркетинг",
+            name : "Григорий Богачев",
+            descr: "Head of SEO MediaCom",
+            src : "assets/images/mentors/men17.png",
+            classFilter : "marketing"
+        },
+        {
+            division : "Маркетинг",
+            name : "Евгений Вольнов",
+            descr: "Media Director в Sports.ru",
+            src : "assets/images/mentors/men18.png",
+            classFilter : "marketing"
+        },
+        {
+            division : "Маркетинг",
+            name : "Егор Карпов",
+            descr: "Эксперт по емейл-маркетингу в компании ExpertSender",
+            src : "assets/images/mentors/men19.png",
+            classFilter : "marketing"
+        },
+        {
+            division : "Маркетинг",
+            name : "Егор Тимофеев",
+            descr: "пресс-секретарь РБК",
+            src : "assets/images/mentors/men20.png",
+            classFilter : "marketing"
+        },
+        {
+            division : "Маркетинг",
+            name : "Егор Яковишен",
+            descr: "Senior Frontend Developer в Setka",
+            src : "assets/images/mentors/men21.png",
+            classFilter : "marketing"
+        },
+        {
+            division : "Маркетинг",
+            name : "Екатерина Прохорова",
+            descr: "Исполнительный директор Celebrity Marketing Agency Feedstars",
+            src : "assets/images/mentors/men22.png",
+            classFilter : "marketing"
+        },
+        {
+            division : "Маркетинг",
+            name : "Злата Николаева",
+            descr: "Руководитель направления внешних коммуникаций Qlean.ru",
+            src : "assets/images/mentors/men23.png",
+            classFilter : "marketing"
+        },
+        {
+            division : "Маркетинг",
+            name : "Иван Сиденко",
+            descr: "Управляющий партнер агентств Re:evolution и All Stars",
+            src : "assets/images/mentors/men24.png",
+            classFilter : "marketing"
+        },
+        {
+            division : "Маркетинг",
+            name : "Ирина Запевалова",
+            descr: "Talent Manager, Danone",
+            src : "assets/images/mentors/men25.png",
+            classFilter : "marketing"
+        },
+        {
+            division : "Маркетинг",
+            name : "Ирина Зверева",
+            descr: "Сооснователь агентства TheHeads",
+            src : "assets/images/mentors/men26.png",
+            classFilter : "marketing"
+        },
+        {
+            division : "Маркетинг",
+            name : "Ирина Нагорнова",
+            descr: "Директор по внешним связям Abbott",
+            src : "assets/images/mentors/men27.png",
+            classFilter : "marketing"
+        },
+        {
+            division : "Маркетинг",
+            name : "Кирилл Борисов",
+            descr: "Co-Founder/CEO в LabelUp - Influencer Marketing Platform",
+            src : "assets/images/mentors/men28.png",
+            classFilter : "marketing"
+        },
+        {
+            division : "Маркетинг",
+            name : "Константин Тамиров",
+            descr: "Директор по маркетингу AB InBev-Efes (бренды: BUD, Клинское, Сибирская корона, Stella Artois, Corona Extra, Lowenbrau, Staropramen, Efes и другие)",
+            src : "assets/images/mentors/men29.png",
+            classFilter : "marketing"
+        },
+        {
+            division : "Маркетинг",
+            name : "Максим Тишининов",
+            descr: "Технический специалист, эксперт по емейл-маркетингу компании ExpertSender",
+            src : "assets/images/mentors/men30.png",
+            classFilter : "marketing"
+        },
+        {
+            division : "Маркетинг",
+            name : "Максим Юрин",
+            descr: "Соучредитель и стратегический директор digital-агентства Little Big Agency ",
+            src : "assets/images/mentors/men31.png",
+            classFilter : "marketing"
+        },
+        {
+            division : "Маркетинг",
+            name : "Мария Гельман",
+            descr: "Креативный директор Look At Media ",
+            src : "assets/images/mentors/men32.png",
+            classFilter : "marketing"
+        },
+        {
+            division : "Маркетинг",
+            name : "Марьям Ахунова",
+            descr: "Креативный директор Possible Moscow",
+            src : "assets/images/mentors/men33.png",
+            classFilter : "marketing"
+        },
+        {
+            division : "Маркетинг",
+            name : "Никита Трещев",
+            descr: "Проектный директор агентства «Апрель», ведет @odigital",
+            src : "assets/images/mentors/men34.png",
+            classFilter : "marketing"
+        },
+        {
+            division : "Маркетинг",
+            name : "Николай Гришин",
+            descr: "Руководитель отдела «Свое дело» РБК",
+            src : "assets/images/mentors/men35.png",
+            classFilter : "marketing"
+        },
+        {
+            division : "Маркетинг",
+            name : "Нина Шарутина",
+            descr: "Marketing Communication Director, Affect",
+            src : "assets/images/mentors/men36.png",
+            classFilter : "marketing"
+        },
+        {
+            division : "Маркетинг",
+            name : "Олег Корнев",
+            descr: "Креативный директор Digital Ape",
+            src : "assets/images/mentors/men37.png",
+            classFilter : "marketing"
+        },
+        {
+            division : "Маркетинг",
+            name : "Олег Крупенов",
+            descr: "Руководитель PR-отдела в СМИ2",
+            src : "assets/images/mentors/men38.png",
+            classFilter : "marketing"
+        },
+        {
+            division : "Маркетинг",
+            name : "Олеся Теплова",
+            descr: "Директор департамента маркетинга и связей с общественностью TVzavr",
+            src : "assets/images/mentors/men39.png",
+            classFilter : "marketing"
+        },
+        {
+            division : "Маркетинг",
+            name : "Ольга Вяткина",
+            descr: "PR-директор агентства Nectarin",
+            src : "assets/images/mentors/men40.png",
+            classFilter : "marketing"
+        },
+        {
+            division : "Маркетинг",
+            name : "Роман Бездудный",
+            descr: "Консультант по маркетингу и оптимизации бизнес процессов",
+            src : "assets/images/mentors/men41.png",
+            classFilter : "marketing"
+        },
+        {
+            division : "Маркетинг",
+            name : "Роман Колосов",
+            descr: "Social Media Director в Affect",
+            src : "assets/images/mentors/men42.png",
+            classFilter : "marketing"
+        },
+        {
+            division : "Маркетинг",
+            name : "Сазонов Алексей",
+            descr: "Независимый медиа эксперт, кандидат технических наук.",
+            src : "assets/images/mentors/men43.png",
+            classFilter : "marketing"
+        },
+        {
+            division : "Маркетинг",
+            name : "Светлана Киселева",
+            descr: "Независимый консультант по оптимизации бизнес процессов в отделах продаж",
+            src : "assets/images/mentors/men44.png",
+            classFilter : "marketing"
+        },
+        {
+            division : "Маркетинг",
+            name : "Светлана Майбродская",
+            descr: "Основатель и директор Академии коммуникаций Wordshop",
+            src : "assets/images/mentors/men45.png",
+            classFilter : "marketing"
+        },
+        {
+            division : "Маркетинг",
+            name : "Сергей Грим",
+            descr: "Co-founder LAVA MEDIA",
+            src : "assets/images/mentors/men46.png",
+            classFilter : "marketing"
+        },
+        {
+            division : "Маркетинг",
+            name : "Татьяна Попова",
+            descr: "Консультант по маркетингу и бизнес-тренер",
+            src : "assets/images/mentors/men47.png",
+            classFilter : "marketing"
+        }
+    ]

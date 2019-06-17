@@ -1,0 +1,43 @@
+.slider   
+    ul.slider__list-left
+        - for(var i =0; i < 3; i++) {
+            if i == 0
+                li.slider__item-left(style="background-color: #000F4D;")
+                    .wrap__left-content
+                        .slider__left-title-txt1 Наши курсы
+                        .slider__left-title Digital PR & SMM
+                        .slider__left-title-txt2 Образовательный курс
+                        .slider__left-descr Современный PR-специалист может хорошо писать тексты и иметь обширную базу журналистов, но более успешным и востребованным он будет, если…
+                        a(href="#").slider__left-link Подробнее
+            else
+                li.slider__item-left(style="background-color: #0e1772;")
+                    .wrap__left-content
+                        .slider__left-title-txt1=i
+                        .slider__left-title Digital PR & SMM
+                        .slider__left-title-txt2 Образовательный курс
+                        .slider__left-descr Современный PR-специалист может хорошо писать тексты и иметь обширную базу журналистов, но более успешным и востребованным он будет, если…
+                        a(href="#").slider__left-link Подробнее
+        -}
+    ul.slider__list-right
+        - for(var i =0; i < 3; i++) {
+            if i == 0
+                li.slider__item-right
+                    .slider__item-right__content(style="background: url(assets/images/sl-bg.png); background-size: cover; background-repeat no-repeat")
+                        .slider__item-wrap
+                            img.slider__item-wrap-img(src="assets/images/sale.png")
+            else
+                li.slider__item-right
+                    .slider__item-right__content(style="background: url(http://lorempixel.com/500/250); background-size: cover; background-repeat no-repeat")
+                        .slider__item-wrap
+                            img.slider__item-wrap-img(src="assets/images/sale.png")
+        -}  
+    
+    
+
+.slider__controls
+    .controls__num-slide
+        span.controls__num-current 
+        span.controls__num-slash /
+        span.controls__num-total 
+    //- .controls__next &rarr;	
+    //- .controls__prev &larr;     

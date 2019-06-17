@@ -1,0 +1,30 @@
+include ../data/about-arr.pug
+.about
+    main.main
+        .block__title
+            h2.h2__title Что такое волна
+        .wrap__block__title.animate-block-plus.animatable.fadeInDown
+            .block__title.flex-item
+                h2.h2__title.h2__title-first Интелектуальная
+                    br
+                    | шеринг-платформа AdIndex
+            .wrap__icon 
+                .about-box-svg
+                    include ../common/plus.pug
+        for items in aboutsArr
+            .block__title.animatable.bounceInLeft
+                h3.h3__title !{items.title}
+            .about__content
+                each val in items.text
+                    p.animatable.moveUp=val
+               
+        .block__title.animatable.bounceInLeft
+            h2.h2__title Партнеры
+        .partners-gallery
+            for items in parnersArr
+                .partners-gallery__shrt-text.animatable.bounceInLeft=items.title
+                ul.partners-gallery--list.animatable.moveUp
+                    each val in items.src
+                        li.partners-gallery--item 300 x 80
+                            //- img(src=`${val}`).partners-gallery--img
+                            

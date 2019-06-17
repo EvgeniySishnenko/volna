@@ -1,0 +1,18 @@
+.mentors
+    .block__title
+        h2.h2__title Наставники
+    include ../common/filter-mentors.pug
+    .mentors__content  
+        .mentors__list
+            include ../data/mentors-arr.pug
+                for items in mentorsArr
+                    .mentors__item(class=`${items.classFilter}`)
+                        .wrap__mentors--img
+                            img(src=`${items.src}` alt=`${items.name}`).mentors__img
+                        .mentors__descr
+                            .wrap__mentors__descr
+                                .mentors__activities !{items.division}
+                                .mentors__name !{items.name}
+                                .mentors__position !{items.descr}
+.btn__show-more.btn-more__mentors Показать еще
+            

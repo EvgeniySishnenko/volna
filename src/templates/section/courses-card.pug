@@ -1,0 +1,73 @@
+.courses__card
+    ul.courses__card--list
+        include ../data/courses-arr.pug
+        for items in coursesArr
+            li.courses__card--item
+                .courses__card-left
+                    .courses__card-left__shrt-text Набор открыт
+                    .courses__card-left__content
+                        .courses__card-left__name-courses
+                            .courses__bckg-number 0
+                                span.courses__bckg-number__current=items.num
+                            .courses__card-left__pic
+                                img.courses__card-left__img(src=`${items.imageSrc}`)
+                            .courses__card-left__shrt-text2=items.trainingName
+                            .courses__card-left__title !{items.courses}
+                            if items.info == "true"
+                                if items.infoClass == "red"
+                                    .courses__card-left__info--red=items.infoText
+                                else if items.infoClass == "blue"
+                                    .courses__card-left__info--blue=items.infoText
+                        .courses__card-left__descr-courses
+                            .courses__card-left__descr-courses__title=items.courses2
+                            .courses__card-left__descr-courses__text=items.text
+                            a(href=`${items.linkMore}` target="_blank").courses__card-left__descr-courses__link-more подробнее
+                                .wrap__link-more_arrow
+                                    img.more_arrow--img(src="assets/images/arrow.png")
+
+
+                .courses__card-right
+                    .courses__card-right__infomation
+                        ul.infomation-list
+                            li.infomation-item  
+                                .wrap__infomation-icon
+                                    svg.infomation--svg
+                                        use(xlink:href="assets/sprite/sprite.svg#calend")
+                                .wrap__infomation-descr
+                                    .infomation-descr--key Когда
+                                    .infomation-descr--value=items.when
+                            li.infomation-item  
+                                .wrap__infomation-icon
+                                    svg.infomation--svg
+                                        use(xlink:href="assets/sprite/sprite.svg#time")
+                                .wrap__infomation-descr
+                                    .infomation-descr--key Продолжительность
+                                    .infomation-descr--value=items.duration
+                            li.infomation-item  
+                                .wrap__infomation-icon
+                                    svg.infomation--svg
+                                        use(xlink:href="assets/sprite/sprite.svg#head")
+                                .wrap__infomation-descr
+                                    .infomation-descr--key Формат обучения
+                                    .infomation-descr--value=items.formOfStudy
+                            li.infomation-item  
+                                .wrap__infomation-icon
+                                    svg.infomation--svg
+                                        use(xlink:href="assets/sprite/sprite.svg#student")
+                                .wrap__infomation-descr
+                                    .infomation-descr--key Количество наставников
+                                    .infomation-descr--value=items.numberOfMentors
+                    .courses__card-right__price
+                        .wrap__price
+                            .price-key 
+                                span.price-key__shrt-text  Стоимость курса
+                                if items.warningInfo == 'true'
+                                    span.price-key__shrt-text-warning=items.warningwarningInfoText
+                            .price-value=items.price
+                                span.price-valuta руб.
+                        if items.warningPrice == 'true'
+                            .price__warning=items.warningPriceText
+                        .price__btn-signup
+                            a(href=`${items.attr}`).btn-signup Записаться
+
+                            

@@ -1,0 +1,179 @@
+.contacts
+    position relative
+    overflow hidden
+    width 100%
+    display flex
+    background-color color_def
+    +adapt(1440px)
+        display block
+        height auto
+.contacts-left,
+.contacts-right
+    position relative
+    width 50%
+    top 0%
+    +adapt(1440px)
+        width 100%
+.contacts-left
+    left 0
+    background-color blue
+    +adapt(992px)
+        margin-top 50px
+.contacts-right
+    right 0
+    background-color #808495
+   
+.wrap__left
+    position relative
+    padding 70px gap 130px
+    max-width 960px
+    margin-left auto
+    opacity 0
+    +adapt(1920px)
+       padding 40px gap 80px
+    +adapt(1920px)
+        max-width: 700px
+        margin-left 0
+        margin-right auto
+        padding-left 0
+    +adapt(1920px)
+       padding 40px gap 80px
+    +adapt(1200px)
+        max-width 600px
+    +adapt(992px)
+        max-width 100%
+        margin-left 0
+    
+.contacts__list
+    margin-top 80px
+    +adapt(1920px)
+        margin-top 40px
+.contacts__item
+    display flex
+    align-items center
+    margin-top 90px
+    &:first-child
+        margin-top 0
+    +adapt(1920px)
+        margin-top 40px
+    +adapt(992px)
+        margin-top 20px
+.wrap__contacts-icon
+    margin-right 50px
+    +adapt(1920px)
+        margin-right 20px
+.address-key
+    font('robotoCondensedRegular', 24px, yellow)
+    +adapt(1920px)
+        font-size 20px
+    +adapt(1200px)
+        font-size 18px 
+    +adapt(992px)
+        font-size 16px
+.address-value
+    font('robotoCondensedBold', 35px, #fff)
+    +adapt(1920px)
+        font-size 30px
+    +adapt(1200px)
+        font-size 25px 
+    +adapt(992px)
+        font-size 20px
+    +adapt(480px)
+        font-size 18px
+.contacts--svg
+    width 60px
+    height 60px
+    fill white
+    +adapt(1920px)
+        width 40px
+        height 40px
+    +adapt(1200px)
+        width 35px
+        height 35px
+    +adapt(992px)
+        width 30px
+        height 30px
+    +adapt(480px)
+        width 25px
+        height 25px
+.wrap-map
+    position relative
+    width 100%
+    height 100%
+    opacity 0
+    animation-fill-mode forwards
+   
+.contacts-start
+    .wrap__left
+        animation opacity-slide  3s ease-out
+        animation-fill-mode forwards
+        
+    .contacts-left
+        animation: inleft 2s ease-out
+        
+    .contacts--svg
+        animation scale-slide  4s ease-out
+        animation-fill-mode forwards
+        
+    .wrap-map
+        animation opacity-slide  3s ease-out 
+        animation-fill-mode forwards
+        
+    .contacts-right
+        animation inright 2s ease-out;
+        
+
+#map 
+    width: 99.99%
+    height 100%
+    +adapt(1440px)
+        width 100%
+        height: 460px
+.ymaps-2-1-73-ground-pane
+    -webkit-filter: grayscale(100%);
+
+@keyframes inleft 
+    0% 
+        transform translateX(-100%)
+    
+    40% 
+        transform translateX(-100%)
+  
+    100% 
+        transform translateX(0)
+
+
+@keyframes inright 
+    0% 
+        transform translateX(100%)
+    
+    40% 
+        transform translateX(100%)
+  
+    100% 
+        transform translateX(0)
+  
+
+@keyframes opacity-slide 
+    0% 
+        opacity 0
+    
+    60%
+        opacity 0
+ 
+    100% 
+        opacity 1
+@keyframes scale-slide
+    0% 
+        transform: scale(1)
+        fill white
+    70%
+        transform: scale(1)
+        fill red
+    80%
+        transform: scale(1.2)
+        fill red
+    100% 
+        transform: scale(1)
+        fill white
+  

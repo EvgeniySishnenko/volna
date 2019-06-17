@@ -1,0 +1,12 @@
+- 
+    var arrMenu = [
+        ['Статьи и публикации', 'index.html' ],
+        ['Курсы и интенсивы', 'courses.html' ],
+        ['Наши наставники', 'mentors.html' ],
+        ['Что такое волна', 'about.html' ],
+        ['Блог', 'blog.html' ]
+    ]
+each item in arrMenu
+    li.header__nav--item
+        a(href=`${item[1]}`).header__nav--link=item[0]
+        

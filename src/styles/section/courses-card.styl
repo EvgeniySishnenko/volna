@@ -1,0 +1,326 @@
+.courses__card--item
+    display flex
+    margin-top 80px
+    &:first-child
+        margin-top 40px 
+    +adapt(1024px)
+        display block
+    &:hover
+        .courses__card-left__info--red,
+        .courses__card-left__info--blue
+            animation: 1.8s ease-in-out 0s normal none infinite running trambling-animation;
+.courses__card-left
+    width 70%
+    border 1px solid red
+    padding gap*2 gap gap
+    +adapt(1440px)
+        padding gap gap_mob gap
+    +adapt(1024px)
+        width 100%
+    +adapt(768px)
+        padding gap_mob gap_mob gap_mob
+.courses__card-left__content
+    display flex
+    +adapt(768px)
+        display block
+.courses__card-left__name-courses
+    position relative
+    width 50%
+    +adapt(768px)
+        width 100%
+.courses__card-left__shrt-text
+    font('robotoCondensedRegular', 24px, red)
+    text-transform uppercase
+    +adapt(1440px)
+        font-size 18px
+    +adapt(768px)
+        text-align center
+.courses__bckg-number
+    position absolute
+    top 50%
+    left 50%
+    transform translate(-50%, -50%)
+    font('Attentica4F', 700px, color_def)
+    z-index -1
+    +adapt(1440px)
+        font-size 500px
+    +adapt(768px)
+        display none
+.courses__card-left__pic
+    margin-top 90px
+    text-align center
+    +adapt(1440px)
+        margin-top 50px
+        text-align left
+        margin-bottom 10px
+    +adapt(1024px)
+        margin-top 30px
+    +adapt(768px)
+        display none
+.courses__card-left__shrt-text2 
+    font('robotoCondensedRegular', 24px, yellow)
+    text-transform uppercase
+    +adapt(1440px)
+        font-size 18px
+    +adapt(768px)
+        display none
+.courses__card-left__title
+    font('Attentica4F', 105px, blue)
+    // font-weight: 600;
+    line-height 1
+    margin-top 50px
+    +adapt(1440px)
+        font-size 80px
+    +adapt(1200px)
+        font-size 65px
+    +adapt(1024px)
+        font-size 70px
+    +adapt(768px)
+        display none
+.courses__card-left__info--red,
+.courses__card-left__info--blue
+    width 300px
+    height 70px
+    display flex
+    justify-content: center
+    align-items center
+    font('robotoCondensedBold', 18px, white)
+    text-transform uppercase
+    margin-top 50px
+    +adapt(1440px)
+        font-size 16px
+        height 50px
+        width 250px
+    +adapt(1024px)
+        margin-top 30px
+    +adapt(768px)
+        width 50%
+        margin 0 auto
+        margin-top gap_mob
+    +adapt(550px)
+        width 80%
+        font('robotoCondensedBold', 16px, white)
+    +adapt(375px)
+        width 95%
+
+@keyframes trambling-animation 
+    0%, 50%, 100% 
+        transform rotate(0deg)
+    10%, 30% 
+        transform rotate(-10deg)
+    20%, 40% 
+        transform rotate(10deg)
+     
+.courses__card-left__info--blue
+    background-color blue
+.courses__card-left__info--red
+    background-color red
+.courses__card-left__descr-courses
+    width 50%
+    display flex
+    flex-direction column
+    justify-content: center
+    +adapt(768px)
+        width 100%
+.courses__card-left__descr-courses__title
+    font('robotoCondensedBold', 35px, blue)
+    text-transform uppercase
+    +adapt(1440px)
+        font-size 25px
+    +adapt(1024px)
+        font-size 22px
+    +adapt(768px)
+        margin-top gap_mob
+        text-align center
+.courses__card-left__descr-courses__text
+    font('robotoSlabLight', 24px, black)
+    margin-top 30px
+    +adapt(1440px)
+        font-size 20px
+    +adapt(1024px)
+        font-size 18px
+    +adapt(768px)
+        font-size 16px
+        margin-top gap_mob
+.wrap__descr-courses__link-more
+    width 100%
+.courses__card-left__descr-courses__link-more
+    font('robotoCondensedRegular', 24px, red)
+    text-transform uppercase
+    display inline-flex
+    align-items center
+    margin-top 40px
+    tran(color)
+    
+    &:hover
+        color darken(red, 10%)
+        .wrap__link-more_arrow
+            margin-left 20px
+    +adapt(1440px)
+        font-size 20px
+    +adapt(1024px)
+        font-size  18px
+    +adapt(768px)
+        margin-top gap_mob
+.wrap__link-more_arrow
+    margin-bottom 4px
+    margin-left 15px
+    tran()
+    +adapt(1024px)
+        width 35px
+        margin-bottom 0
+.more_arrow--img
+    +adapt(1024px)
+        display block
+        max-width 100%
+.courses__card-right
+    width 30%
+    border 1px solid yellow
+    border-left none
+    padding gap*2 gap gap
+    +adapt(1440px)
+        padding gap gap_mob gap
+    +adapt(1024px)
+        display flex
+        width 100%
+        border-left 1px solid yellow
+        border-top none
+.courses__card-right__infomation
+    position relative
+    &:before
+        content: 'info block'
+        position absolute 
+        font('playfairDisplayBold', 24px, color_def)
+        top -20px
+        right 0
+    +adapt(768px)
+            display none
+
+.courses__card-right__infomation
+    +adapt(1024px)
+        width 50%
+.infomation-list
+    border-bottom 1px solid yellow
+    +adapt(1024px)
+        border-bottom none
+.infomation-item  
+    display flex
+    margin-bottom 30px 
+    +adapt(1440px)
+        margin-bottom 15px
+.wrap__infomation-icon
+    margin-right gap
+    +adapt(1440px)
+        margin-right gap_mob
+.infomation--svg
+    width 25px
+    height 25px
+    fill yellow
+.infomation-descr--key
+    font('robotoCondensedRegular', 24px, blue)
+    text-transform uppercase 
+    line-height 1
+    +adapt(1440px)
+        font-size 20px
+        
+.infomation-descr--value
+    font('robotoCondensedRegular', 24px, red)
+    text-transform uppercase 
+    margin-top 10px
+    +adapt(1440px)
+        font-size 20px
+        margin-top 5px
+.courses__card-right__price
+    +adapt(1024px)
+        width 50%
+        display flex
+        justify-content center
+        align-items center
+        flex-direction column
+    +adapt(768px)
+        width 100%
+.wrap__price
+    margin-top 30px
+    white-space nowrap 
+    +adapt(1440px)
+        margin-top 20px
+    +adapt(1024px)
+        margin-top 0
+.price-key
+    font('Rr', 24px, yellow)
+    display flex
+    justify-content space-between
+    align-items center
+    width 100%
+    flex-wrap wrap
+    +adapt(1440px)
+        font-size 20px
+    +adapt(768px)
+        flex-direction column
+        justify-content center
+.price-key__shrt-text 
+    margin-right 10px
+.price-key__shrt-text-warning
+    font('robotoCondensedRegular', 18px, blue)
+.price-value
+    font('Rb', 60px, blue)
+    +adapt(1440px)
+        font-size 40px
+    +adapt(1024px)
+        text-align center
+    +adapt(1024px)
+        margin-top gap_mob
+.price-valuta
+    font('Rr', 24px, blue)
+    +adapt(1440px)
+        font-size 20px
+.price__warning
+    font('robotoCondensedRegular', 24px, red)
+    text-transform uppercase
+    margin-top 30px
+    +adapt(1440px)
+        font-size 20px
+    +adapt(1024px)
+        margin-top gap_mob
+    +adapt(480px)
+        font-size 16px
+.price__btn-signup
+    margin-top 30px
+    +adapt(1024px)
+        margin-top gap_mob
+.btn-signup
+    display flex
+    justify-content: center
+    align-items center
+    background-color none
+    border 1px solid red
+    font('robotoCondensedRegular', 24px, blue)
+    text-transform uppercase
+    width 100%
+    height 65px
+    tran(all, .6s)
+    position relative
+    overflow hidden
+    z-index 1
+    &:hover
+        color white
+        &:before
+            height: 100%;
+            left: 0;
+            top: 0;
+            width: 100%;
+    &:before
+        content ''
+        position absolute
+        height 0
+        left 50%
+        top 50%
+        width 0
+        background-color red
+        tran(all, .3s)
+        z-index -1
+    +adapt(1440px)
+        font-size 20px
+    +adapt(1024px)
+        width 250px
+        height 50px

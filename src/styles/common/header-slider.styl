@@ -1,0 +1,180 @@
+.header__slider 
+    margin-top 20px
+    position relative
+.slider  
+    display flex
+    position relative
+    overflow hidden
+    +adapt(992px)
+        display block
+.slider__list-left,
+.slider__list-right   
+    width 50%
+    height 400px
+    position relative
+    +adapt(1200px)
+        height 450px
+    +adapt(992px)
+        width 100%
+        height 300px
+    +adapt(480px)
+        height 350px 
+    +adapt(375px)
+        height 400px
+    +adapt(320px)
+        height 410px
+
+.slider__item-left
+    width 100%
+    height 400px 
+    padding gap_mob 0
+    +adapt(1200px)
+        height 450px
+    +adapt(992px)
+        width 100%
+        height 300px
+    +adapt(480px)
+        height 350px 
+    +adapt(375px)
+        height 400px
+    +adapt(320px)
+        height 410px
+.wrap__left-content
+    max-width 960px
+    margin-left auto
+    padding-left gap
+    +adapt(1400px)
+        max-width: 700px
+    +adapt(1200px)
+        max-width: 600px
+    +adapt(992px)
+        max-width 100%
+        margin-left 0
+.slider__left-title-txt1
+    font('robotoSlabLight', 24px, #fff)
+    text-transform uppercase
+    border-bottom 1px solid#410B43
+    display inline-block
+    +adapt(992px)
+        font-size: 20px
+.slider__left-title
+    font('playfairDisplayBold', 50px, yellow)
+    margin-top 30px
+    +adapt(992px)
+        font-size: 35px
+        margin-top 20px
+.slider__left-title-txt2
+    font('robotoSlabRegular', 18px, yellow)
+    margin-top 25px
+    text-transform uppercase
+    +adapt(992px)
+        font-size: 16px
+        margin-top 15px
+.slider__left-descr
+    font('robotoSlabLight', 18px, #fff)
+    margin-top 20px
+    width 70%
+    +adapt(992px)
+        width 90%
+        font-size: 16px
+        margin-top 15px
+.slider__left-link
+    display: block
+    text-transform uppercase
+    font('robotoCondensedRegular', 18px, yellow)
+    margin-top 40px
+    +adapt(992px)
+        font-size: 16px
+        margin-top 20px
+.slider__item-right
+    width 100%
+    height 400px
+    +adapt(1200px)
+        height 450px
+    +adapt(992px)
+        width 100%
+        height 300px
+    +adapt(480px)
+        height 350px 
+    +adapt(375px)
+        height 400px
+    +adapt(320px)
+        height 410px
+.slider__item-right__content
+    width 100%
+    height 100%
+    display flex
+    align-items center
+    padding-left 120px
+    +adapt(1800px)
+        padding-left 0
+        justify-content center
+    +adapt(992px)
+        padding 40px 0
+.slider__item-wrap
+    background-color rgba(blue, 0.8)
+    border 1px solid red
+    width 740px
+    height 80%
+    display flex
+    justify-content center
+    align-items center
+    +adapt(1800px)
+        width 80%
+    +adapt(1400px)
+        width 90%
+.slider__controls
+    position absolute
+    top 20px
+    left 43%
+    +adapt(992px)
+        position relative
+        top 0
+        left 0
+        display flex
+        justify-content center
+.controls__next,
+.controls__prev
+    
+    background-color red
+    width 60px
+    height 60px
+    font-weight bold
+    font-size 30px 
+    color #fff
+    cursor pointer
+    z-index 30
+    border none 
+    outline none
+    position absolute
+    &:focus
+        outline none
+    +adapt(992px)
+        width 40px
+        height 40px
+        font-size 20px 
+.controls__next
+    left -80px
+    bottom 130px
+    +adapt(992px)
+        left inherit 
+        right 20%
+        bottom -41px
+.controls__prev
+    left -80px
+    bottom 50px
+    +adapt(992px)
+        left 20%
+        bottom -41px
+.controls__num-slide
+    +adapt(992px)
+        order 2
+        margin 0 15px
+.controls__num-current,
+.controls__num-slash,
+.controls__num-total
+    font('playfairDisplayBold', 50px, #4D5782)
+    +adapt(992px)
+        font-size 30px
+.active-slide
+    top 0

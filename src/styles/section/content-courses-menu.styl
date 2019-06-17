@@ -1,0 +1,40 @@
+.courses-menu
+    padding-top 30px
+    border-bottom  1px solid #ecedf2;
+.courses-menu__images__block
+    width 100%
+    height 400px
+    background-color #ECEDF2
+.courses__content__menu
+    width 100%
+    height 145px
+    +adapt(1920px)
+        height auto
+.courses__content__menu--nav,
+.courses__content__menu--list
+    height 100%
+.font-coloring-courses
+    color title_color
+.courses__content__menu--list
+    display flex
+    justify-content space-between
+    align-items center
+    +adapt(1920px)
+        justify-content center
+        flex-wrap wrap 
+        padding 20px 0
+    +adapt(630px)
+        display block
+    .content__menu--item
+        +adapt(1920px)
+            margin-right 40px
+            &:last-child
+                margin-right 0
+        +adapt(630px)
+            margin-right 0
+            margin-top 10px
+    .content__menu--link
+        +adapt(630px)
+            font-size 16px
+            // text-transform none      
+    

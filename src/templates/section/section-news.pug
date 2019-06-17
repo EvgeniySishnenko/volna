@@ -1,0 +1,57 @@
+include ../data/news-arr.pug
+.news
+    ul.news__list
+        - for(var h = 0; h < 5; h++) {
+            for items in newsArr
+                if items.class == "item-width-1fr"
+                    li(class=`${items.class}`).news__item
+                        if items.img == true
+                            a(href=`${items.link}`).wrap__news-img
+                                img(class="news-img" src=`${items.imgSrc}`)
+                                if items.icon == true
+                                    .news-icon
+                                        svg.mews--svg
+                                            use(xlink:href=`${items.iconSrc}`)
+                        .wrap__news__descr
+                            .news__division !{items.division}
+                            a(href=`${items.link}`).news__title !{items.title}
+                            .news__descr !{items.descr}
+
+                else if items.class == "item-width-2fr" 
+                    li(class=`${items.class}`).news__item
+                        div(class=`news__${items.classCont}-wr`)
+                            div(class=`${items.classCont}`)
+                                div(class=`${items.classCont}__shrt-text`) !{items.division}
+                                if items.img == true
+                                    div(class=`${items.classCont}__wr-img`)
+                                        img(src=`${items.imgSrc}`).special-project__img
+                                div(class=`${items.classCont}__title`) !{items.title}
+                                div(class=`${items.classCont}__descr`) !{items.descr}
+                                if items.button == true
+                                    div(class=`${items.classCont}__button`)
+                                        a(href=`${items.link}`).news-card__button-link Подробнее
+                            if items.icon == true
+                                .news-icon
+                                    svg.mews--svg
+                                        use(xlink:href=`${items.iconSrc}`)
+                            
+
+                else if items.class == "item-width-3fr" 
+                    li(class=`${items.class}`).news__item
+                        .news__media-today-wr
+                            .media-today
+                                .media-today__left
+                                    .media-today__shrt-text !{items.division}
+                                    .media-today__left-info !{items.infoLeft}
+                                    .media-today__title !{items.title}
+                                    .media-today__descr !{items.descr} 
+                                .media-today__right
+                                    .media-today__right-info !{items.infoRight}
+                                    .media-today__botton
+                                        a(href=`${items.link}`).news-card__button-link Подробнее
+        - }
+.btn__show-more.btn-more__home-news Показать еще
+
+
+       
+
