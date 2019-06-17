@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./assets/styles/app.min.css">
+    <script src="assets/scripts/bundle.js" defer></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="maincontent">
+        <header class="header header-def">
+          <div class="header-top">
+            <div class="container container_header-top">
+              <div class="header__logo-adindex"><a class="header__logo__link" href="https://adindex.ru/" target="_blank">
+                  <svg class="logo__link--svg">
+                    <use xlink:href="assets/sprite/sprite.svg#logo"></use>
+                  </svg></a></div>
+              <div class="header__logo-volna"><a class="header__logo__link" href="#" target="_blank"><img class="logo-img" src="assets/images/volna-logo.png"></a></div>
+              <div class="header__contacts">
+                <div class="shrt-text">+7 (495) 737-08-45</div>
+                <div class="shrt-text">volna@adindex.ru</div>
+              </div>
+            </div>
+          </div>
+          <div class="header__nav">
+            <div class="container">
+              <div class="wrap-menu">
+                <div class="block__header-nav">
+                  <ul class="header__nav--list">
+                    <li class="header__nav--item"><a class="header__nav--link" href="index.html">Статьи и публикации</a></li>
+                    <li class="header__nav--item"><a class="header__nav--link" href="courses.html">Курсы и интенсивы</a></li>
+                    <li class="header__nav--item"><a class="header__nav--link" href="mentors.html">Наши наставники</a></li>
+                    <li class="header__nav--item"><a class="header__nav--link" href="about.html">Что такое волна</a></li>
+                    <li class="header__nav--item"><a class="header__nav--link" href="blog.html">Блог</a></li>
+                  </ul>
+                </div>
+                <div class="block__social">
+                  <div class="social-text">
+                    <div class="shrt-text">Мы в соцсетях:</div>
+                  </div>
+                  <ul class="social--list">
+                    <li class="social--item"><a class="social--link">
+                        <svg class="social--svg">
+                          <use xlink:href="assets/sprite/sprite.svg#vk"></use>
+                        </svg></a></li>
+                    <li class="social--item"><a class="social--link">
+                        <svg class="social--svg">
+                          <use xlink:href="assets/sprite/sprite.svg#youtube"></use>
+                        </svg></a></li>
+                    <li class="social--item"><a class="social--link">
+                        <svg class="social--svg">
+                          <use xlink:href="assets/sprite/sprite.svg#tlg"></use>
+                        </svg></a></li>
+                    <li class="social--item"><a class="social--link">
+                        <svg class="social--svg">
+                          <use xlink:href="assets/sprite/sprite.svg#fb"></use>
+                        </svg></a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="block__btn">
+                <div class="btn__menu">
+                  <div class="btn__menu__wrap--img"><img class="btn__menu--img" src="assets/images/volna.png"></div>
+                  <div class="btn__menu--text">Меню</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+        <section class="section section__contacts">
+          <div class="container__def">
+            <div class="contacts">
+              <div class="contacts-left">
+                <div class="wrap__left">
+                  <div class="block__title">
+                    <h2 class="h2__title">Контакты</h2>
+                  </div>
+                  <ul class="contacts__list">
+                    <li class="contacts__item">
+                      <div class="wrap__contacts-icon">
+                        <svg class="contacts--svg">
+                          <use xlink:href="assets/sprite/sprite.svg#call"></use>
+                        </svg>
+                      </div>
+                      <div class="contacts__address">
+                        <div class="address-key">Телефон:</div>
+                        <div class="address-value">+7 (495) 737-08-45</div>
+                      </div>
+                    </li>
+                    <li class="contacts__item">
+                      <div class="wrap__contacts-icon">
+                        <svg class="contacts--svg">
+                          <use xlink:href="assets/sprite/sprite.svg#email"></use>
+                        </svg>
+                      </div>
+                      <div class="contacts__address">
+                        <div class="address-key">E-mail:</div>
+                        <div class="address-value">volna@adindex.ru</div>
+                      </div>
+                    </li>
+                    <li class="contacts__item">
+                      <div class="wrap__contacts-icon">
+                        <svg class="contacts--svg">
+                          <use xlink:href="assets/sprite/sprite.svg#placeholder"></use>
+                        </svg>
+                      </div>
+                      <div class="contacts__address">
+                        <div class="address-key">Офис:</div>
+                        <div class="address-value">Москва, Образцова д.7, офис 301</div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="contacts-right">
+                <div class="wrap-map">
+                  <div id="map"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section">
+          <div class="container">
+            <div class="share"> 
+              <ul class="share__list animate-block-plus">
+                <li class="share__item-icon"> 
+                  <svg class="plus--svg1">
+                    <use xlink:href="assets/sprite/sprite.svg#plus"></use>
+                  </svg>
+                  <svg class="plus--svg2">
+                    <use xlink:href="assets/sprite/sprite.svg#plus"></use>
+                  </svg>
+                  <svg class="plus--svg3">
+                    <use xlink:href="assets/sprite/sprite.svg#plus"></use>
+                  </svg>
+                </li>
+                <li class="share__item-social">
+                  <div class="wrap__share">
+                    <div class="share__shrt-text">Поделиться с друзьями</div>
+                    <div class="share__social">
+                      <script src="https://yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
+                      <script src="https://yastatic.net/share2/share.js"></script>
+                      <div class="ya-share2" data-services="vkontakte,facebook,odnoklassniki,twitter,pocket,viber,whatsapp" data-counter=""></div>
+                    </div>
+                  </div>
+                </li>
+                <li class="share__item-icon">
+                  <svg class="plus--svg1">
+                    <use xlink:href="assets/sprite/sprite.svg#plus"></use>
+                  </svg>
+                  <svg class="plus--svg2">
+                    <use xlink:href="assets/sprite/sprite.svg#plus"></use>
+                  </svg>
+                  <svg class="plus--svg3">
+                    <use xlink:href="assets/sprite/sprite.svg#plus"></use>
+                  </svg>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <footer class="footer">
+          <div class="container">
+            <div class="footer__logo"><img class="footer__logo-img" src="assets/images/volna-logo.png"></div>
+            <div class="footer__options">
+              <div class="footer__menu">
+                <ul class="footer__menu-list">
+                  <li class="footer__menu-item">
+                    <div class="footer__menu-title">О нас</div>
+                    <div class="footer__wrap-link"><a class="footer__menu-link" href="about.html">Что такое волна</a><a class="footer__menu-link" href="crew.html">Команда</a><a class="footer__menu-link" href="contacts.html">Контакты</a>
+                    </div>
+                  </li>
+                  <li class="footer__menu-item">
+                    <div class="footer__menu-title">Слушателями</div>
+                    <div class="footer__wrap-link"><a class="footer__menu-link" href="courses.html">Курсы волны</a><a class="footer__menu-link" href="mentors.html">Наставники волны</a>
+                    </div>
+                  </li>
+                  <li class="footer__menu-item">
+                    <div class="footer__menu-title">Направления волны</div>
+                    <div class="footer__wrap-link"><a class="footer__menu-link" href="https://volna-courses.adindex.ru/" target="_blank">Курс Digital PR &amp; SMM</a><a class="footer__menu-link" href="https://volna-courses.adindex.ru/promedia?utm_source=volna&amp;utm_medium=banner&amp;utm_campaign=newmedia" target="_blank">Медиапланирования и маркетинговые исследования в Digital</a><a class="footer__menu-link" href="https://volna-courses.adindex.ru/promedia?utm_source=volna&amp;utm_medium=banner&amp;utm_campaign=newmedia" target="_blank">Data Mining в рекламе и маркетинге</a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="block__form">
+                <div class="form__title">
+                  <div class="wrap__title-img"><img class="form__title-img" src="assets/images/lips.png"></div>
+                  <div class="form__title__shrt-text">Получить лучшее на почту</div>
+                </div>
+                <form class="form">
+                  <input class="form-input" type="email" placeholder="Ваш e-mail">
+                  <input class="form-submit" type="submit" value="ок">
+                </form>
+                <div class="form__text">Нажимая на кнопку, вы даете согласие на обработку своих персональных данных</div>
+              </div>
+            </div>
+            <div class="footer__bottom">© 2017 Все права защищены</div>
+          </div>
+        </footer>
+        <div class="popup-menu">
+          <div class="popup-menu-left"></div>
+          <div class="popup-menu-right"></div>
+          <div class="wrap-menu-mobile">
+            <div class="block__header-nav">
+              <ul class="header__nav--list">
+                <li class="header__nav--item"><a class="header__nav--link" href="index.html">Статьи и публикации</a></li>
+                <li class="header__nav--item"><a class="header__nav--link" href="courses.html">Курсы и интенсивы</a></li>
+                <li class="header__nav--item"><a class="header__nav--link" href="mentors.html">Наши наставники</a></li>
+                <li class="header__nav--item"><a class="header__nav--link" href="about.html">Что такое волна</a></li>
+                <li class="header__nav--item"><a class="header__nav--link" href="blog.html">Блог</a></li>
+              </ul>
+            </div>
+            <div class="block__social">
+              <div class="social-text">
+                <div class="shrt-text">Мы в соцсетях:</div>
+              </div>
+              <ul class="social--list">
+                <li class="social--item"><a class="social--link">
+                    <svg class="social--svg">
+                      <use xlink:href="assets/sprite/sprite.svg#vk"></use>
+                    </svg></a></li>
+                <li class="social--item"><a class="social--link">
+                    <svg class="social--svg">
+                      <use xlink:href="assets/sprite/sprite.svg#youtube"></use>
+                    </svg></a></li>
+                <li class="social--item"><a class="social--link">
+                    <svg class="social--svg">
+                      <use xlink:href="assets/sprite/sprite.svg#tlg"></use>
+                    </svg></a></li>
+                <li class="social--item"><a class="social--link">
+                    <svg class="social--svg">
+                      <use xlink:href="assets/sprite/sprite.svg#fb"></use>
+                    </svg></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="closed__menu-mobile">
+            <svg class="closed--svg">
+              <use xlink:href="assets/sprite/sprite.svg#closed"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="block__btn-up">
+          <div class="btn__up">
+            <svg class="btn__up--svg">
+              <use xlink:href="assets/sprite/sprite.svg#up"></use>
+            </svg><span class="btn__shrt-text">Вверх</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

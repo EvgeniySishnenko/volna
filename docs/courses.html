@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./assets/styles/app.min.css">
+    <script src="assets/scripts/bundle.js" defer></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="maincontent">
+        <header class="header header-def">
+          <div class="header-top">
+            <div class="container container_header-top">
+              <div class="header__logo-adindex"><a class="header__logo__link" href="https://adindex.ru/" target="_blank">
+                  <svg class="logo__link--svg">
+                    <use xlink:href="assets/sprite/sprite.svg#logo"></use>
+                  </svg></a></div>
+              <div class="header__logo-volna"><a class="header__logo__link" href="#" target="_blank"><img class="logo-img" src="assets/images/volna-logo.png"></a></div>
+              <div class="header__contacts">
+                <div class="shrt-text">+7 (495) 737-08-45</div>
+                <div class="shrt-text">volna@adindex.ru</div>
+              </div>
+            </div>
+          </div>
+          <div class="header__nav">
+            <div class="container">
+              <div class="wrap-menu">
+                <div class="block__header-nav">
+                  <ul class="header__nav--list">
+                    <li class="header__nav--item"><a class="header__nav--link" href="index.html">Статьи и публикации</a></li>
+                    <li class="header__nav--item"><a class="header__nav--link" href="courses.html">Курсы и интенсивы</a></li>
+                    <li class="header__nav--item"><a class="header__nav--link" href="mentors.html">Наши наставники</a></li>
+                    <li class="header__nav--item"><a class="header__nav--link" href="about.html">Что такое волна</a></li>
+                    <li class="header__nav--item"><a class="header__nav--link" href="blog.html">Блог</a></li>
+                  </ul>
+                </div>
+                <div class="block__social">
+                  <div class="social-text">
+                    <div class="shrt-text">Мы в соцсетях:</div>
+                  </div>
+                  <ul class="social--list">
+                    <li class="social--item"><a class="social--link">
+                        <svg class="social--svg">
+                          <use xlink:href="assets/sprite/sprite.svg#vk"></use>
+                        </svg></a></li>
+                    <li class="social--item"><a class="social--link">
+                        <svg class="social--svg">
+                          <use xlink:href="assets/sprite/sprite.svg#youtube"></use>
+                        </svg></a></li>
+                    <li class="social--item"><a class="social--link">
+                        <svg class="social--svg">
+                          <use xlink:href="assets/sprite/sprite.svg#tlg"></use>
+                        </svg></a></li>
+                    <li class="social--item"><a class="social--link">
+                        <svg class="social--svg">
+                          <use xlink:href="assets/sprite/sprite.svg#fb"></use>
+                        </svg></a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="block__btn">
+                <div class="btn__menu">
+                  <div class="btn__menu__wrap--img"><img class="btn__menu--img" src="assets/images/volna.png"></div>
+                  <div class="btn__menu--text">Меню</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+        <section class="section box-shadow">
+          <div class="container">
+            <div class="courses-menu">
+              <div class="courses-menu__images__block"></div>
+              <div class="courses__content__menu">
+                <nav class="courses__content__menu--nav">
+                  <ul class="courses__content__menu--list">
+                    <li class="content__menu--item"><a class="font-coloring-courses content__menu--link" href="https://volna-courses.adindex.ru/" target="_blank">Digital PR &amp; SMM</a></li>
+                    <li class="content__menu--item"><a class="font-coloring-courses content__menu--link" href="https://volna.adindex.ru/courses/brand-marketing/index.phtml" target="_blank">Бренд-маркетинг</a></li>
+                    <li class="content__menu--item"><a class="font-coloring-courses content__menu--link" href="https://volna.adindex.ru/courses/intensive-practical-media-planni/index.phtml" target="_blank">Практическое медиапланирование</a></li>
+                    <li class="content__menu--item"><a class="font-coloring-courses content__menu--link" href="https://volna-courses.adindex.ru/promedia?utm_source=volna&amp;utm_medium=banner&amp;utm_campaign=newmedia" target="_blank">Медиапланирование и маркетинговые исследования в digital</a></li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section section__courses__card">
+          <div class="container">
+            <div class="courses__card">
+              <ul class="courses__card--list">
+                <li class="courses__card--item">
+                  <div class="courses__card-left">
+                    <div class="courses__card-left__shrt-text">Набор открыт</div>
+                    <div class="courses__card-left__content">
+                      <div class="courses__card-left__name-courses">
+                        <div class="courses__bckg-number">0<span class="courses__bckg-number__current">1</span></div>
+                        <div class="courses__card-left__pic"><img class="courses__card-left__img" src="assets/images/card/card1.png"></div>
+                        <div class="courses__card-left__shrt-text2">Курс</div>
+                        <div class="courses__card-left__title">Digital <br> PR & SMM</div>
+                        <div class="courses__card-left__info--red"> Осталось всего 3 места</div>
+                      </div>
+                      <div class="courses__card-left__descr-courses">
+                        <div class="courses__card-left__descr-courses__title">Digital PR &amp; SMM</div>
+                        <div class="courses__card-left__descr-courses__text">Современный PR-специалист может хорошо писать тексты и иметь обширную базу журналистов, но более успешным и востребованным он будет, если будет знать основы digital, programmatic, научится пользоваться технологическими платформами для разработки лендингов и инфографики, рекламными кабинетами социальных сетей и многим другим</div><a class="courses__card-left__descr-courses__link-more" href="https://volna-courses.adindex.ru/" target="_blank">подробнее
+                          <div class="wrap__link-more_arrow"><img class="more_arrow--img" src="assets/images/arrow.png"></div></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="courses__card-right">
+                    <div class="courses__card-right__infomation">
+                      <ul class="infomation-list">
+                        <li class="infomation-item"> 
+                          <div class="wrap__infomation-icon">
+                            <svg class="infomation--svg">
+                              <use xlink:href="assets/sprite/sprite.svg#calend"></use>
+                            </svg>
+                          </div>
+                          <div class="wrap__infomation-descr">
+                            <div class="infomation-descr--key">Когда</div>
+                            <div class="infomation-descr--value">Зима 2018</div>
+                          </div>
+                        </li>
+                        <li class="infomation-item"> 
+                          <div class="wrap__infomation-icon">
+                            <svg class="infomation--svg">
+                              <use xlink:href="assets/sprite/sprite.svg#time"></use>
+                            </svg>
+                          </div>
+                          <div class="wrap__infomation-descr">
+                            <div class="infomation-descr--key">Продолжительность</div>
+                            <div class="infomation-descr--value">24 дня</div>
+                          </div>
+                        </li>
+                        <li class="infomation-item"> 
+                          <div class="wrap__infomation-icon">
+                            <svg class="infomation--svg">
+                              <use xlink:href="assets/sprite/sprite.svg#head"></use>
+                            </svg>
+                          </div>
+                          <div class="wrap__infomation-descr">
+                            <div class="infomation-descr--key">Формат обучения</div>
+                            <div class="infomation-descr--value">Обычный</div>
+                          </div>
+                        </li>
+                        <li class="infomation-item"> 
+                          <div class="wrap__infomation-icon">
+                            <svg class="infomation--svg">
+                              <use xlink:href="assets/sprite/sprite.svg#student"></use>
+                            </svg>
+                          </div>
+                          <div class="wrap__infomation-descr">
+                            <div class="infomation-descr--key">Количество наставников</div>
+                            <div class="infomation-descr--value">Более 35</div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="courses__card-right__price">
+                      <div class="wrap__price">
+                        <div class="price-key"> <span class="price-key__shrt-text"> Стоимость курса</span>
+                        </div>
+                        <div class="price-value">60 000 <span class="price-valuta">руб.</span></div>
+                      </div>
+                      <div class="price__btn-signup"><a class="btn-signup" href="">Записаться</a></div>
+                    </div>
+                  </div>
+                </li>
+                <li class="courses__card--item">
+                  <div class="courses__card-left">
+                    <div class="courses__card-left__shrt-text">Набор открыт</div>
+                    <div class="courses__card-left__content">
+                      <div class="courses__card-left__name-courses">
+                        <div class="courses__bckg-number">0<span class="courses__bckg-number__current">2</span></div>
+                        <div class="courses__card-left__pic"><img class="courses__card-left__img" src="assets/images/card/card2.png"></div>
+                        <div class="courses__card-left__shrt-text2">Курс</div>
+                        <div class="courses__card-left__title">Бренд- <br>маркетинг</div>
+                        <div class="courses__card-left__info--blue"> Скидка 20% до 31 августа</div>
+                      </div>
+                      <div class="courses__card-left__descr-courses">
+                        <div class="courses__card-left__descr-courses__title">Образовательный курс по бренд-маркетингу</div>
+                        <div class="courses__card-left__descr-courses__text">8 недель концентрированного маркетинга от экспертов с огромным опытом + компьютерная игра по бренд-стратегии из Франции</div><a class="courses__card-left__descr-courses__link-more" href="https://volna.adindex.ru/courses/brand-marketing/index.phtml" target="_blank">подробнее
+                          <div class="wrap__link-more_arrow"><img class="more_arrow--img" src="assets/images/arrow.png"></div></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="courses__card-right">
+                    <div class="courses__card-right__infomation">
+                      <ul class="infomation-list">
+                        <li class="infomation-item"> 
+                          <div class="wrap__infomation-icon">
+                            <svg class="infomation--svg">
+                              <use xlink:href="assets/sprite/sprite.svg#calend"></use>
+                            </svg>
+                          </div>
+                          <div class="wrap__infomation-descr">
+                            <div class="infomation-descr--key">Когда</div>
+                            <div class="infomation-descr--value">2 октября - 22 ноября</div>
+                          </div>
+                        </li>
+                        <li class="infomation-item"> 
+                          <div class="wrap__infomation-icon">
+                            <svg class="infomation--svg">
+                              <use xlink:href="assets/sprite/sprite.svg#time"></use>
+                            </svg>
+                          </div>
+                          <div class="wrap__infomation-descr">
+                            <div class="infomation-descr--key">Продолжительность</div>
+                            <div class="infomation-descr--value">8 недель</div>
+                          </div>
+                        </li>
+                        <li class="infomation-item"> 
+                          <div class="wrap__infomation-icon">
+                            <svg class="infomation--svg">
+                              <use xlink:href="assets/sprite/sprite.svg#head"></use>
+                            </svg>
+                          </div>
+                          <div class="wrap__infomation-descr">
+                            <div class="infomation-descr--key">Формат обучения</div>
+                            <div class="infomation-descr--value">Обычный</div>
+                          </div>
+                        </li>
+                        <li class="infomation-item"> 
+                          <div class="wrap__infomation-icon">
+                            <svg class="infomation--svg">
+                              <use xlink:href="assets/sprite/sprite.svg#student"></use>
+                            </svg>
+                          </div>
+                          <div class="wrap__infomation-descr">
+                            <div class="infomation-descr--key">Количество наставников</div>
+                            <div class="infomation-descr--value">Более 9</div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="courses__card-right__price">
+                      <div class="wrap__price">
+                        <div class="price-key"> <span class="price-key__shrt-text"> Стоимость курса</span><span class="price-key__shrt-text-warning">До 31 августа</span>
+                        </div>
+                        <div class="price-value">40 000 <span class="price-valuta">руб.</span></div>
+                      </div>
+                      <div class="price__warning">Повышение цены с 1 сентября</div>
+                      <div class="price__btn-signup"><a class="btn-signup" href="#">Записаться</a></div>
+                    </div>
+                  </div>
+                </li>
+                <li class="courses__card--item">
+                  <div class="courses__card-left">
+                    <div class="courses__card-left__shrt-text">Набор открыт</div>
+                    <div class="courses__card-left__content">
+                      <div class="courses__card-left__name-courses">
+                        <div class="courses__bckg-number">0<span class="courses__bckg-number__current">3</span></div>
+                        <div class="courses__card-left__pic"><img class="courses__card-left__img" src="assets/images/card/card3.png"></div>
+                        <div class="courses__card-left__shrt-text2">Интенсив</div>
+                        <div class="courses__card-left__title">Парктическое  <br>медиапланирование</div>
+                      </div>
+                      <div class="courses__card-left__descr-courses">
+                        <div class="courses__card-left__descr-courses__title">Интенсив парктическое медаапланирование</div>
+                        <div class="courses__card-left__descr-courses__text">– один из ключевых этапов реализации маркетинговых коммуникаций. Исключительна его роль в обеспечении эффективности расходования рекламного бюджета, до 80-90% которого приходится именно на медиа. Это соединение науки и искусства, не терпящее поверхностных знаний и нечеткой постановки задач. Вместе с тем для многих рекламодателей медиапланирование все еще остается сложным и малопонятным процессом, доступным только избранным</div><a class="courses__card-left__descr-courses__link-more" href="https://volna.adindex.ru/courses/intensive-practical-media-planni/index.phtml" target="_blank">подробнее
+                          <div class="wrap__link-more_arrow"><img class="more_arrow--img" src="assets/images/arrow.png"></div></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="courses__card-right">
+                    <div class="courses__card-right__infomation">
+                      <ul class="infomation-list">
+                        <li class="infomation-item"> 
+                          <div class="wrap__infomation-icon">
+                            <svg class="infomation--svg">
+                              <use xlink:href="assets/sprite/sprite.svg#calend"></use>
+                            </svg>
+                          </div>
+                          <div class="wrap__infomation-descr">
+                            <div class="infomation-descr--key">Когда</div>
+                            <div class="infomation-descr--value">Дата формируется</div>
+                          </div>
+                        </li>
+                        <li class="infomation-item"> 
+                          <div class="wrap__infomation-icon">
+                            <svg class="infomation--svg">
+                              <use xlink:href="assets/sprite/sprite.svg#time"></use>
+                            </svg>
+                          </div>
+                          <div class="wrap__infomation-descr">
+                            <div class="infomation-descr--key">Продолжительность</div>
+                            <div class="infomation-descr--value">2 дня</div>
+                          </div>
+                        </li>
+                        <li class="infomation-item"> 
+                          <div class="wrap__infomation-icon">
+                            <svg class="infomation--svg">
+                              <use xlink:href="assets/sprite/sprite.svg#head"></use>
+                            </svg>
+                          </div>
+                          <div class="wrap__infomation-descr">
+                            <div class="infomation-descr--key">Формат обучения</div>
+                            <div class="infomation-descr--value">Обычный</div>
+                          </div>
+                        </li>
+                        <li class="infomation-item"> 
+                          <div class="wrap__infomation-icon">
+                            <svg class="infomation--svg">
+                              <use xlink:href="assets/sprite/sprite.svg#student"></use>
+                            </svg>
+                          </div>
+                          <div class="wrap__infomation-descr">
+                            <div class="infomation-descr--key">Количество наставников</div>
+                            <div class="infomation-descr--value">1</div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="courses__card-right__price">
+                      <div class="wrap__price">
+                        <div class="price-key"> <span class="price-key__shrt-text"> Стоимость курса</span>
+                        </div>
+                        <div class="price-value">20 000 <span class="price-valuta">руб.</span></div>
+                      </div>
+                      <div class="price__btn-signup"><a class="btn-signup" href="#">Записаться</a></div>
+                    </div>
+                  </div>
+                </li>
+                <li class="courses__card--item">
+                  <div class="courses__card-left">
+                    <div class="courses__card-left__shrt-text">Набор открыт</div>
+                    <div class="courses__card-left__content">
+                      <div class="courses__card-left__name-courses">
+                        <div class="courses__bckg-number">0<span class="courses__bckg-number__current">4</span></div>
+                        <div class="courses__card-left__pic"><img class="courses__card-left__img" src="assets/images/card/card4.png"></div>
+                        <div class="courses__card-left__shrt-text2">Курс</div>
+                        <div class="courses__card-left__title">Медиа <br>сегодня</div>
+                      </div>
+                      <div class="courses__card-left__descr-courses">
+                        <div class="courses__card-left__descr-courses__title">Медиа сегодня: овременный взгляд на производство и монетизациу контента</div>
+                        <div class="courses__card-left__descr-courses__text">Это первый большой и актуальный курс по «новой журналистике», включающий в себя самые передовые знания, которые в данный момент есть на российском рынке</div><a class="courses__card-left__descr-courses__link-more" href="https://volna-courses.adindex.ru/promedia?utm_source=volna&amp;utm_medium=banner&amp;utm_campaign=newmedia" target="_blank">подробнее
+                          <div class="wrap__link-more_arrow"><img class="more_arrow--img" src="assets/images/arrow.png"></div></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="courses__card-right">
+                    <div class="courses__card-right__infomation">
+                      <ul class="infomation-list">
+                        <li class="infomation-item"> 
+                          <div class="wrap__infomation-icon">
+                            <svg class="infomation--svg">
+                              <use xlink:href="assets/sprite/sprite.svg#calend"></use>
+                            </svg>
+                          </div>
+                          <div class="wrap__infomation-descr">
+                            <div class="infomation-descr--key">Когда</div>
+                            <div class="infomation-descr--value">22 октября - 18 февраля</div>
+                          </div>
+                        </li>
+                        <li class="infomation-item"> 
+                          <div class="wrap__infomation-icon">
+                            <svg class="infomation--svg">
+                              <use xlink:href="assets/sprite/sprite.svg#time"></use>
+                            </svg>
+                          </div>
+                          <div class="wrap__infomation-descr">
+                            <div class="infomation-descr--key">Продолжительность</div>
+                            <div class="infomation-descr--value">24 дня</div>
+                          </div>
+                        </li>
+                        <li class="infomation-item"> 
+                          <div class="wrap__infomation-icon">
+                            <svg class="infomation--svg">
+                              <use xlink:href="assets/sprite/sprite.svg#head"></use>
+                            </svg>
+                          </div>
+                          <div class="wrap__infomation-descr">
+                            <div class="infomation-descr--key">Формат обучения</div>
+                            <div class="infomation-descr--value">Обычный</div>
+                          </div>
+                        </li>
+                        <li class="infomation-item"> 
+                          <div class="wrap__infomation-icon">
+                            <svg class="infomation--svg">
+                              <use xlink:href="assets/sprite/sprite.svg#student"></use>
+                            </svg>
+                          </div>
+                          <div class="wrap__infomation-descr">
+                            <div class="infomation-descr--key">Количество наставников</div>
+                            <div class="infomation-descr--value">Более 50</div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="courses__card-right__price">
+                      <div class="wrap__price">
+                        <div class="price-key"> <span class="price-key__shrt-text"> Стоимость курса</span>
+                        </div>
+                        <div class="price-value">60 000 <span class="price-valuta">руб.</span></div>
+                      </div>
+                      <div class="price__btn-signup"><a class="btn-signup" href="#">Записаться</a></div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="section">
+          <div class="container">
+            <div class="share"> 
+              <ul class="share__list animate-block-plus">
+                <li class="share__item-icon"> 
+                  <svg class="plus--svg1">
+                    <use xlink:href="assets/sprite/sprite.svg#plus"></use>
+                  </svg>
+                  <svg class="plus--svg2">
+                    <use xlink:href="assets/sprite/sprite.svg#plus"></use>
+                  </svg>
+                  <svg class="plus--svg3">
+                    <use xlink:href="assets/sprite/sprite.svg#plus"></use>
+                  </svg>
+                </li>
+                <li class="share__item-social">
+                  <div class="wrap__share">
+                    <div class="share__shrt-text">Поделиться с друзьями</div>
+                    <div class="share__social">
+                      <script src="https://yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
+                      <script src="https://yastatic.net/share2/share.js"></script>
+                      <div class="ya-share2" data-services="vkontakte,facebook,odnoklassniki,twitter,pocket,viber,whatsapp" data-counter=""></div>
+                    </div>
+                  </div>
+                </li>
+                <li class="share__item-icon">
+                  <svg class="plus--svg1">
+                    <use xlink:href="assets/sprite/sprite.svg#plus"></use>
+                  </svg>
+                  <svg class="plus--svg2">
+                    <use xlink:href="assets/sprite/sprite.svg#plus"></use>
+                  </svg>
+                  <svg class="plus--svg3">
+                    <use xlink:href="assets/sprite/sprite.svg#plus"></use>
+                  </svg>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <footer class="footer">
+          <div class="container">
+            <div class="footer__logo"><img class="footer__logo-img" src="assets/images/volna-logo.png"></div>
+            <div class="footer__options">
+              <div class="footer__menu">
+                <ul class="footer__menu-list">
+                  <li class="footer__menu-item">
+                    <div class="footer__menu-title">О нас</div>
+                    <div class="footer__wrap-link"><a class="footer__menu-link" href="about.html">Что такое волна</a><a class="footer__menu-link" href="crew.html">Команда</a><a class="footer__menu-link" href="contacts.html">Контакты</a>
+                    </div>
+                  </li>
+                  <li class="footer__menu-item">
+                    <div class="footer__menu-title">Слушателями</div>
+                    <div class="footer__wrap-link"><a class="footer__menu-link" href="courses.html">Курсы волны</a><a class="footer__menu-link" href="mentors.html">Наставники волны</a>
+                    </div>
+                  </li>
+                  <li class="footer__menu-item">
+                    <div class="footer__menu-title">Направления волны</div>
+                    <div class="footer__wrap-link"><a class="footer__menu-link" href="https://volna-courses.adindex.ru/" target="_blank">Курс Digital PR &amp; SMM</a><a class="footer__menu-link" href="https://volna-courses.adindex.ru/promedia?utm_source=volna&amp;utm_medium=banner&amp;utm_campaign=newmedia" target="_blank">Медиапланирования и маркетинговые исследования в Digital</a><a class="footer__menu-link" href="https://volna-courses.adindex.ru/promedia?utm_source=volna&amp;utm_medium=banner&amp;utm_campaign=newmedia" target="_blank">Data Mining в рекламе и маркетинге</a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="block__form">
+                <div class="form__title">
+                  <div class="wrap__title-img"><img class="form__title-img" src="assets/images/lips.png"></div>
+                  <div class="form__title__shrt-text">Получить лучшее на почту</div>
+                </div>
+                <form class="form">
+                  <input class="form-input" type="email" placeholder="Ваш e-mail">
+                  <input class="form-submit" type="submit" value="ок">
+                </form>
+                <div class="form__text">Нажимая на кнопку, вы даете согласие на обработку своих персональных данных</div>
+              </div>
+            </div>
+            <div class="footer__bottom">© 2017 Все права защищены</div>
+          </div>
+        </footer>
+        <div class="popup-menu">
+          <div class="popup-menu-left"></div>
+          <div class="popup-menu-right"></div>
+          <div class="wrap-menu-mobile">
+            <div class="block__header-nav">
+              <ul class="header__nav--list">
+                <li class="header__nav--item"><a class="header__nav--link" href="index.html">Статьи и публикации</a></li>
+                <li class="header__nav--item"><a class="header__nav--link" href="courses.html">Курсы и интенсивы</a></li>
+                <li class="header__nav--item"><a class="header__nav--link" href="mentors.html">Наши наставники</a></li>
+                <li class="header__nav--item"><a class="header__nav--link" href="about.html">Что такое волна</a></li>
+                <li class="header__nav--item"><a class="header__nav--link" href="blog.html">Блог</a></li>
+              </ul>
+            </div>
+            <div class="block__social">
+              <div class="social-text">
+                <div class="shrt-text">Мы в соцсетях:</div>
+              </div>
+              <ul class="social--list">
+                <li class="social--item"><a class="social--link">
+                    <svg class="social--svg">
+                      <use xlink:href="assets/sprite/sprite.svg#vk"></use>
+                    </svg></a></li>
+                <li class="social--item"><a class="social--link">
+                    <svg class="social--svg">
+                      <use xlink:href="assets/sprite/sprite.svg#youtube"></use>
+                    </svg></a></li>
+                <li class="social--item"><a class="social--link">
+                    <svg class="social--svg">
+                      <use xlink:href="assets/sprite/sprite.svg#tlg"></use>
+                    </svg></a></li>
+                <li class="social--item"><a class="social--link">
+                    <svg class="social--svg">
+                      <use xlink:href="assets/sprite/sprite.svg#fb"></use>
+                    </svg></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="closed__menu-mobile">
+            <svg class="closed--svg">
+              <use xlink:href="assets/sprite/sprite.svg#closed"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="block__btn-up">
+          <div class="btn__up">
+            <svg class="btn__up--svg">
+              <use xlink:href="assets/sprite/sprite.svg#up"></use>
+            </svg><span class="btn__shrt-text">Вверх</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

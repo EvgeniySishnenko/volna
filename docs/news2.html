@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./assets/styles/app.min.css">
+    <script src="assets/scripts/bundle.js" defer></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="maincontent">
+        <header class="header">
+          <div class="header-top">
+            <div class="container container_header-top">
+              <div class="header__logo-adindex"><a class="header__logo__link" href="https://adindex.ru/" target="_blank">
+                  <svg class="logo__link--svg">
+                    <use xlink:href="assets/sprite/sprite.svg#logo"></use>
+                  </svg></a></div>
+              <div class="header__logo-volna"><a class="header__logo__link" href="#" target="_blank"><img class="logo-img" src="assets/images/volna-logo.png"></a></div>
+              <div class="header__contacts">
+                <div class="shrt-text">+7 (495) 737-08-45</div>
+                <div class="shrt-text">volna@adindex.ru</div>
+              </div>
+            </div>
+          </div>
+          <div class="header__slider"> 
+            <div class="slider">  
+              <ul class="slider__list-left">
+                <li class="slider__item-left" style="background-color: #000F4D;">
+                  <div class="wrap__left-content">
+                    <div class="slider__left-title-txt1">Наши курсы</div>
+                    <div class="slider__left-title">Digital PR & SMM</div>
+                    <div class="slider__left-title-txt2">Образовательный курс</div>
+                    <div class="slider__left-descr">Современный PR-специалист может хорошо писать тексты и иметь обширную базу журналистов, но более успешным и востребованным он будет, если…</div><a class="slider__left-link" href="#">Подробнее</a>
+                  </div>
+                </li>
+                <li class="slider__item-left" style="background-color: #0e1772;">
+                  <div class="wrap__left-content">
+                    <div class="slider__left-title-txt1">1</div>
+                    <div class="slider__left-title">Digital PR & SMM</div>
+                    <div class="slider__left-title-txt2">Образовательный курс</div>
+                    <div class="slider__left-descr">Современный PR-специалист может хорошо писать тексты и иметь обширную базу журналистов, но более успешным и востребованным он будет, если…</div><a class="slider__left-link" href="#">Подробнее</a>
+                  </div>
+                </li>
+                <li class="slider__item-left" style="background-color: #0e1772;">
+                  <div class="wrap__left-content">
+                    <div class="slider__left-title-txt1">2</div>
+                    <div class="slider__left-title">Digital PR & SMM</div>
+                    <div class="slider__left-title-txt2">Образовательный курс</div>
+                    <div class="slider__left-descr">Современный PR-специалист может хорошо писать тексты и иметь обширную базу журналистов, но более успешным и востребованным он будет, если…</div><a class="slider__left-link" href="#">Подробнее</a>
+                  </div>
+                </li>
+              </ul>
+              <ul class="slider__list-right">
+                <li class="slider__item-right">
+                  <div class="slider__item-right__content" style="background: url(assets/images/sl-bg.png); background-size: cover; background-repeat no-repeat">
+                    <div class="slider__item-wrap"><img class="slider__item-wrap-img" src="assets/images/sale.png"></div>
+                  </div>
+                </li>
+                <li class="slider__item-right">
+                  <div class="slider__item-right__content" style="background: url(http://lorempixel.com/500/250); background-size: cover; background-repeat no-repeat">
+                    <div class="slider__item-wrap"><img class="slider__item-wrap-img" src="assets/images/sale.png"></div>
+                  </div>
+                </li>
+                <li class="slider__item-right">
+                  <div class="slider__item-right__content" style="background: url(http://lorempixel.com/500/250); background-size: cover; background-repeat no-repeat">
+                    <div class="slider__item-wrap"><img class="slider__item-wrap-img" src="assets/images/sale.png"></div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="slider__controls">
+              <div class="controls__num-slide"><span class="controls__num-current"> </span><span class="controls__num-slash">/</span><span class="controls__num-total"> </span></div>
+            </div>
+          </div>
+          <div class="header__nav">
+            <div class="container">
+              <div class="wrap-menu">
+                <div class="block__header-nav">
+                  <ul class="header__nav--list">
+                    <li class="header__nav--item"><a class="header__nav--link" href="index.html">Статьи и публикации</a></li>
+                    <li class="header__nav--item"><a class="header__nav--link" href="courses.html">Курсы и интенсивы</a></li>
+                    <li class="header__nav--item"><a class="header__nav--link" href="mentors.html">Наши наставники</a></li>
+                    <li class="header__nav--item"><a class="header__nav--link" href="about.html">Что такое волна</a></li>
+                    <li class="header__nav--item"><a class="header__nav--link" href="blog.html">Блог</a></li>
+                  </ul>
+                </div>
+                <div class="block__social">
+                  <div class="social-text">
+                    <div class="shrt-text">Мы в соцсетях:</div>
+                  </div>
+                  <ul class="social--list">
+                    <li class="social--item"><a class="social--link">
+                        <svg class="social--svg">
+                          <use xlink:href="assets/sprite/sprite.svg#vk"></use>
+                        </svg></a></li>
+                    <li class="social--item"><a class="social--link">
+                        <svg class="social--svg">
+                          <use xlink:href="assets/sprite/sprite.svg#youtube"></use>
+                        </svg></a></li>
+                    <li class="social--item"><a class="social--link">
+                        <svg class="social--svg">
+                          <use xlink:href="assets/sprite/sprite.svg#tlg"></use>
+                        </svg></a></li>
+                    <li class="social--item"><a class="social--link">
+                        <svg class="social--svg">
+                          <use xlink:href="assets/sprite/sprite.svg#fb"></use>
+                        </svg></a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="block__btn">
+                <div class="btn__menu">
+                  <div class="btn__menu__wrap--img"><img class="btn__menu--img" src="assets/images/volna.png"></div>
+                  <div class="btn__menu--text">Меню</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+        <section class="section box-shadow">
+          <div class="container">
+            <div class="content__menu">
+              <nav class="content__menu--nav">
+                <ul class="content__menu--list">
+                  <li class="content__menu--item"><a class="content__menu--link" href="#">Все</a></li>
+                  <li class="content__menu--item"><a class="content__menu--link" href="#">Как все устроено</a></li>
+                  <li class="content__menu--item"><a class="content__menu--link" href="#">Профессиональные лайфхаки</a></li>
+                  <li class="content__menu--item"><a class="content__menu--link" href="news2.html">Шторм идей</a></li>
+                  <li class="content__menu--item"><a class="content__menu--link" href="news.html">Точка зрения</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </section>
+        <section class="section section__about box-shadow">
+          <div class="container container__art">
+            <div class="art">
+              <div class="art__fix-width-wr">
+                <div class="art-division">Шторм идей</div>
+                <article class="article">
+                  <div class="art__first-title-wr">
+                    <h2 class="first-title">Как пиарщику не разрушить репутацию компании в соцсетях&nbsp;— рекомендации экспертов</h2>
+                  </div>
+                  <p>Последние громкие скандалы, вызванные неосторожным высказыванием PR-специалистов в социальных сетях, в очередной раз остро поставили вопрос: что же такое соцсети для пиарщика — удобный инструмент для коммуникаций или личное пространство, где можно смело высказываться, не оглядываясь на должность. Редакция ВОЛНЫ поговорила с экспертами — Олегом Крупеновым, PR-директором СМИ2 и наставником ВОЛНЫ, и Ольгой Вяткиной, PR-директором агентства Nectarin — о том, что сегодня можно, а что нельзя делать даже в личном аккаунте</p>
+                  <div class="art__img-wr"><img class="art-img--larg" src="assets/images/art/pic.png"></div>
+                  <p>Кратко напомним предысторию. В начале июля Галина Панина, PR-директор международной компании «Леруа Мерлен», разместила в своем Facebook пост, о котором можно смело сказать — «взорвал интернет». Он не только собрал большое число комментариев, запустил флешмоб #Я_Не_Покупаю_В_Леруа_Мерлен , привлек внимание чиновников, но и стал инфоповодом для всех ведущих российских СМИ.</p>
+                  <div class="block-pick">
+                    <svg class="block-pick--svg">
+                      <use xlink:href="assets/sprite/sprite.svg#down"></use>
+                    </svg><img class="block-pick-img" src="assets/images/volna.png">
+                    <svg class="block-pick--svg">
+                      <use xlink:href="assets/sprite/sprite.svg#down"></use>
+                    </svg>
+                  </div>
+                  <p class="wr__latter-text"><span class="first-letter">К</span><span class="next-text">Кратко напомним предысторию. В начале июля Галина Панина, PR-директор международной компании «Леруа Мерлен», разместила в своем Facebook пост, о котором можно смело сказать — «взорвал интернет». Он не только собрал большое</span></p>
+                  <p>Пять столетий спустя Lorem Ipsum испытал всплеск популярности с выпуском сухого переноса листов Letraset в. Эти листы надписи можно потереть на любом месте и были быстро приняты художники-графики, принтеры, архитекторов и рекламодателей для их профессионального вида и простоты использования. Letraset включены Lorem Ipsum проходы в арсеналом шрифтов, стилей и размеров, затвердевание место Латинского-эск фразу целиком в печатной и графической индустрии. Те, с вниманием к деталям будет даже поймали дань классического текста в эпизоде Mad Men (S6E1 вокруг 1:18:55 для тех, кто не сделал).</p>
+                  <div class="art__box-wrap">
+                    <div class="art__box fix-widt50 float-r txt-center"> 
+                      <div class="decor-img-wr"><img src="assets/images/art/trap.png"></div>
+                      <div class="incut-text-wr">
+                        <div class="incut-text">Как пиарщику не разрушить репутацию компании в соцсетях&nbsp;— рекомендации экспертов </div>
+                      </div>
+                      <div class="decor-img-wr"><img src="assets/images/art/trap2.png"></div>
+                    </div>
+                    <div class="art__box">
+                      <p> Aldus Corporation, которая впоследствии объединилась с Adobe Systems, помогли принести Lorem Ipsum в информационную эпоху с ее 1985 флагманского программного обеспечения Aldus PageMaker. Программа входит в комплект с Lorem Ipsum манекен текст, чтобы помочь с выложив содержимое страницы и другие текстовые процессоры, такие как Microsoft Word</p>
+                    </div>
+                  </div>
+                  <p>Пять столетий спустя Lorem Ipsum испытал всплеск популярности с выпуском сухого переноса листов Letraset в. Эти листы надписи можно потереть на любом месте и были быстро приняты художники-графики, принтеры, архитекторов и рекламодателей для их профессионального вида и простоты использования. Letraset включены Lorem Ipsum проходы в арсеналом шрифтов, стилей и размеров, затвердевание место Латинского-эск фразу целиком в печатной и графической индустрии. Те, с вниманием к деталям будет даже поймали дань классического текста в эпизоде Mad Men (S6E1 вокруг 1:18:55 для тех, кто не сделал).</p>
+                  <div class="block__incut animate-block-plus">
+                    <div class="incut-svg incut-svg-plus1">
+                      <svg class="plus--svg1">
+                        <use xlink:href="assets/sprite/sprite.svg#plus"></use>
+                      </svg>
+                      <svg class="plus--svg2">
+                        <use xlink:href="assets/sprite/sprite.svg#plus"></use>
+                      </svg>
+                      <svg class="plus--svg3">
+                        <use xlink:href="assets/sprite/sprite.svg#plus"></use>
+                      </svg>
+                    </div>
+                    <div class="incut-svg incut-svg-plus2">
+                      <svg class="plus--svg1">
+                        <use xlink:href="assets/sprite/sprite.svg#plus"></use>
+                      </svg>
+                      <svg class="plus--svg2">
+                        <use xlink:href="assets/sprite/sprite.svg#plus"></use>
+                      </svg>
+                      <svg class="plus--svg3">
+                        <use xlink:href="assets/sprite/sprite.svg#plus"></use>
+                      </svg>
+                    </div>
+                    <div class="block__incut-text-wr">
+                      <div class="incut-text">Как пиарщику не разрушить репутацию компании в соцсетях&nbsp;— рекомендации экспертов </div>
+                    </div>
+                    <div class="incut-svg incut-svg-plus3">
+                      <svg class="plus--svg1">
+                        <use xlink:href="assets/sprite/sprite.svg#plus"></use>
+                      </svg>
+                      <svg class="plus--svg2">
+                        <use xlink:href="assets/sprite/sprite.svg#plus"></use>
+                      </svg>
+                      <svg class="plus--svg3">
+                        <use xlink:href="assets/sprite/sprite.svg#plus"></use>
+                      </svg>
+                    </div>
+                    <div class="incut-svg incut-svg-plus4">
+                      <svg class="plus--svg1">
+                        <use xlink:href="assets/sprite/sprite.svg#plus"></use>
+                      </svg>
+                      <svg class="plus--svg2">
+                        <use xlink:href="assets/sprite/sprite.svg#plus"></use>
+                      </svg>
+                      <svg class="plus--svg3">
+                        <use xlink:href="assets/sprite/sprite.svg#plus"></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <p>Пять столетий спустя Lorem Ipsum испытал всплеск популярности с выпуском сухого переноса листов Letraset в. Эти листы надписи можно потереть на любом месте и были быстро приняты художники-графики, принтеры, архитекторов и рекламодателей для их профессионального вида и простоты использования. Letraset включены Lorem Ipsum проходы в арсеналом шрифтов, стилей и размеров, затвердевание место Латинского-эск фразу целиком в печатной и графической индустрии. Те, с вниманием к деталям будет даже поймали дань классического текста в эпизоде Mad Men (S6E1 вокруг 1:18:55 для тех, кто не сделал).</p>
+                  <div class="block__incut">
+                    <div class="decor-img-wr"><img src="assets/images/art/curve.png"></div>
+                    <div class="block__incut-text-wr">
+                      <div class="incut-text">Как пиарщику не разрушить репутацию компании в соцсетях&nbsp;— рекомендации экспертов, ад для пиарщиков, где искать деньги в медиа и почему SMM — новое TV</div>
+                    </div>
+                    <div class="decor-img-wr"><img src="assets/images/art/curve.png"></div>
+                  </div>
+                  <p>Пять столетий спустя Lorem Ipsum испытал всплеск популярности с выпуском сухого переноса листов Letraset в. Эти листы надписи можно потереть на любом месте и были быстро приняты художники-графики, принтеры, архитекторов и рекламодателей для их профессионального вида и простоты использования. Letraset включены Lorem Ipsum проходы в арсеналом шрифтов, стилей и размеров, затвердевание место Латинского-эск фразу целиком в печатной и графической индустрии. Те, с вниманием к деталям будет даже поймали дань классического текста в эпизоде Mad Men (S6E1 вокруг 1:18:55 для тех, кто не сделал).</p>
+                  <div class="art__box-wrap">
+                    <div class="art__box fix-widt50 float-l art__box-border">
+                      <div class="incut-text">Как пиарщику не разрушить репутацию</div>
+                      <ul class="incut-list">
+                        <li class="incut-item">
+                          <div class="color__sm-num">01</div>
+                          <div class="incut-item__shrt-text">Aldus Corporation</div>
+                        </li>
+                        <li class="incut-item">
+                          <div class="color__sm-num">02</div>
+                          <div class="incut-item__shrt-text">Aldus Corporation</div>
+                        </li>
+                        <li class="incut-item">
+                          <div class="color__sm-num">03</div>
+                          <div class="incut-item__shrt-text">Aldus Corporation</div>
+                        </li>
+                        <li class="incut-item">
+                          <div class="color__sm-num">04</div>
+                          <div class="incut-item__shrt-text">Aldus Corporation</div>
+                        </li>
+                        <li class="incut-item">
+                          <div class="color__sm-num">05</div>
+                          <div class="incut-item__shrt-text">Aldus Corporation</div>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="art__box">
+                      <p>Aldus Corporation, которая впоследствии объединилась с Adobe Systems, помогли принести Lorem Ipsum в информационную эпоху с ее 1985 флагманского программного обеспечения Aldus PageMaker. Программа входит в комплект с Lorem Ipsum манекен текст, чтобы помочь с выложив содержимое страницы и другие текстовые процессоры, такие как Microsoft Word последовали его примеру. В последнее время рост веб-дизайна помогла пролиферируют Lorem Ipsum через Интернет в качестве заполнителя для выкладки веб-сайтов и blogs-, а в некоторых случаях окончательное содержание (не пусть это будет вам!).</p>
+                    </div>
+                  </div>
+                  <div class="clearfix"></div>
+                  <div class="art-item mt-gap art-item-def"><a class="incut-text" href="#">Как пиарщику не разрушить репутацию компании в соцсетях&nbsp;— рекомендации экспертов, ад для пиарщиков, где искать деньги в медиа и почему SMM — новое TV</a>
+                    <div class="art-item-text">Пять столетий спустя Lorem Ipsum испытал всплеск популярности с выпуском сухого переноса листов Letraset в. Эти листы надписи можно потереть на любом месте и были быстро приняты художники-графики, принтеры, архитекторов и рекламодателей для их профессионального вида и простоты использования. Letraset включены Lorem Ipsum проходы в арсеналом шрифтов, стилей и размеров, затвердевание место Латинского-эск фразу целиком в печатной и графической индустрии. Те, с вниманием к деталям будет даже поймали дань классического текста в эпизоде Mad Men (S6E1 вокруг 1:18:55 для тех, кто не сделал).</div>
+                  </div>
+                  <div class="art-item">
+                    <div class="art-division">Шторм </div>
+                    <div class="art-item-wr"><a class="incut-text" href="#">Как пиарщику не разрушить репутацию компании в соцсетях&nbsp;— рекомендации экспертов, ад для пиарщиков, где искать деньги в медиа и почему SMM — новое TV</a></div>
+                    <div class="art-item-text">Пять столетий спустя Lorem Ipsum испытал всплеск популярности с выпуском сухого переноса листов Letraset в. Эти листы надписи можно потереть на любом месте и были быстро приняты художники-графики, принтеры, архитекторов и рекламодателей для их профессионального вида и простоты использования. Letraset включены Lorem Ipsum проходы в арсеналом шрифтов, стилей и размеров, затвердевание место Латинского-эск фразу целиком в печатной и графической индустрии. Те, с вниманием к деталям будет даже поймали дань классического текста в эпизоде Mad Men (S6E1 вокруг 1:18:55 для тех, кто не сделал).</div>
+                  </div>
+                  <div class="art-item">
+                    <div class="art-division">Шторм </div>
+                    <div class="art-item-wr"><a class="incut-text" href="#">Как пиарщику не разрушить репутацию компании в соцсетях&nbsp;— рекомендации экспертов, ад для пиарщиков, где искать деньги в медиа и почему SMM — новое TV</a></div>
+                    <div class="art-item-text">Пять столетий спустя Lorem Ipsum испытал всплеск популярности с выпуском сухого переноса листов Letraset в. Эти листы надписи можно потереть на любом месте и были быстро приняты художники-графики, принтеры, архитекторов и рекламодателей для их профессионального вида и простоты использования. Letraset включены Lorem Ipsum проходы в арсеналом шрифтов, стилей и размеров, затвердевание место Латинского-эск фразу целиком в печатной и графической индустрии. Те, с вниманием к деталям будет даже поймали дань классического текста в эпизоде Mad Men (S6E1 вокруг 1:18:55 для тех, кто не сделал).</div>
+                  </div>
+                  <div class="art-item">
+                    <div class="art-division">Шторм </div>
+                    <div class="art-item-wr"><a class="incut-text" href="#">Как пиарщику не разрушить репутацию компании в соцсетях&nbsp;— рекомендации экспертов, ад для пиарщиков, где искать деньги в медиа и почему SMM — новое TV</a></div>
+                    <div class="art-item-text">Пять столетий спустя Lorem Ipsum испытал всплеск популярности с выпуском сухого переноса листов Letraset в. Эти листы надписи можно потереть на любом месте и были быстро приняты художники-графики, принтеры, архитекторов и рекламодателей для их профессионального вида и простоты использования. Letraset включены Lorem Ipsum проходы в арсеналом шрифтов, стилей и размеров, затвердевание место Латинского-эск фразу целиком в печатной и графической индустрии. Те, с вниманием к деталям будет даже поймали дань классического текста в эпизоде Mad Men (S6E1 вокруг 1:18:55 для тех, кто не сделал).</div>
+                  </div>
+                  <div class="art-item">
+                    <div class="art__box fix-widt50 float-r"><a class="art__fancybox__link group" href="https://www.youtube.com/watch?v=iaxVSQtSNzs&amp;autoplay=0&amp;feature=youtu.be"><img class="art__box-image" src="assets/images/art/cat.png">
+                        <div class="wr__icon-play"><img class="icon-play__img" src="assets/images/art/play.png"></div></a></div>
+                    <div class="art__box mt-gap_mob">
+                      <div class="art-division">Шторм 1</div>
+                      <div class="art-item-wr"><a class="incut-text" href="#">Как пиарщику не разрушить репутацию компании</a></div>
+                      <p>Пять столетий спустя Lorem Ipsum испытал всплеск популярности с выпуском сухого переноса листов Letraset в. Эти листы надписи можно потереть на любом месте и были быстро приняты художники-графики, принтеры, архитекторов и рекламодателей </p>
+                      <div class="art-item-text">для их профессионального вида и простоты использования. Letraset включены Lorem Ipsum проходы в арсеналом шрифтов, стилей и размеров, затвердевание место Латинского-эск фразу целиком в печатной и графической индустрии. Те, с вниманием к деталям будет даже поймали дань классического текста в эпизоде Mad Men (S6E1 вокруг 1:18:55 для тех, кто не сделал).</div>
+                    </div>
+                  </div>
+                  <div class="art-item">
+                    <div class="art__box"><a class="art__fancybox__link group" href="https://www.youtube.com/watch?v=iaxVSQtSNzs&amp;autoplay=0&amp;feature=youtu.be"><img class="art__box-image" src="assets/images/art/img123.png">
+                        <div class="wr__icon-play"><img class="icon-play__img" src="assets/images/art/play.png"></div></a></div>
+                  </div>
+                  <div class="art-item">   
+                    <div class="art__box">Пять столетий спустя Lorem Ipsum испытал всплеск популярности с выпуском сухого переноса листов Letraset в. Эти листы надписи можно потереть на любом месте и были быстро приняты художники-графики, принтеры, архитекторов и рекламодателей для их профессионального вида и простоты использования. Letraset включены Lorem Ipsum проходы в арсеналом шрифтов, стилей и размеров, затвердевание место Латинского-эск фразу целиком в печатной и графической индустрии. Те, с вниманием к деталям будет даже поймали дань классического текста в эпизоде Mad Men (S6E1 вокруг 1:18:55 для тех, кто не сделал).</div>
+                  </div>
+                  <div class="art-item">   
+                    <div class="art__box">Пять столетий спустя Lorem Ipsum испытал всплеск популярности с выпуском сухого переноса листов Letraset в. Эти листы надписи можно потереть на любом месте и были быстро приняты художники-графики, принтеры, архитекторов и рекламодателей для их профессионального вида и простоты использования. Letraset включены Lorem Ipsum проходы в арсеналом шрифтов, стилей и размеров, затвердевание место Латинского-эск фразу целиком в печатной и графической индустрии. Те, с вниманием к деталям будет даже поймали дань классического текста в эпизоде Mad Men (S6E1 вокруг 1:18:55 для тех, кто не сделал).</div>
+                  </div>
+                  <div class="art__box-wrap mt-gap">
+                    <div class="art__box fix-widt30 float-l">
+                      <div class="art__box__bckg-img-wr"><img class="art__box-image" src="assets/images/art/img1.png"></div>
+                    </div>
+                    <div class="art__box">
+                      <div class="art__shrt-text ml-def">Олег Крупенов, PR-директор СМИ2,<br>наставник ВОЛНЫ:  </div>
+                      <p>Все зависит от целей. Хотите общаться с друзьями — не проблема, социальные сети в принципе для этого и созданы. Построение личного бренда — вполне себе разумная идея для специалиста по связям с общественностью. Но важно понимать, что в определенный момент пользователя начинают ассоциировать с компанией, в которой он работает. Например, после того, как он указывает место работы в своем профиле.</p>
+                    </div>
+                  </div>
+                  <div class="clearfix">  </div>
+                  <div class="art__box-wrap mt-gap">
+                    <div class="art__box fix-widt30 float-l"> 
+                      <div class="art__box__bckg-img-wr"><img class="art__box-image" src="assets/images/art/img2.png"></div>
+                    </div>
+                    <div class="art__box">
+                      <div class="art__shrt-text ml-def">Ольга Вяткина, PR-директор Nectarin:</div>
+                      <p>Профессиональные пиарщики часто используют Facebook для рабочих переписок и поиска деловых контактов, поэтому для них очень важно следить за своим профилем. По моему мнению, существуют две стратегии ведения аккаунтов в соцсетях:</p>
+                      <p> <span class="color-red">1. </span>Закрытый аккаунт «для друзей». На таких страницах можно публиковать любой контент и не беспокоиться о том, что его увидят посторонние. Однако настройки закрытой страницы не могут гарантированно защитить, так как ваш пост в любой момент может стать публичным. </p>
+                      <p><span class="color-red">2.</span>Открытый публичный аккаунт. Такие страницы нужны для выстраивания вашего личного имиджа как специалиста по коммуникациям. Здесь можно указать должность и компанию, в который вы работаете. Важно уметь фильтровать контент и размещать только тот, который не противоречит нормам, принятым в обществе, и не сможет навредить имиджу вашей компании.</p>
+                    </div>
+                  </div>
+                  <div class="art__slider">
+                    <div class="slider__list">
+                      <div class="slider__item"><img class="slider-img" src="assets/images/art/pic.png"></div>
+                      <div class="slider__item"><img class="slider-img" src="assets/images/art/img123.png"></div>
+                      <div class="slider__item"><img class="slider-img" src="assets/images/art/img22.png"></div>
+                    </div>
+                  </div>
+                  <div class="art__box-wrap mt-70">
+                    <div class="art__box fix-widt50 float-r art__box-border">
+                      <div class="popop__form__title">
+                        <div class="wrap__news__title-img"><img class="popop__form-img" src="assets/images/lips.png"></div>
+                        <div class="popop__form_title__shrt-text">Получить лучшее на почту</div>
+                      </div>
+                      <form class="popop__form">
+                        <input class="popop__form-input" type="email" placeholder="Ваш e-mail">
+                        <input class="popop__form-submit" type="submit" value="ок">
+                      </form>
+                      <div class="popop__form__text">Нажимая на кнопку, вы даете согласие на обработку своих персональных данных</div>
+                    </div>
+                    <div class="art__box">
+                      <p>Пять столетий спустя Lorem Ipsum испытал всплеск популярности с выпуском сухого переноса листов Letraset в. Эти листы надписи можно потереть на любом месте и были быстро приняты художники-графики, принтеры, архитекторов и рекламодателей для их профессионального вида и простоты использования. Letraset включены Lorem Ipsum проходы в арсеналом шрифтов, стилей и размеров, затвердевание место Латинского-эск фразу целиком в печатной и графической индустрии. Те, с вниманием к деталям будет даже поймали дань классического текста в эпизоде Mad Men (S6E1 вокруг 1:18:55 для тех, кто не сделал).</p>
+                    </div>
+                  </div>
+                  <p>Пять столетий спустя Lorem Ipsum испытал всплеск популярности с выпуском сухого переноса листов Letraset в. Эти листы надписи можно потереть на любом месте и были быстро приняты художники-графики, принтеры, архитекторов и рекламодателей для их профессионального вида и простоты использования. Letraset включены Lorem Ipsum проходы в арсеналом шрифтов, стилей и размеров, затвердевание место Латинского-эск фразу целиком в печатной и графической индустрии. Те, с вниманием к деталям будет даже поймали дань классического текста в эпизоде Mad Men (S6E1 вокруг 1:18:55 для тех, кто не сделал). </p>
+                  <div class="art__box-wrap flex-768 between aline-items-center">
+                    <div class="art__box fix-widt49 txt-center"><img class="art__box-image" src="assets/images/art/we2.png"></div>
+                    <div class="art__box fix-widt49 txt-center mt-gap_mob"><img class="art__box-image" src="assets/images/art/we1.png"></div>
+                  </div>
+                  <p>Пять столетий спустя Lorem Ipsum испытал всплеск популярности с выпуском сухого переноса листов Letraset в. Эти листы надписи можно потереть на любом месте и были быстро приняты художники-графики, принтеры, архитекторов и рекламодателей для их профессионального вида и простоты использования. Letraset включены Lorem Ipsum проходы в арсеналом шрифтов, стилей и размеров, затвердевание место Латинского-эск фразу целиком в печатной и графической индустрии. Те, с вниманием к деталям будет даже поймали дань классического текста в эпизоде Mad Men (S6E1 вокруг 1:18:55 для тех, кто не сделал). </p>
+                  <div class="hover__num-animate">  
+                    <div class="art__box-wrap flex-768 mt-100">
+                      <div class="art__box">
+                        <div class="animate-wr-num">
+                          <div class="num-animate1-1">0</div>
+                          <div class="num-animate1-2">1</div><img class="img-animate" src="assets/images/volna.png">
+                        </div>
+                      </div>
+                      <div class="art__box">
+                        <div class="aimate-wr-text">
+                          <div class="art__shrt-text">Быстрее, чем ТАСС.</div>
+                          <p>Никто не помнит второго человека, покорившего Эверест. Постарайтесь стать первым, кто оседлает свежий инфоповод</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="art__box-wrap flex-768 mt-100">
+                      <div class="art__box">
+                        <div class="animate-wr-num">
+                          <div class="num-animate1-1">0</div>
+                          <div class="num-animate1-2">2</div><img class="img-animate" src="assets/images/volna.png">
+                        </div>
+                      </div>
+                      <div class="art__box">
+                        <div class="aimate-wr-text">
+                          <div class="art__shrt-text">Контент — это король, и он может быть каким угодно, даже голым.</div>
+                          <p>Организуйте свое время и потоки информации таким образом, чтобы постоянно получать новую информацию, актуальные новости и кейсы, не затрачивая на это много времени. Зачастую чужой контекст, чужие идеи и лучшие практики помогают достигнуть собственных высоких результатов в кратчайшие сроки.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="art__box-wrap flex-768 mt-100">
+                      <div class="art__box">
+                        <div class="animate-wr-num">
+                          <div class="num-animate1-1">0</div>
+                          <div class="num-animate1-2">3</div><img class="img-animate" src="assets/images/volna.png">
+                        </div>
+                      </div>
+                      <div class="art__box">
+                        <div class="aimate-wr-text">
+                          <div class="art__shrt-text">Контент — это король, и он может быть каким угодно, даже голым.</div>
+                          <p>Организуйте свое время и потоки информации таким образом, чтобы постоянно получать новую информацию, актуальные новости и кейсы, не затрачивая на это много времени. Зачастую чужой контекст, чужие идеи и лучшие практики помогают достигнуть собственных высоких результатов в кратчайшие сроки.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="art__box-wrap flex-768 mt-100">
+                      <div class="art__box">
+                        <div class="animate-wr-num">
+                          <div class="num-animate1-1">0</div>
+                          <div class="num-animate1-2">4</div><img class="img-animate" src="assets/images/volna.png">
+                        </div>
+                      </div>
+                      <div class="art__box">
+                        <div class="aimate-wr-text">
+                          <div class="art__shrt-text">Контент — это король, и он может быть каким угодно, даже голым.</div>
+                          <p>Организуйте свое время и потоки информации таким образом, чтобы постоянно получать новую информацию, актуальные новости и кейсы, не затрачивая на это много времени. Зачастую чужой контекст, чужие идеи и лучшие практики помогают достигнуть собственных высоких результатов в кратчайшие сроки.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="art__box-wrap flex-768 mt-100">
+                      <div class="art__box">
+                        <div class="animate-wr-num">
+                          <div class="num-animate1-1">0</div>
+                          <div class="num-animate1-2">5</div><img class="img-animate" src="assets/images/volna.png">
+                        </div>
+                      </div>
+                      <div class="art__box">
+                        <div class="aimate-wr-text">
+                          <div class="art__shrt-text">Контент — это король, и он может быть каким угодно, даже голым.</div>
+                          <p>Организуйте свое время и потоки информации таким образом, чтобы постоянно получать новую информацию, актуальные новости и кейсы, не затрачивая на это много времени. Зачастую чужой контекст, чужие идеи и лучшие практики помогают достигнуть собственных высоких результатов в кратчайшие сроки.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="art__box-wrap flex-768 mt-100">
+                      <div class="art__box">
+                        <div class="animate-wr-num">
+                          <div class="num-animate1-1">0</div>
+                          <div class="num-animate1-2">6</div><img class="img-animate" src="assets/images/volna.png">
+                        </div>
+                      </div>
+                      <div class="art__box">
+                        <div class="aimate-wr-text">
+                          <div class="art__shrt-text">Контент — это король, и он может быть каким угодно, даже голым.</div>
+                          <p>Организуйте свое время и потоки информации таким образом, чтобы постоянно получать новую информацию, актуальные новости и кейсы, не затрачивая на это много времени. Зачастую чужой контекст, чужие идеи и лучшие практики помогают достигнуть собственных высоких результатов в кратчайшие сроки.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <p>Пять столетий спустя Lorem Ipsum испытал всплеск популярности с выпуском сухого переноса листов Letraset в. Эти листы надписи можно потереть на любом месте и были быстро приняты художники-графики, принтеры, архитекторов и рекламодателей для их профессионального вида и простоты использования. Letraset включены Lorem Ipsum проходы в арсеналом шрифтов, стилей и размеров, затвердевание место Латинского-эск фразу целиком в печатной и графической индустрии. Те, с вниманием к деталям будет даже поймали дань классического текста в эпизоде Mad Men (S6E1 вокруг 1:18:55 для тех, кто не сделал). </p>
+                  <div class="art__box-wrap">
+                    <div class="art__box fix-widt50 float-r txt-center"> 
+                      <div class="decor-img-wr"><img src="assets/images/art/curve.png"></div>
+                      <div class="incut-text-wr">
+                        <div class="incut-text">Как пиарщику не разрушить репутацию компании в соцсетях&nbsp;— рекомендации экспертов </div>
+                      </div>
+                      <div class="decor-img-wr"><img src="assets/images/art/curve.png"></div>
+                    </div>
+                    <div class="art__box">
+                      <p> Aldus Corporation, которая впоследствии объединилась с Adobe Systems, помогли принести Lorem Ipsum в информационную эпоху с ее 1985 флагманского программного обеспечения Aldus PageMaker. Программа входит в комплект с Lorem Ipsum манекен текст, чтобы помочь с выложив содержимое страницы и другие текстовые процессоры, такие как Microsoft Word</p>
+                    </div>
+                  </div>
+                  <p>Пять столетий спустя Lorem Ipsum испытал всплеск популярности с выпуском сухого переноса листов Letraset в. Эти листы надписи можно потереть на любом месте и были быстро приняты художники-графики, принтеры, архитекторов и рекламодателей для их профессионального вида и простоты использования. Letraset включены Lorem Ipsum проходы в арсеналом шрифтов, стилей и размеров, затвердевание место Латинского-эск фразу целиком в печатной и графической индустрии. Те, с вниманием к деталям будет даже поймали дань классического текста в эпизоде Mad Men (S6E1 вокруг 1:18:55 для тех, кто не сделал). </p>
+                  <div class="art__box-wrap flex-768 between aline-items-center">
+                    <div class="art__box fix-widt49 txt-center">
+                      <div class="decor-img-wr"><img src="assets/images/volna.png"></div>
+                      <div class="incut-text-wr">
+                        <div class="incut-text">Как пиарщику не разрушить репутацию компании в соцсетях&nbsp;— рекомендации экспертов </div>
+                      </div>
+                      <div class="decor-img-wr"><img src="assets/images/volna.png"></div>
+                    </div>
+                    <div class="art__box fix-widt49 txt-center mt-gap_mob"><img class="art__box-image" src="assets/images/art/we3.png"></div>
+                  </div>
+                  <p>Пять столетий спустя Lorem Ipsum испытал всплеск популярности с выпуском сухого переноса листов Letraset в. Эти листы надписи можно потереть на любом месте и были быстро приняты художники-графики, принтеры, архитекторов и рекламодателей для их профессионального вида и простоты использования. Letraset включены Lorem Ipsum проходы в арсеналом шрифтов, стилей и размеров, затвердевание место Латинского-эск фразу целиком в печатной и графической индустрии. Те, с вниманием к деталям будет даже поймали дань классического текста в эпизоде Mad Men (S6E1 вокруг 1:18:55 для тех, кто не сделал). </p>
+                  <div class="art__box-wrap flex-768 between aline-items-center">
+                    <div class="art__box fix-widt49 txt-center"><img class="art__box-image" src="assets/images/art/we3.png"></div>
+                    <div class="art__box fix-widt49 txt-center mt-gap_mob">
+                      <div class="decor-img-wr"><img src="assets/images/volna.png"></div>
+                      <div class="incut-text-wr">
+                        <div class="incut-text">Как пиарщику не разрушить репутацию компании в соцсетях&nbsp;— рекомендации экспертов </div>
+                      </div>
+                      <div class="decor-img-wr"><img src="assets/images/volna.png"></div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <aside class="aside">
+              <div class="aside__block"><img class="aside-baner" src="assets/images/art/baner.jpg"></div>
+            </aside>
+          </div>
+        </section>
+        <section class="section">
+          <div class="container">
+            <div class="share"> 
+              <ul class="share__list animate-block-plus">
+                <li class="share__item-icon"> 
+                  <svg class="plus--svg1">
+                    <use xlink:href="assets/sprite/sprite.svg#plus"></use>
+                  </svg>
+                  <svg class="plus--svg2">
+                    <use xlink:href="assets/sprite/sprite.svg#plus"></use>
+                  </svg>
+                  <svg class="plus--svg3">
+                    <use xlink:href="assets/sprite/sprite.svg#plus"></use>
+                  </svg>
+                </li>
+                <li class="share__item-social">
+                  <div class="wrap__share">
+                    <div class="share__shrt-text">Поделиться с друзьями</div>
+                    <div class="share__social">
+                      <script src="https://yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
+                      <script src="https://yastatic.net/share2/share.js"></script>
+                      <div class="ya-share2" data-services="vkontakte,facebook,odnoklassniki,twitter,pocket,viber,whatsapp" data-counter=""></div>
+                    </div>
+                  </div>
+                </li>
+                <li class="share__item-icon">
+                  <svg class="plus--svg1">
+                    <use xlink:href="assets/sprite/sprite.svg#plus"></use>
+                  </svg>
+                  <svg class="plus--svg2">
+                    <use xlink:href="assets/sprite/sprite.svg#plus"></use>
+                  </svg>
+                  <svg class="plus--svg3">
+                    <use xlink:href="assets/sprite/sprite.svg#plus"></use>
+                  </svg>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="section">
+          <div class="container">
+            <div class="more-materials">
+              <div class="block__title">
+                <h2 class="h2__title">Еще материалы </h2>
+              </div>
+              <ul class="news__list">
+                <li class="item-width-1fr more-materials__item"><a class="wrap__news-img" href="#"><img class="news-img" src="assets/images/news-card/cinema.png">
+                    <div class="news-icon">
+                      <svg class="mews--svg">
+                        <use xlink:href="assets/sprite/sprite.svg#book-cover"></use>
+                      </svg>
+                    </div></a>
+                  <div class="wrap__news__descr">
+                    <div class="news__division">Как все устроено</div><a class="news__title" href="#">Российские тв-зрители любят посмеятся. Не бойтесь быть смешным</a>
+                    <div class="news__descr">Для чего брендам нужно ТВ-спонсорство, почему они не хотят делиться своими результатами и как привлечь аудиторию </div>
+                  </div>
+                </li>
+                <li class="item-width-1fr more-materials__item"><a class="wrap__news-img" href="#"><img class="news-img" src="assets/images/news-card/piar-cinem.png">
+                    <div class="news-icon">
+                      <svg class="mews--svg">
+                        <use xlink:href="assets/sprite/sprite.svg#book-cover"></use>
+                      </svg>
+                    </div></a>
+                  <div class="wrap__news__descr">
+                    <div class="news__division">Как все устроено</div><a class="news__title" href="#">7 сериалов, которые обязан посмотреть каждый пиарщик</a>
+                    <div class="news__descr">Редакция ВОЛНЫ собрала подборку сериалов, которые помогут вам узнать что-то новое о своей профессии </div>
+                  </div>
+                </li>
+                <li class="item-width-1fr more-materials__item"><a class="wrap__news-img" href="#"><img class="news-img" src="assets/images/news-card/bird.png">
+                    <div class="news-icon">
+                      <svg class="mews--svg">
+                        <use xlink:href="assets/sprite/sprite.svg#book-cover"></use>
+                      </svg>
+                    </div></a>
+                  <div class="wrap__news__descr">
+                    <div class="news__division">Как все устроено</div><a class="news__title" href="#">Словарь по бренд-маркетингу: 19 терминов, которые должны знать профессионалы</a>
+                    <div class="news__descr">Слова и выражения, которые обязан знать каждый специалист</div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <footer class="footer">
+          <div class="container">
+            <div class="footer__logo"><img class="footer__logo-img" src="assets/images/volna-logo.png"></div>
+            <div class="footer__options">
+              <div class="footer__menu">
+                <ul class="footer__menu-list">
+                  <li class="footer__menu-item">
+                    <div class="footer__menu-title">О нас</div>
+                    <div class="footer__wrap-link"><a class="footer__menu-link" href="about.html">Что такое волна</a><a class="footer__menu-link" href="crew.html">Команда</a><a class="footer__menu-link" href="contacts.html">Контакты</a>
+                    </div>
+                  </li>
+                  <li class="footer__menu-item">
+                    <div class="footer__menu-title">Слушателями</div>
+                    <div class="footer__wrap-link"><a class="footer__menu-link" href="courses.html">Курсы волны</a><a class="footer__menu-link" href="mentors.html">Наставники волны</a>
+                    </div>
+                  </li>
+                  <li class="footer__menu-item">
+                    <div class="footer__menu-title">Направления волны</div>
+                    <div class="footer__wrap-link"><a class="footer__menu-link" href="https://volna-courses.adindex.ru/" target="_blank">Курс Digital PR &amp; SMM</a><a class="footer__menu-link" href="https://volna-courses.adindex.ru/promedia?utm_source=volna&amp;utm_medium=banner&amp;utm_campaign=newmedia" target="_blank">Медиапланирования и маркетинговые исследования в Digital</a><a class="footer__menu-link" href="https://volna-courses.adindex.ru/promedia?utm_source=volna&amp;utm_medium=banner&amp;utm_campaign=newmedia" target="_blank">Data Mining в рекламе и маркетинге</a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="block__form">
+                <div class="form__title">
+                  <div class="wrap__title-img"><img class="form__title-img" src="assets/images/lips.png"></div>
+                  <div class="form__title__shrt-text">Получить лучшее на почту</div>
+                </div>
+                <form class="form">
+                  <input class="form-input" type="email" placeholder="Ваш e-mail">
+                  <input class="form-submit" type="submit" value="ок">
+                </form>
+                <div class="form__text">Нажимая на кнопку, вы даете согласие на обработку своих персональных данных</div>
+              </div>
+            </div>
+            <div class="footer__bottom">© 2017 Все права защищены</div>
+          </div>
+        </footer>
+        <div class="popup-menu">
+          <div class="popup-menu-left"></div>
+          <div class="popup-menu-right"></div>
+          <div class="wrap-menu-mobile">
+            <div class="block__header-nav">
+              <ul class="header__nav--list">
+                <li class="header__nav--item"><a class="header__nav--link" href="index.html">Статьи и публикации</a></li>
+                <li class="header__nav--item"><a class="header__nav--link" href="courses.html">Курсы и интенсивы</a></li>
+                <li class="header__nav--item"><a class="header__nav--link" href="mentors.html">Наши наставники</a></li>
+                <li class="header__nav--item"><a class="header__nav--link" href="about.html">Что такое волна</a></li>
+                <li class="header__nav--item"><a class="header__nav--link" href="blog.html">Блог</a></li>
+              </ul>
+            </div>
+            <div class="block__social">
+              <div class="social-text">
+                <div class="shrt-text">Мы в соцсетях:</div>
+              </div>
+              <ul class="social--list">
+                <li class="social--item"><a class="social--link">
+                    <svg class="social--svg">
+                      <use xlink:href="assets/sprite/sprite.svg#vk"></use>
+                    </svg></a></li>
+                <li class="social--item"><a class="social--link">
+                    <svg class="social--svg">
+                      <use xlink:href="assets/sprite/sprite.svg#youtube"></use>
+                    </svg></a></li>
+                <li class="social--item"><a class="social--link">
+                    <svg class="social--svg">
+                      <use xlink:href="assets/sprite/sprite.svg#tlg"></use>
+                    </svg></a></li>
+                <li class="social--item"><a class="social--link">
+                    <svg class="social--svg">
+                      <use xlink:href="assets/sprite/sprite.svg#fb"></use>
+                    </svg></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="closed__menu-mobile">
+            <svg class="closed--svg">
+              <use xlink:href="assets/sprite/sprite.svg#closed"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="block__btn-up">
+          <div class="btn__up">
+            <svg class="btn__up--svg">
+              <use xlink:href="assets/sprite/sprite.svg#up"></use>
+            </svg><span class="btn__shrt-text">Вверх</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

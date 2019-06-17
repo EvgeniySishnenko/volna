@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./assets/styles/app.min.css">
+    <script src="assets/scripts/bundle.js" defer></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="maincontent">
+        <header class="header header-def">
+          <div class="header-top">
+            <div class="container container_header-top">
+              <div class="header__logo-adindex"><a class="header__logo__link" href="https://adindex.ru/" target="_blank">
+                  <svg class="logo__link--svg">
+                    <use xlink:href="assets/sprite/sprite.svg#logo"></use>
+                  </svg></a></div>
+              <div class="header__logo-volna"><a class="header__logo__link" href="#" target="_blank"><img class="logo-img" src="assets/images/volna-logo.png"></a></div>
+              <div class="header__contacts">
+                <div class="shrt-text">+7 (495) 737-08-45</div>
+                <div class="shrt-text">volna@adindex.ru</div>
+              </div>
+            </div>
+          </div>
+          <div class="header__nav">
+            <div class="container">
+              <div class="wrap-menu">
+                <div class="block__header-nav">
+                  <ul class="header__nav--list">
+                    <li class="header__nav--item"><a class="header__nav--link" href="index.html">Статьи и публикации</a></li>
+                    <li class="header__nav--item"><a class="header__nav--link" href="courses.html">Курсы и интенсивы</a></li>
+                    <li class="header__nav--item"><a class="header__nav--link" href="mentors.html">Наши наставники</a></li>
+                    <li class="header__nav--item"><a class="header__nav--link" href="about.html">Что такое волна</a></li>
+                    <li class="header__nav--item"><a class="header__nav--link" href="blog.html">Блог</a></li>
+                  </ul>
+                </div>
+                <div class="block__social">
+                  <div class="social-text">
+                    <div class="shrt-text">Мы в соцсетях:</div>
+                  </div>
+                  <ul class="social--list">
+                    <li class="social--item"><a class="social--link">
+                        <svg class="social--svg">
+                          <use xlink:href="assets/sprite/sprite.svg#vk"></use>
+                        </svg></a></li>
+                    <li class="social--item"><a class="social--link">
+                        <svg class="social--svg">
+                          <use xlink:href="assets/sprite/sprite.svg#youtube"></use>
+                        </svg></a></li>
+                    <li class="social--item"><a class="social--link">
+                        <svg class="social--svg">
+                          <use xlink:href="assets/sprite/sprite.svg#tlg"></use>
+                        </svg></a></li>
+                    <li class="social--item"><a class="social--link">
+                        <svg class="social--svg">
+                          <use xlink:href="assets/sprite/sprite.svg#fb"></use>
+                        </svg></a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="block__btn">
+                <div class="btn__menu">
+                  <div class="btn__menu__wrap--img"><img class="btn__menu--img" src="assets/images/volna.png"></div>
+                  <div class="btn__menu--text">Меню</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+        <section class="section section__about box-shadow">
+          <div class="container container__blog">
+            <div class="blog">
+              <div class="blog__header-wr">
+                <div class="block__title">
+                  <h2 class="h2__title">Мы на волне</h2>
+                </div>
+                <div class="blog__header__search">
+                  <ul class="blog__header-list">
+                    <li class="blog__header-item-reset">
+                      <div class="btn-reset">Сбросить</div>
+                    </li>
+                    <li class="blog__header-item blog__search-year">
+                      <div class="blog__header-item__shrt-txt">Год</div>
+                      <svg class="blog__header-item__svg">
+                        <use xlink:href="assets/sprite/sprite.svg#down"></use>
+                      </svg>
+                      <ul class="blog__header__sub-list">
+                        <li class="sub-item-year blog__header__sub-item" attr="year_all">Все</li>
+                        <li class="sub-item-year blog__header__sub-item" attr="year_2019">2019 год</li>
+                        <li class="sub-item-year blog__header__sub-item" attr="year_2018">2018 год</li>
+                        <li class="sub-item-year blog__header__sub-item" attr="year_2017">2017 год</li>
+                        <li class="sub-item-year blog__header__sub-item" attr="year_2016">2016 год</li>
+                      </ul>
+                    </li>
+                    <li class="blog__header-item blog__search-month">
+                      <div class="blog__header-item__shrt-txt">Месяц</div>
+                      <svg class="blog__header-item__svg">
+                        <use xlink:href="assets/sprite/sprite.svg#down"></use>
+                      </svg>
+                      <ul class="blog__header__sub-list">
+                        <li class="sub-item-month blog__header__sub-item" attr="month_all">Все</li>
+                        <li class="sub-item-month blog__header__sub-item" attr="january">Январь</li>
+                        <li class="sub-item-month blog__header__sub-item" attr="february">Февраль</li>
+                        <li class="sub-item-month blog__header__sub-item" attr="march">Март</li>
+                        <li class="sub-item-month blog__header__sub-item" attr="april">Апрель</li>
+                        <li class="sub-item-month blog__header__sub-item" attr="may">Май</li>
+                        <li class="sub-item-month blog__header__sub-item" attr="june">Июнь</li>
+                        <li class="sub-item-month blog__header__sub-item" attr="july">Июль</li>
+                        <li class="sub-item-month blog__header__sub-item" attr="august">Август</li>
+                        <li class="sub-item-month blog__header__sub-item" attr="september">Сентябрь</li>
+                        <li class="sub-item-month blog__header__sub-item" attr="october">Октябрь</li>
+                        <li class="sub-item-month blog__header__sub-item" attr="november">Ноябрь</li>
+                        <li class="sub-item-month blog__header__sub-item" attr="december">Декабрь</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <main class="main main__blog">
+                <div class="blog__content--list month_all april year_all year_2019">
+                  <div class="blog__content-date">23/04/2019</div>
+                  <div class="blog__content--item-wr">
+                    <div class="blog__content--item">
+                      <div class="blog__content__wr-img"><img class="blog__content__img" src="assets/images/blog/blg-img.png"></div>
+                      <div class="blog__content__wr-title"><a class="blog__content__link" href="#">Проход продолжает видеть частое использование, с lorem ipsum</a></div>
+                      <div class="blog__content__wr-text">Aldus Corporation, которая впоследствии объединилась с Adobe Systems, помогли принести Lorem Ipsum в информационную эпоху с ее 1985 флагманского</div>
+                    </div>
+                    <div class="blog__content--item">
+                      <div class="blog__content__wr-img"><img class="blog__content__img" src="assets/images/blog/blg-img.png"></div>
+                      <div class="blog__content__wr-title"><a class="blog__content__link" href="#">Проход продолжает видеть частое использование, с lorem ipsum</a></div>
+                      <div class="blog__content__wr-text">Aldus Corporation, которая впоследствии объединилась с Adobe Systems, помогли принести Lorem Ipsum в информационную эпоху с ее 1985 флагманского</div>
+                    </div>
+                    <div class="blog__content--item">
+                      <div class="blog__content__wr-img"><img class="blog__content__img" src="assets/images/blog/blg-img.png"></div>
+                      <div class="blog__content__wr-title"><a class="blog__content__link" href="#">Проход продолжает видеть частое использование, с lorem ipsum</a></div>
+                      <div class="blog__content__wr-text">Aldus Corporation, которая впоследствии объединилась с Adobe Systems, помогли принести Lorem Ipsum в информационную эпоху с ее 1985 флагманского</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="blog__content--list month_all august year_all year_2019">
+                  <div class="blog__content-date">13/08/2019</div>
+                  <div class="blog__content--item-wr">
+                    <div class="blog__content--item">
+                      <div class="blog__content__wr-img"><img class="blog__content__img" src="assets/images/blog/blg-img.png"></div>
+                      <div class="blog__content__wr-title"><a class="blog__content__link" href="#">Проход продолжает видеть частое использование, с lorem ipsum</a></div>
+                      <div class="blog__content__wr-text">Aldus Corporation, которая впоследствии объединилась с Adobe Systems, помогли принести Lorem Ipsum в информационную эпоху с ее 1985 флагманского</div>
+                    </div>
+                    <div class="blog__content--item">
+                      <div class="blog__content__wr-img"><img class="blog__content__img" src="assets/images/blog/blg-img.png"></div>
+                      <div class="blog__content__wr-title"><a class="blog__content__link" href="#">Проход продолжает видеть частое использование, с lorem ipsum</a></div>
+                      <div class="blog__content__wr-text">Aldus Corporation, которая впоследствии объединилась с Adobe Systems, помогли принести Lorem Ipsum в информационную эпоху с ее 1985 флагманского</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="blog__content--list month_all august year_all year_2018">
+                  <div class="blog__content-date">22/08/2018</div>
+                  <div class="blog__content--item-wr">
+                    <div class="blog__content--item">
+                      <div class="blog__content__wr-img"><img class="blog__content__img" src="assets/images/blog/blg-img.png"></div>
+                      <div class="blog__content__wr-title"><a class="blog__content__link" href="#">Проход продолжает видеть частое использование, с lorem ipsum</a></div>
+                      <div class="blog__content__wr-text">Aldus Corporation, которая впоследствии объединилась с Adobe Systems, помогли принести Lorem Ipsum в информационную эпоху с ее 1985 флагманского</div>
+                    </div>
+                    <div class="blog__content--item">
+                      <div class="blog__content__wr-img"><img class="blog__content__img" src="assets/images/blog/blg-img.png"></div>
+                      <div class="blog__content__wr-title"><a class="blog__content__link" href="#">Проход продолжает видеть частое использование, с lorem ipsum</a></div>
+                      <div class="blog__content__wr-text">Aldus Corporation, которая впоследствии объединилась с Adobe Systems, помогли принести Lorem Ipsum в информационную эпоху с ее 1985 флагманского</div>
+                    </div>
+                    <div class="blog__content--item">
+                      <div class="blog__content__wr-img"><img class="blog__content__img" src="assets/images/blog/blg-img.png"></div>
+                      <div class="blog__content__wr-title"><a class="blog__content__link" href="#">Проход продолжает видеть частое использование, с lorem ipsum</a></div>
+                      <div class="blog__content__wr-text">Aldus Corporation, которая впоследствии объединилась с Adobe Systems, помогли принести Lorem Ipsum в информационную эпоху с ее 1985 флагманского</div>
+                    </div>
+                    <div class="blog__content--item">
+                      <div class="blog__content__wr-img"><img class="blog__content__img" src="assets/images/blog/blg-img.png"></div>
+                      <div class="blog__content__wr-title"><a class="blog__content__link" href="#">Проход продолжает видеть частое использование, с lorem ipsum</a></div>
+                      <div class="blog__content__wr-text">Aldus Corporation, которая впоследствии объединилась с Adobe Systems, помогли принести Lorem Ipsum в информационную эпоху с ее 1985 флагманского</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="blog__content--list month_all july year_all year_2017">
+                  <div class="blog__content-date">03/07/2017</div>
+                  <div class="blog__content--item-wr">
+                    <div class="blog__content--item">
+                      <div class="blog__content__wr-img"><img class="blog__content__img" src="assets/images/blog/blg-img.png"></div>
+                      <div class="blog__content__wr-title"><a class="blog__content__link" href="#">Проход продолжает видеть частое использование, с lorem ipsum</a></div>
+                      <div class="blog__content__wr-text">Aldus Corporation, которая впоследствии объединилась с Adobe Systems, помогли принести Lorem Ipsum в информационную эпоху с ее 1985 флагманского</div>
+                    </div>
+                    <div class="blog__content--item">
+                      <div class="blog__content__wr-img"><img class="blog__content__img" src="assets/images/blog/blg-img.png"></div>
+                      <div class="blog__content__wr-title"><a class="blog__content__link" href="#">Проход продолжает видеть частое использование, с lorem ipsum</a></div>
+                      <div class="blog__content__wr-text">Aldus Corporation, которая впоследствии объединилась с Adobe Systems, помогли принести Lorem Ipsum в информационную эпоху с ее 1985 флагманского</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="blog__content--list month_all july year_all year_2016">
+                  <div class="blog__content-date">03/07/2016</div>
+                  <div class="blog__content--item-wr">
+                    <div class="blog__content--item">
+                      <div class="blog__content__wr-img"><img class="blog__content__img" src="assets/images/blog/blg-img.png"></div>
+                      <div class="blog__content__wr-title"><a class="blog__content__link" href="#">Проход продолжает видеть частое использование, с lorem ipsum</a></div>
+                      <div class="blog__content__wr-text">Aldus Corporation, которая впоследствии объединилась с Adobe Systems, помогли принести Lorem Ipsum в информационную эпоху с ее 1985 флагманского</div>
+                    </div>
+                    <div class="blog__content--item">
+                      <div class="blog__content__wr-img"><img class="blog__content__img" src="assets/images/blog/blg-img.png"></div>
+                      <div class="blog__content__wr-title"><a class="blog__content__link" href="#">Проход продолжает видеть частое использование, с lorem ipsum</a></div>
+                      <div class="blog__content__wr-text">Aldus Corporation, которая впоследствии объединилась с Adobe Systems, помогли принести Lorem Ipsum в информационную эпоху с ее 1985 флагманского</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="massage__error">По заданным параметрам ничего не найдено </div>
+              </main>
+            </div>
+            <aside class="aside">
+              <div class="aside__block"><img class="aside-baner" src="assets/images/art/baner.jpg"></div>
+            </aside>
+          </div>
+        </section>
+        <footer class="footer">
+          <div class="container">
+            <div class="footer__logo"><img class="footer__logo-img" src="assets/images/volna-logo.png"></div>
+            <div class="footer__options">
+              <div class="footer__menu">
+                <ul class="footer__menu-list">
+                  <li class="footer__menu-item">
+                    <div class="footer__menu-title">О нас</div>
+                    <div class="footer__wrap-link"><a class="footer__menu-link" href="about.html">Что такое волна</a><a class="footer__menu-link" href="crew.html">Команда</a><a class="footer__menu-link" href="contacts.html">Контакты</a>
+                    </div>
+                  </li>
+                  <li class="footer__menu-item">
+                    <div class="footer__menu-title">Слушателями</div>
+                    <div class="footer__wrap-link"><a class="footer__menu-link" href="courses.html">Курсы волны</a><a class="footer__menu-link" href="mentors.html">Наставники волны</a>
+                    </div>
+                  </li>
+                  <li class="footer__menu-item">
+                    <div class="footer__menu-title">Направления волны</div>
+                    <div class="footer__wrap-link"><a class="footer__menu-link" href="https://volna-courses.adindex.ru/" target="_blank">Курс Digital PR &amp; SMM</a><a class="footer__menu-link" href="https://volna-courses.adindex.ru/promedia?utm_source=volna&amp;utm_medium=banner&amp;utm_campaign=newmedia" target="_blank">Медиапланирования и маркетинговые исследования в Digital</a><a class="footer__menu-link" href="https://volna-courses.adindex.ru/promedia?utm_source=volna&amp;utm_medium=banner&amp;utm_campaign=newmedia" target="_blank">Data Mining в рекламе и маркетинге</a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="block__form">
+                <div class="form__title">
+                  <div class="wrap__title-img"><img class="form__title-img" src="assets/images/lips.png"></div>
+                  <div class="form__title__shrt-text">Получить лучшее на почту</div>
+                </div>
+                <form class="form">
+                  <input class="form-input" type="email" placeholder="Ваш e-mail">
+                  <input class="form-submit" type="submit" value="ок">
+                </form>
+                <div class="form__text">Нажимая на кнопку, вы даете согласие на обработку своих персональных данных</div>
+              </div>
+            </div>
+            <div class="footer__bottom">© 2017 Все права защищены</div>
+          </div>
+        </footer>
+        <div class="popup-menu">
+          <div class="popup-menu-left"></div>
+          <div class="popup-menu-right"></div>
+          <div class="wrap-menu-mobile">
+            <div class="block__header-nav">
+              <ul class="header__nav--list">
+                <li class="header__nav--item"><a class="header__nav--link" href="index.html">Статьи и публикации</a></li>
+                <li class="header__nav--item"><a class="header__nav--link" href="courses.html">Курсы и интенсивы</a></li>
+                <li class="header__nav--item"><a class="header__nav--link" href="mentors.html">Наши наставники</a></li>
+                <li class="header__nav--item"><a class="header__nav--link" href="about.html">Что такое волна</a></li>
+                <li class="header__nav--item"><a class="header__nav--link" href="blog.html">Блог</a></li>
+              </ul>
+            </div>
+            <div class="block__social">
+              <div class="social-text">
+                <div class="shrt-text">Мы в соцсетях:</div>
+              </div>
+              <ul class="social--list">
+                <li class="social--item"><a class="social--link">
+                    <svg class="social--svg">
+                      <use xlink:href="assets/sprite/sprite.svg#vk"></use>
+                    </svg></a></li>
+                <li class="social--item"><a class="social--link">
+                    <svg class="social--svg">
+                      <use xlink:href="assets/sprite/sprite.svg#youtube"></use>
+                    </svg></a></li>
+                <li class="social--item"><a class="social--link">
+                    <svg class="social--svg">
+                      <use xlink:href="assets/sprite/sprite.svg#tlg"></use>
+                    </svg></a></li>
+                <li class="social--item"><a class="social--link">
+                    <svg class="social--svg">
+                      <use xlink:href="assets/sprite/sprite.svg#fb"></use>
+                    </svg></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="closed__menu-mobile">
+            <svg class="closed--svg">
+              <use xlink:href="assets/sprite/sprite.svg#closed"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="block__btn-up">
+          <div class="btn__up">
+            <svg class="btn__up--svg">
+              <use xlink:href="assets/sprite/sprite.svg#up"></use>
+            </svg><span class="btn__shrt-text">Вверх</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./assets/styles/app.min.css">
+    <script src="assets/scripts/bundle.js" defer></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="maincontent">
+        <header class="header header-def">
+          <div class="header-top">
+            <div class="container container_header-top">
+              <div class="header__logo-adindex"><a class="header__logo__link" href="https://adindex.ru/" target="_blank">
+                  <svg class="logo__link--svg">
+                    <use xlink:href="assets/sprite/sprite.svg#logo"></use>
+                  </svg></a></div>
+              <div class="header__logo-volna"><a class="header__logo__link" href="#" target="_blank"><img class="logo-img" src="assets/images/volna-logo.png"></a></div>
+              <div class="header__contacts">
+                <div class="shrt-text">+7 (495) 737-08-45</div>
+                <div class="shrt-text">volna@adindex.ru</div>
+              </div>
+            </div>
+          </div>
+          <div class="header__nav">
+            <div class="container">
+              <div class="wrap-menu">
+                <div class="block__header-nav">
+                  <ul class="header__nav--list">
+                    <li class="header__nav--item"><a class="header__nav--link" href="index.html">Статьи и публикации</a></li>
+                    <li class="header__nav--item"><a class="header__nav--link" href="courses.html">Курсы и интенсивы</a></li>
+                    <li class="header__nav--item"><a class="header__nav--link" href="mentors.html">Наши наставники</a></li>
+                    <li class="header__nav--item"><a class="header__nav--link" href="about.html">Что такое волна</a></li>
+                    <li class="header__nav--item"><a class="header__nav--link" href="blog.html">Блог</a></li>
+                  </ul>
+                </div>
+                <div class="block__social">
+                  <div class="social-text">
+                    <div class="shrt-text">Мы в соцсетях:</div>
+                  </div>
+                  <ul class="social--list">
+                    <li class="social--item"><a class="social--link">
+                        <svg class="social--svg">
+                          <use xlink:href="assets/sprite/sprite.svg#vk"></use>
+                        </svg></a></li>
+                    <li class="social--item"><a class="social--link">
+                        <svg class="social--svg">
+                          <use xlink:href="assets/sprite/sprite.svg#youtube"></use>
+                        </svg></a></li>
+                    <li class="social--item"><a class="social--link">
+                        <svg class="social--svg">
+                          <use xlink:href="assets/sprite/sprite.svg#tlg"></use>
+                        </svg></a></li>
+                    <li class="social--item"><a class="social--link">
+                        <svg class="social--svg">
+                          <use xlink:href="assets/sprite/sprite.svg#fb"></use>
+                        </svg></a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="block__btn">
+                <div class="btn__menu">
+                  <div class="btn__menu__wrap--img"><img class="btn__menu--img" src="assets/images/volna.png"></div>
+                  <div class="btn__menu--text">Меню</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+        <section class="section section__crew box-shadow">
+          <div class="container">
+            <div class="mentors">
+              <div class="block__title">
+                <h2 class="h2__title">Наставники</h2>
+              </div>
+              <div class="mentors__filter">
+                <div class="mentors__filter-all">
+                  <div class="box__btn box__btn-all">
+                    <input class="chk chk_all" type="checkbox" data-attr="chk_all">
+                    <div class="knobs"></div>
+                    <div class="layer"></div>
+                    <div class="text">Все</div>
+                  </div>
+                </div>
+                <div class="mentors__filter-activities1">
+                  <div class="box__btn box__btn-activities1">
+                    <input class="chk chk_dgt" type="checkbox" data-attr="chk_dgt">
+                    <div class="knobs"></div>
+                    <div class="layer"></div>
+                    <div class="text">Digital PR & SMM</div>
+                  </div>
+                </div>
+                <div class="mentors__filter-activities2">
+                  <div class="box__btn box__btn-activities1">
+                    <input class="chk chk_mrk" type="checkbox" data-attr="chk_mrk">
+                    <div class="knobs"></div>
+                    <div class="layer"></div>
+                    <div class="text">Маркетинг</div>
+                  </div>
+                </div>
+              </div>
+              <div class="mentors__content"> 
+                <div class="mentors__list">
+                  <div class="mentors__item digital">
+                    <div class="wrap__mentors--img"><img class="mentors__img" src="assets/images/mentors/men1.png" alt="Александр Еськов"></div>
+                    <div class="mentors__descr">
+                      <div class="wrap__mentors__descr">
+                        <div class="mentors__activities">Digital PR & SMM</div>
+                        <div class="mentors__name">Александр Еськов</div>
+                        <div class="mentors__position">Senior Performance Manager АДВ Лаб</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mentors__item digital">
+                    <div class="wrap__mentors--img"><img class="mentors__img" src="assets/images/mentors/men2.png" alt="Александр Марфин"></div>
+                    <div class="mentors__descr">
+                      <div class="wrap__mentors__descr">
+                        <div class="mentors__activities">Digital PR & SMM</div>
+                        <div class="mentors__name">Александр Марфин</div>
+                        <div class="mentors__position">Бренд-стратег. Независимый консультант.</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mentors__item marketing">
+                    <div class="wrap__mentors--img"><img class="mentors__img" src="assets/images/mentors/men3.png" alt="Александра Кулачикова"></div>
+                    <div class="mentors__descr">
+                      <div class="wrap__mentors__descr">
+                        <div class="mentors__activities">Маркетинг</div>
+                        <div class="mentors__name">Александра Кулачикова</div>
+                        <div class="mentors__position">Руководитель продвижения Яндекс.Метрика</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mentors__item digital">
+                    <div class="wrap__mentors--img"><img class="mentors__img" src="assets/images/mentors/men4.png" alt="Анастасия Лобода"></div>
+                    <div class="mentors__descr">
+                      <div class="wrap__mentors__descr">
+                        <div class="mentors__activities">Digital PR & SMM</div>
+                        <div class="mentors__name">Анастасия Лобода</div>
+                        <div class="mentors__position">Заместитель директора поцифровой стратегии ИД «Коммерсантъ»</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mentors__item marketing">
+                    <div class="wrap__mentors--img"><img class="mentors__img" src="assets/images/mentors/men5.png" alt="Андрей Иванов"></div>
+                    <div class="mentors__descr">
+                      <div class="wrap__mentors__descr">
+                        <div class="mentors__activities">Маркетинг</div>
+                        <div class="mentors__name">Андрей Иванов</div>
+                        <div class="mentors__position">Менеджер рекламных кампаний programmatic-платформы Getintent</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mentors__item marketing">
+                    <div class="wrap__mentors--img"><img class="mentors__img" src="assets/images/mentors/men6.png" alt="Анна Старостина"></div>
+                    <div class="mentors__descr">
+                      <div class="wrap__mentors__descr">
+                        <div class="mentors__activities">Маркетинг</div>
+                        <div class="mentors__name">Анна Старостина</div>
+                        <div class="mentors__position">Руководитель отдела маркетинга Uvenco Group (Russia/UK)</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mentors__item digital">
+                    <div class="wrap__mentors--img"><img class="mentors__img" src="assets/images/mentors/men7.png" alt="Антон Шестаков"></div>
+                    <div class="mentors__descr">
+                      <div class="wrap__mentors__descr">
+                        <div class="mentors__activities">Digital PR & SMM</div>
+                        <div class="mentors__name">Антон Шестаков</div>
+                        <div class="mentors__position">PR-директор АДВ</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mentors__item marketing">
+                    <div class="wrap__mentors--img"><img class="mentors__img" src="assets/images/mentors/men8.png" alt="Арина Клементьева"></div>
+                    <div class="mentors__descr">
+                      <div class="wrap__mentors__descr">
+                        <div class="mentors__activities">Маркетинг</div>
+                        <div class="mentors__name">Арина Клементьева</div>
+                        <div class="mentors__position">Директор по связям с общественностью Tenzor Consulting Group</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mentors__item digital">
+                    <div class="wrap__mentors--img"><img class="mentors__img" src="assets/images/mentors/men9.png" alt="Артём Крашенинников"></div>
+                    <div class="mentors__descr">
+                      <div class="wrap__mentors__descr">
+                        <div class="mentors__activities">Digital PR & SMM</div>
+                        <div class="mentors__name">Артём Крашенинников</div>
+                        <div class="mentors__position">Главный редактор "Лентач"</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mentors__item digital">
+                    <div class="wrap__mentors--img"><img class="mentors__img" src="assets/images/mentors/men10.png" alt="Артем Тарабрин"></div>
+                    <div class="mentors__descr">
+                      <div class="wrap__mentors__descr">
+                        <div class="mentors__activities">Digital PR & SMM</div>
+                        <div class="mentors__name">Артем Тарабрин</div>
+                        <div class="mentors__position">Senior Targeted Advertising Manager iProspect Russia</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mentors__item digital">
+                    <div class="wrap__mentors--img"><img class="mentors__img" src="assets/images/mentors/men11.png" alt="Василий Богданов"></div>
+                    <div class="mentors__descr">
+                      <div class="wrap__mentors__descr">
+                        <div class="mentors__activities">Digital PR & SMM</div>
+                        <div class="mentors__name">Василий Богданов</div>
+                        <div class="mentors__position">Соучредитель и креативный директор агентства Little BigAgency</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mentors__item digital">
+                    <div class="wrap__mentors--img"><img class="mentors__img" src="assets/images/mentors/men12.png" alt="Василий Черный"></div>
+                    <div class="mentors__descr">
+                      <div class="wrap__mentors__descr">
+                        <div class="mentors__activities">Digital PR & SMM</div>
+                        <div class="mentors__name">Василий Черный</div>
+                        <div class="mentors__position">Директор по маркетинговым коммуникациям в Brand Analytics</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mentors__item marketing">
+                    <div class="wrap__mentors--img"><img class="mentors__img" src="assets/images/mentors/men13.png" alt="Анна Гиско"></div>
+                    <div class="mentors__descr">
+                      <div class="wrap__mentors__descr">
+                        <div class="mentors__activities">Маркетинг</div>
+                        <div class="mentors__name">Анна Гиско</div>
+                        <div class="mentors__position">Head of Media Henkel Russia & CIS</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mentors__item marketing">
+                    <div class="wrap__mentors--img"><img class="mentors__img" src="assets/images/mentors/men14.png" alt="Василий Ящук"></div>
+                    <div class="mentors__descr">
+                      <div class="wrap__mentors__descr">
+                        <div class="mentors__activities">Маркетинг</div>
+                        <div class="mentors__name">Василий Ящук</div>
+                        <div class="mentors__position">Основатель Players</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mentors__item marketing">
+                    <div class="wrap__mentors--img"><img class="mentors__img" src="assets/images/mentors/men15.png" alt="Виктория Грин"></div>
+                    <div class="mentors__descr">
+                      <div class="wrap__mentors__descr">
+                        <div class="mentors__activities">Маркетинг</div>
+                        <div class="mentors__name">Виктория Грин</div>
+                        <div class="mentors__position">Key account manager LAVA MEDIA</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mentors__item marketing">
+                    <div class="wrap__mentors--img"><img class="mentors__img" src="assets/images/mentors/men16.png" alt="Владимир Антошин"></div>
+                    <div class="mentors__descr">
+                      <div class="wrap__mentors__descr">
+                        <div class="mentors__activities">Маркетинг</div>
+                        <div class="mentors__name">Владимир Антошин</div>
+                        <div class="mentors__position">Коммерческий директор iVengo Mobile</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mentors__item marketing">
+                    <div class="wrap__mentors--img"><img class="mentors__img" src="assets/images/mentors/men17.png" alt="Григорий Богачев"></div>
+                    <div class="mentors__descr">
+                      <div class="wrap__mentors__descr">
+                        <div class="mentors__activities">Маркетинг</div>
+                        <div class="mentors__name">Григорий Богачев</div>
+                        <div class="mentors__position">Head of SEO MediaCom</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mentors__item marketing">
+                    <div class="wrap__mentors--img"><img class="mentors__img" src="assets/images/mentors/men18.png" alt="Евгений Вольнов"></div>
+                    <div class="mentors__descr">
+                      <div class="wrap__mentors__descr">
+                        <div class="mentors__activities">Маркетинг</div>
+                        <div class="mentors__name">Евгений Вольнов</div>
+                        <div class="mentors__position">Media Director в Sports.ru</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mentors__item marketing">
+                    <div class="wrap__mentors--img"><img class="mentors__img" src="assets/images/mentors/men19.png" alt="Егор Карпов"></div>
+                    <div class="mentors__descr">
+                      <div class="wrap__mentors__descr">
+                        <div class="mentors__activities">Маркетинг</div>
+                        <div class="mentors__name">Егор Карпов</div>
+                        <div class="mentors__position">Эксперт по емейл-маркетингу в компании ExpertSender</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mentors__item marketing">
+                    <div class="wrap__mentors--img"><img class="mentors__img" src="assets/images/mentors/men20.png" alt="Егор Тимофеев"></div>
+                    <div class="mentors__descr">
+                      <div class="wrap__mentors__descr">
+                        <div class="mentors__activities">Маркетинг</div>
+                        <div class="mentors__name">Егор Тимофеев</div>
+                        <div class="mentors__position">пресс-секретарь РБК</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mentors__item marketing">
+                    <div class="wrap__mentors--img"><img class="mentors__img" src="assets/images/mentors/men21.png" alt="Егор Яковишен"></div>
+                    <div class="mentors__descr">
+                      <div class="wrap__mentors__descr">
+                        <div class="mentors__activities">Маркетинг</div>
+                        <div class="mentors__name">Егор Яковишен</div>
+                        <div class="mentors__position">Senior Frontend Developer в Setka</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mentors__item marketing">
+                    <div class="wrap__mentors--img"><img class="mentors__img" src="assets/images/mentors/men22.png" alt="Екатерина Прохорова"></div>
+                    <div class="mentors__descr">
+                      <div class="wrap__mentors__descr">
+                        <div class="mentors__activities">Маркетинг</div>
+                        <div class="mentors__name">Екатерина Прохорова</div>
+                        <div class="mentors__position">Исполнительный директор Celebrity Marketing Agency Feedstars</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mentors__item marketing">
+                    <div class="wrap__mentors--img"><img class="mentors__img" src="assets/images/mentors/men23.png" alt="Злата Николаева"></div>
+                    <div class="mentors__descr">
+                      <div class="wrap__mentors__descr">
+                        <div class="mentors__activities">Маркетинг</div>
+                        <div class="mentors__name">Злата Николаева</div>
+                        <div class="mentors__position">Руководитель направления внешних коммуникаций Qlean.ru</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mentors__item marketing">
+                    <div class="wrap__mentors--img"><img class="mentors__img" src="assets/images/mentors/men24.png" alt="Иван Сиденко"></div>
+                    <div class="mentors__descr">
+                      <div class="wrap__mentors__descr">
+                        <div class="mentors__activities">Маркетинг</div>
+                        <div class="mentors__name">Иван Сиденко</div>
+                        <div class="mentors__position">Управляющий партнер агентств Re:evolution и All Stars</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mentors__item marketing">
+                    <div class="wrap__mentors--img"><img class="mentors__img" src="assets/images/mentors/men25.png" alt="Ирина Запевалова"></div>
+                    <div class="mentors__descr">
+                      <div class="wrap__mentors__descr">
+                        <div class="mentors__activities">Маркетинг</div>
+                        <div class="mentors__name">Ирина Запевалова</div>
+                        <div class="mentors__position">Talent Manager, Danone</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mentors__item marketing">
+                    <div class="wrap__mentors--img"><img class="mentors__img" src="assets/images/mentors/men26.png" alt="Ирина Зверева"></div>
+                    <div class="mentors__descr">
+                      <div class="wrap__mentors__descr">
+                        <div class="mentors__activities">Маркетинг</div>
+                        <div class="mentors__name">Ирина Зверева</div>
+                        <div class="mentors__position">Сооснователь агентства TheHeads</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mentors__item marketing">
+                    <div class="wrap__mentors--img"><img class="mentors__img" src="assets/images/mentors/men27.png" alt="Ирина Нагорнова"></div>
+                    <div class="mentors__descr">
+                      <div class="wrap__mentors__descr">
+                        <div class="mentors__activities">Маркетинг</div>
+                        <div class="mentors__name">Ирина Нагорнова</div>
+                        <div class="mentors__position">Директор по внешним связям Abbott</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mentors__item marketing">
+                    <div class="wrap__mentors--img"><img class="mentors__img" src="assets/images/mentors/men28.png" alt="Кирилл Борисов"></div>
+                    <div class="mentors__descr">
+                      <div class="wrap__mentors__descr">
+                        <div class="mentors__activities">Маркетинг</div>
+                        <div class="mentors__name">Кирилл Борисов</div>
+                        <div class="mentors__position">Co-Founder/CEO в LabelUp - Influencer Marketing Platform</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mentors__item marketing">
+                    <div class="wrap__mentors--img"><img class="mentors__img" src="assets/images/mentors/men29.png" alt="Константин Тамиров"></div>
+                    <div class="mentors__descr">
+                      <div class="wrap__mentors__descr">
+                        <div class="mentors__activities">Маркетинг</div>
+                        <div class="mentors__name">Константин Тамиров</div>
+                        <div class="mentors__position">Директор по маркетингу AB InBev-Efes (бренды: BUD, Клинское, Сибирская корона, Stella Artois, Corona Extra, Lowenbrau, Staropramen, Efes и другие)</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mentors__item marketing">
+                    <div class="wrap__mentors--img"><img class="mentors__img" src="assets/images/mentors/men30.png" alt="Максим Тишининов"></div>
+                    <div class="mentors__descr">
+                      <div class="wrap__mentors__descr">
+                        <div class="mentors__activities">Маркетинг</div>
+                        <div class="mentors__name">Максим Тишининов</div>
+                        <div class="mentors__position">Технический специалист, эксперт по емейл-маркетингу компании ExpertSender</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mentors__item marketing">
+                    <div class="wrap__mentors--img"><img class="mentors__img" src="assets/images/mentors/men31.png" alt="Максим Юрин"></div>
+                    <div class="mentors__descr">
+                      <div class="wrap__mentors__descr">
+                        <div class="mentors__activities">Маркетинг</div>
+                        <div class="mentors__name">Максим Юрин</div>
+                        <div class="mentors__position">Соучредитель и стратегический директор digital-агентства Little Big Agency </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mentors__item marketing">
+                    <div class="wrap__mentors--img"><img class="mentors__img" src="assets/images/mentors/men32.png" alt="Мария Гельман"></div>
+                    <div class="mentors__descr">
+                      <div class="wrap__mentors__descr">
+                        <div class="mentors__activities">Маркетинг</div>
+                        <div class="mentors__name">Мария Гельман</div>
+                        <div class="mentors__position">Креативный директор Look At Media </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mentors__item marketing">
+                    <div class="wrap__mentors--img"><img class="mentors__img" src="assets/images/mentors/men33.png" alt="Марьям Ахунова"></div>
+                    <div class="mentors__descr">
+                      <div class="wrap__mentors__descr">
+                        <div class="mentors__activities">Маркетинг</div>
+                        <div class="mentors__name">Марьям Ахунова</div>
+                        <div class="mentors__position">Креативный директор Possible Moscow</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mentors__item marketing">
+                    <div class="wrap__mentors--img"><img class="mentors__img" src="assets/images/mentors/men34.png" alt="Никита Трещев"></div>
+                    <div class="mentors__descr">
+                      <div class="wrap__mentors__descr">
+                        <div class="mentors__activities">Маркетинг</div>
+                        <div class="mentors__name">Никита Трещев</div>
+                        <div class="mentors__position">Проектный директор агентства «Апрель», ведет @odigital</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mentors__item marketing">
+                    <div class="wrap__mentors--img"><img class="mentors__img" src="assets/images/mentors/men35.png" alt="Николай Гришин"></div>
+                    <div class="mentors__descr">
+                      <div class="wrap__mentors__descr">
+                        <div class="mentors__activities">Маркетинг</div>
+                        <div class="mentors__name">Николай Гришин</div>
+                        <div class="mentors__position">Руководитель отдела «Свое дело» РБК</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mentors__item marketing">
+                    <div class="wrap__mentors--img"><img class="mentors__img" src="assets/images/mentors/men36.png" alt="Нина Шарутина"></div>
+                    <div class="mentors__descr">
+                      <div class="wrap__mentors__descr">
+                        <div class="mentors__activities">Маркетинг</div>
+                        <div class="mentors__name">Нина Шарутина</div>
+                        <div class="mentors__position">Marketing Communication Director, Affect</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mentors__item marketing">
+                    <div class="wrap__mentors--img"><img class="mentors__img" src="assets/images/mentors/men37.png" alt="Олег Корнев"></div>
+                    <div class="mentors__descr">
+                      <div class="wrap__mentors__descr">
+                        <div class="mentors__activities">Маркетинг</div>
+                        <div class="mentors__name">Олег Корнев</div>
+                        <div class="mentors__position">Креативный директор Digital Ape</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mentors__item marketing">
+                    <div class="wrap__mentors--img"><img class="mentors__img" src="assets/images/mentors/men38.png" alt="Олег Крупенов"></div>
+                    <div class="mentors__descr">
+                      <div class="wrap__mentors__descr">
+                        <div class="mentors__activities">Маркетинг</div>
+                        <div class="mentors__name">Олег Крупенов</div>
+                        <div class="mentors__position">Руководитель PR-отдела в СМИ2</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mentors__item marketing">
+                    <div class="wrap__mentors--img"><img class="mentors__img" src="assets/images/mentors/men39.png" alt="Олеся Теплова"></div>
+                    <div class="mentors__descr">
+                      <div class="wrap__mentors__descr">
+                        <div class="mentors__activities">Маркетинг</div>
+                        <div class="mentors__name">Олеся Теплова</div>
+                        <div class="mentors__position">Директор департамента маркетинга и связей с общественностью TVzavr</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mentors__item marketing">
+                    <div class="wrap__mentors--img"><img class="mentors__img" src="assets/images/mentors/men40.png" alt="Ольга Вяткина"></div>
+                    <div class="mentors__descr">
+                      <div class="wrap__mentors__descr">
+                        <div class="mentors__activities">Маркетинг</div>
+                        <div class="mentors__name">Ольга Вяткина</div>
+                        <div class="mentors__position">PR-директор агентства Nectarin</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mentors__item marketing">
+                    <div class="wrap__mentors--img"><img class="mentors__img" src="assets/images/mentors/men41.png" alt="Роман Бездудный"></div>
+                    <div class="mentors__descr">
+                      <div class="wrap__mentors__descr">
+                        <div class="mentors__activities">Маркетинг</div>
+                        <div class="mentors__name">Роман Бездудный</div>
+                        <div class="mentors__position">Консультант по маркетингу и оптимизации бизнес процессов</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mentors__item marketing">
+                    <div class="wrap__mentors--img"><img class="mentors__img" src="assets/images/mentors/men42.png" alt="Роман Колосов"></div>
+                    <div class="mentors__descr">
+                      <div class="wrap__mentors__descr">
+                        <div class="mentors__activities">Маркетинг</div>
+                        <div class="mentors__name">Роман Колосов</div>
+                        <div class="mentors__position">Social Media Director в Affect</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mentors__item marketing">
+                    <div class="wrap__mentors--img"><img class="mentors__img" src="assets/images/mentors/men43.png" alt="Сазонов Алексей"></div>
+                    <div class="mentors__descr">
+                      <div class="wrap__mentors__descr">
+                        <div class="mentors__activities">Маркетинг</div>
+                        <div class="mentors__name">Сазонов Алексей</div>
+                        <div class="mentors__position">Независимый медиа эксперт, кандидат технических наук.</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mentors__item marketing">
+                    <div class="wrap__mentors--img"><img class="mentors__img" src="assets/images/mentors/men44.png" alt="Светлана Киселева"></div>
+                    <div class="mentors__descr">
+                      <div class="wrap__mentors__descr">
+                        <div class="mentors__activities">Маркетинг</div>
+                        <div class="mentors__name">Светлана Киселева</div>
+                        <div class="mentors__position">Независимый консультант по оптимизации бизнес процессов в отделах продаж</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mentors__item marketing">
+                    <div class="wrap__mentors--img"><img class="mentors__img" src="assets/images/mentors/men45.png" alt="Светлана Майбродская"></div>
+                    <div class="mentors__descr">
+                      <div class="wrap__mentors__descr">
+                        <div class="mentors__activities">Маркетинг</div>
+                        <div class="mentors__name">Светлана Майбродская</div>
+                        <div class="mentors__position">Основатель и директор Академии коммуникаций Wordshop</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mentors__item marketing">
+                    <div class="wrap__mentors--img"><img class="mentors__img" src="assets/images/mentors/men46.png" alt="Сергей Грим"></div>
+                    <div class="mentors__descr">
+                      <div class="wrap__mentors__descr">
+                        <div class="mentors__activities">Маркетинг</div>
+                        <div class="mentors__name">Сергей Грим</div>
+                        <div class="mentors__position">Co-founder LAVA MEDIA</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mentors__item marketing">
+                    <div class="wrap__mentors--img"><img class="mentors__img" src="assets/images/mentors/men47.png" alt="Татьяна Попова"></div>
+                    <div class="mentors__descr">
+                      <div class="wrap__mentors__descr">
+                        <div class="mentors__activities">Маркетинг</div>
+                        <div class="mentors__name">Татьяна Попова</div>
+                        <div class="mentors__position">Консультант по маркетингу и бизнес-тренер</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="btn__show-more btn-more__mentors">Показать еще</div>
+          </div>
+        </section>
+        <section class="section">
+          <div class="container">
+            <div class="share"> 
+              <ul class="share__list animate-block-plus">
+                <li class="share__item-icon"> 
+                  <svg class="plus--svg1">
+                    <use xlink:href="assets/sprite/sprite.svg#plus"></use>
+                  </svg>
+                  <svg class="plus--svg2">
+                    <use xlink:href="assets/sprite/sprite.svg#plus"></use>
+                  </svg>
+                  <svg class="plus--svg3">
+                    <use xlink:href="assets/sprite/sprite.svg#plus"></use>
+                  </svg>
+                </li>
+                <li class="share__item-social">
+                  <div class="wrap__share">
+                    <div class="share__shrt-text">Поделиться с друзьями</div>
+                    <div class="share__social">
+                      <script src="https://yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
+                      <script src="https://yastatic.net/share2/share.js"></script>
+                      <div class="ya-share2" data-services="vkontakte,facebook,odnoklassniki,twitter,pocket,viber,whatsapp" data-counter=""></div>
+                    </div>
+                  </div>
+                </li>
+                <li class="share__item-icon">
+                  <svg class="plus--svg1">
+                    <use xlink:href="assets/sprite/sprite.svg#plus"></use>
+                  </svg>
+                  <svg class="plus--svg2">
+                    <use xlink:href="assets/sprite/sprite.svg#plus"></use>
+                  </svg>
+                  <svg class="plus--svg3">
+                    <use xlink:href="assets/sprite/sprite.svg#plus"></use>
+                  </svg>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <footer class="footer">
+          <div class="container">
+            <div class="footer__logo"><img class="footer__logo-img" src="assets/images/volna-logo.png"></div>
+            <div class="footer__options">
+              <div class="footer__menu">
+                <ul class="footer__menu-list">
+                  <li class="footer__menu-item">
+                    <div class="footer__menu-title">О нас</div>
+                    <div class="footer__wrap-link"><a class="footer__menu-link" href="about.html">Что такое волна</a><a class="footer__menu-link" href="crew.html">Команда</a><a class="footer__menu-link" href="contacts.html">Контакты</a>
+                    </div>
+                  </li>
+                  <li class="footer__menu-item">
+                    <div class="footer__menu-title">Слушателями</div>
+                    <div class="footer__wrap-link"><a class="footer__menu-link" href="courses.html">Курсы волны</a><a class="footer__menu-link" href="mentors.html">Наставники волны</a>
+                    </div>
+                  </li>
+                  <li class="footer__menu-item">
+                    <div class="footer__menu-title">Направления волны</div>
+                    <div class="footer__wrap-link"><a class="footer__menu-link" href="https://volna-courses.adindex.ru/" target="_blank">Курс Digital PR &amp; SMM</a><a class="footer__menu-link" href="https://volna-courses.adindex.ru/promedia?utm_source=volna&amp;utm_medium=banner&amp;utm_campaign=newmedia" target="_blank">Медиапланирования и маркетинговые исследования в Digital</a><a class="footer__menu-link" href="https://volna-courses.adindex.ru/promedia?utm_source=volna&amp;utm_medium=banner&amp;utm_campaign=newmedia" target="_blank">Data Mining в рекламе и маркетинге</a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="block__form">
+                <div class="form__title">
+                  <div class="wrap__title-img"><img class="form__title-img" src="assets/images/lips.png"></div>
+                  <div class="form__title__shrt-text">Получить лучшее на почту</div>
+                </div>
+                <form class="form">
+                  <input class="form-input" type="email" placeholder="Ваш e-mail">
+                  <input class="form-submit" type="submit" value="ок">
+                </form>
+                <div class="form__text">Нажимая на кнопку, вы даете согласие на обработку своих персональных данных</div>
+              </div>
+            </div>
+            <div class="footer__bottom">© 2017 Все права защищены</div>
+          </div>
+        </footer>
+        <div class="popup-menu">
+          <div class="popup-menu-left"></div>
+          <div class="popup-menu-right"></div>
+          <div class="wrap-menu-mobile">
+            <div class="block__header-nav">
+              <ul class="header__nav--list">
+                <li class="header__nav--item"><a class="header__nav--link" href="index.html">Статьи и публикации</a></li>
+                <li class="header__nav--item"><a class="header__nav--link" href="courses.html">Курсы и интенсивы</a></li>
+                <li class="header__nav--item"><a class="header__nav--link" href="mentors.html">Наши наставники</a></li>
+                <li class="header__nav--item"><a class="header__nav--link" href="about.html">Что такое волна</a></li>
+                <li class="header__nav--item"><a class="header__nav--link" href="blog.html">Блог</a></li>
+              </ul>
+            </div>
+            <div class="block__social">
+              <div class="social-text">
+                <div class="shrt-text">Мы в соцсетях:</div>
+              </div>
+              <ul class="social--list">
+                <li class="social--item"><a class="social--link">
+                    <svg class="social--svg">
+                      <use xlink:href="assets/sprite/sprite.svg#vk"></use>
+                    </svg></a></li>
+                <li class="social--item"><a class="social--link">
+                    <svg class="social--svg">
+                      <use xlink:href="assets/sprite/sprite.svg#youtube"></use>
+                    </svg></a></li>
+                <li class="social--item"><a class="social--link">
+                    <svg class="social--svg">
+                      <use xlink:href="assets/sprite/sprite.svg#tlg"></use>
+                    </svg></a></li>
+                <li class="social--item"><a class="social--link">
+                    <svg class="social--svg">
+                      <use xlink:href="assets/sprite/sprite.svg#fb"></use>
+                    </svg></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="closed__menu-mobile">
+            <svg class="closed--svg">
+              <use xlink:href="assets/sprite/sprite.svg#closed"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="block__btn-up">
+          <div class="btn__up">
+            <svg class="btn__up--svg">
+              <use xlink:href="assets/sprite/sprite.svg#up"></use>
+            </svg><span class="btn__shrt-text">Вверх</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
