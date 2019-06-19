@@ -12,6 +12,7 @@
     width 50%
     height 400px
     position relative
+    
     +adapt(1200px)
         height 450px
     +adapt(992px)
@@ -135,7 +136,6 @@
         justify-content center
 .controls__next,
 .controls__prev
-    
     background-color red
     width 60px
     height 60px
@@ -158,14 +158,22 @@
     bottom 130px
     +adapt(992px)
         left inherit 
-        right 20%
-        bottom -41px
+        // right 20%
+        right 40%
+        // bottom -41px
+        bottom 0
+    +adapt(480px)
+        right 30%
 .controls__prev
     left -80px
     bottom 50px
     +adapt(992px)
-        left 20%
-        bottom -41px
+        // left 20%
+        left 40%
+        // bottom -41px
+        bottom 0
+    +adapt(480px)
+        left 30%
 .controls__num-slide
     +adapt(992px)
         order 2

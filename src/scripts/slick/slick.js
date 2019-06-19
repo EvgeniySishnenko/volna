@@ -2998,9 +2998,9 @@ function slick () {
         dotsClass: 'art-slick-dots',
         slidesToShow: 1,
         slidesToScroll: 1,
-        // prevArrow: '<button class="slick-prev-art" aria-label="Previous" type="button"><img src="assets/images/art/left.png"></button>',
-        prevArrow: '<button class="slick-prev-art" aria-label="Previous" type="button"><svg ><use xlink:href="assets/sprite/sprite.svg#arrow"></use></button>',
-        nextArrow: '<button class="slick-next-art" aria-label="Next" type="button"><img src="assets/images/art/right.png"></button>',
+        prevArrow: '<button class="slick-prev-art" aria-label="Previous" type="button"><img src="assets/images/art/arrow.jpg"></button>',
+        // prevArrow: '<button class="slick-prev-art" aria-label="Previous" type="button"><svg ><use xlink:href="assets/sprite/sprite.svg#arrow"></use></button>',
+        nextArrow: '<button class="slick-next-art" aria-label="Next" type="button"><img src="assets/images/art/arrow.jpg"></button>',
         adaptiveHeight: true
       });
 
